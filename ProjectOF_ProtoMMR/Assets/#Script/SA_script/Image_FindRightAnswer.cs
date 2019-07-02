@@ -72,7 +72,7 @@ public class Image_FindRightAnswer : MonoBehaviour
         StartCoroutine(Answer_Wrong2_Remove(ranOBJ));
     }
 
-    IEnumerator Answer_Wrong2_Remove(GameObject[] RemoveOBJ)
+    IEnumerator Answer_Wrong2_Remove(GameObject[] RemoveOBJ)//#####################Fade 따로빼기
     {
         float Alpha_Remove = RemoveOBJ[0].GetComponent<SpriteRenderer>().color.a;
         if(Alpha_Remove > 0)

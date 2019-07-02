@@ -20,7 +20,7 @@ public class RenderView_ChangeMMR : MonoBehaviour
         //나중에 기획보고 수정해야하는 사항//규칙없음
     }
 
-    public IEnumerator ChangeMMR()
+    public IEnumerator ChangeMMR()//#####################Fade 따로빼기
     {
         RenderViewAnchor.SetActive(true);
         yield return new WaitForSeconds(1f);

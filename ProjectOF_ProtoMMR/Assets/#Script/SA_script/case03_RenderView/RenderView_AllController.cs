@@ -27,5 +27,3 @@ public class RenderView_AllController : MonoBehaviour
         ins_prevent.DisableDragZoom();//드래그 및 줌 방지
     }
 }
-
-
