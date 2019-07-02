@@ -1,0 +1,116 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+
+/// <summary>
+/// 드래그 박스를 그리는 클래스
+/// #캔버스기준 #박스그리기 #마우스좌표변환
+/// </summary>
+
+delegate void DelegateDrawDrag();
+
+public class Play_DrawDrag : MonoBehaviour
+{
+    //public ViewFinder_AutoCamZoom ins_VFzoom;
+    [Tooltip("SCRIPT OBJECT, 캠모드인지 이동모드인지 확인용")]
+    public Ui_CamOnOff ins_uicam;
+    [Tooltip("SCRIPT OBJECT, 캡쳐이미지 저장함수 실행용")]
+    public Picture_Save ins_save;
+    [Tooltip("UI_RECTTRANSFORM, 클릭앤 드래그할때 드래그박스 그림")]
+    public RectTransform DragBoxImage;
+    [Tooltip("CANVAS, 여기에 넣는 캔버스의 Local스페이스를 기준으로 recttransform(좌표위치)을 만듦")]
+    public Canvas myCanvas;
+    [Tooltip("VECTOR, this is for script(Picture_Save) and 드래그 방향에 상관없는 좌표값을 구하기위해 사용됨")]
+    public Vector2 firstPoint, lastPoint;
+
+
+    public GameObject DragLoadImage, DragRangeWarning;
+    public Vector3 startPos, endPos;
+    public Vector3 MovingCenter; //using from viewfinder
+    Vector2 startCanvas, endCanvas;
+    public bool isClicked_DrawingBox = false;//using from camzoom
+
+    // Update is called once per frame
+    void Update()
+    {
+        MovingCenter = Camera.main.WorldToScreenPoint(myCanvas.transform.position);//카메라의 중심
+        if (isClicked_DrawingBox)
+            DragBoxOnDraging();
+        //isclicked로 안하고 델리게이트에서 처리하면 드래그 박스 깜빡이는 현상 있을유
+        //얘는 본인 스크립트에서 실행하는거니까 그냥냅두쟈
+        
+    }
+
+    private void OnEnable()
+    {
+        Play_CheckTouch.DragBoxStart_FromDrag += this.DragBoxStart;
+        Play_CheckTouch.DragBoxEnd_FromDrag += this.DragBoxEnd;
+
+        Ui_CamOnOff.OnDragMode += this.ReturnToDragMode;
+    }
+
+    void ReturnToDragMode()
+    {
+        isClicked_DrawingBox = false;//카메라 버튼 눌러도 비활성화되게(버튼이랑 터치2이내로 제한 적용)
+        DragRangeWarning.SetActive(false);
+        print("드래그 모드");
+    }
+
+    public void DragBoxStart()
+    {
+        DragBoxImage.gameObject.SetActive(true);
+
+        Vector3 TempMouse;
+        TempMouse.x = Mathf.Clamp(Play_CheckTouch.touch.position.x, MovingCenter.x - 530, MovingCenter.x + 540);//캔버스내에서 벗어나지 못하게막음
+        TempMouse.y = Mathf.Clamp(Play_CheckTouch.touch.position.y, MovingCenter.y - 959, MovingCenter.y + 960);
+        TempMouse.z = 0;
+        
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                                    myCanvas.transform as RectTransform, TempMouse,
+                                    myCanvas.worldCamera, out startCanvas);
+        
+        startPos = startCanvas;
+        firstPoint = Play_CheckTouch.touch.position;
+        isClicked_DrawingBox = true;
+    }
+
+    public void DragBoxEnd()
+    {
+        if (isClicked_DrawingBox)//버튼클릭과 동시에 드래그실행됨을 방지
+        {
+            DragBoxImage.gameObject.SetActive(false);
+            lastPoint = Play_CheckTouch.touch.position;
+
+            if (DragBoxImage.sizeDelta.x > 5 || DragBoxImage.sizeDelta.y > 5)
+                if(ins_save != null)//랜더뷰모드일때는 캡쳐가 아님
+                    ins_save.StartPicture();
+
+            isClicked_DrawingBox = false;
+        }
+    }
+
+    public void DragBoxOnDraging()
+    {
+        if(DragLoadImage!=null)
+            DragLoadImage.SetActive(false);
+
+        Vector3 TempMouse;
+        TempMouse.x = Mathf.Clamp(Play_CheckTouch.touch.position.x, MovingCenter.x - 530, MovingCenter.x + 540);
+        TempMouse.y = Mathf.Clamp(Play_CheckTouch.touch.position.y, MovingCenter.y - 959, MovingCenter.y + 960);
+        TempMouse.z = 0;
+        
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                                    myCanvas.transform as RectTransform, TempMouse,
+                                    myCanvas.worldCamera, out endCanvas);
+        endPos = endCanvas;
+        DragBoxImage.position = myCanvas.transform.TransformPoint((startPos + endPos) / 2);
+        //드래그 박스의 위치는 월드기준으로 드래그 첫점과 끝점사이의 중점(드래그 중심)
+
+        float sizeX = Mathf.Abs(startPos.x - endPos.x);
+        float sizeY = Mathf.Abs(startPos.y - endPos.y);
+        DragBoxImage.sizeDelta = new Vector2(sizeX, sizeY);
+        //드래그 박스의 사이즈x,y는 드래그 된 영역만큼의 사이즈
+
+    }
+}
