@@ -14,7 +14,6 @@ public class RenderView_AllController : MonoBehaviour
     public RenderView_RenderCam ins_RVcam;
     public RenderView_ChangeMMR ins_changeMMR;
     public RenderView_PreventDrag ins_prevent;
-    public Image_FindRightAnswer ins_findRight;
 
     private void OnEnable()
     {

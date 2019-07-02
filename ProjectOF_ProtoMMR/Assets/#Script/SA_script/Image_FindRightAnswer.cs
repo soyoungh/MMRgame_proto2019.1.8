@@ -5,11 +5,12 @@ using UnityEngine;
 /// <summary>
 /// 숨은그림을 구별하여 찾는 클래스
 /// #이미지의rect생성 #이미지모서리찾기 #드래그박스모서리찾기 #기즈모그리기 #드래그최소범위구분
+/// 드래그영역내에 오답이 3개 이상일경우 그중 2개지워버리기
 /// </summary>
 public class Image_FindRightAnswer : MonoBehaviour
 {
     public delegate void RenderViewDelegate();
-    public static event RenderViewDelegate RightAnswer;
+    public static event RenderViewDelegate RightAnswer;//RenderView_AllController
 
     public GameObject RangeWarning;
     public RectTransform DragBox;
@@ -19,8 +20,6 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     Vector3[] DragCornersVector = new Vector3[4];
     Vector3[] ImageCornersVector = new Vector3[4];
-
-    //public bool isFindedMMR = false;//using from RenderView Allcontroller
 
     // Start is called before the first frame update
     void Start()
@@ -32,30 +31,25 @@ public class Image_FindRightAnswer : MonoBehaviour
     private void OnEnable()
     {
         Play_CheckTouch.TouchMoved_FromAnswer += this.ImageAndDragboxCorners;
-        Play_CheckTouch.TouchEnd_FromAnswer += DragEndFigureOut;
-        //isFindedMMR 뷰파인더용 스크립트 이외에도 사용되고있는곳이 있는지
+        Play_CheckTouch.TouchEnd_FromAnswer += this.DragEndFigureOut;
     }
 
     public void Answer_Wrong0_GetList()
     {
         Collider2D[] Overlaped = Physics2D.OverlapAreaAll(DragCornersVector[0], DragCornersVector[2]);
         GameObject[] OverlapObject = new GameObject[Overlaped.Length];
-        //print("배열 " + Overlaped.Length);
         int i = 0;
         while(i < Overlaped.Length)
         {
             OverlapObject[i] = Overlaped[i].gameObject;
-            //print("겹쳐진 오브젝트 " + i + "번은 [" + OverlapObject[i].name + "]입니다.");
-            //print("내 레이어넘버 : " + DragBox.layer + ", 겹쳐진 오브젝트 " + i + "번 넘버 : " + Overlaped[i].gameObject.layer);
             i++;
         }
 
         if (OverlapObject.Length >= 3)
             Answer_Wrong1_SetRemove(OverlapObject.Length, OverlapObject);
-        //드래그영역내에 오답이 3개 이상일경우 그중 2개지워버리기
     }
 
-    void Answer_Wrong1_SetRemove(int maxNum, GameObject[] overedOBJ)//
+    void Answer_Wrong1_SetRemove(int maxNum, GameObject[] overedOBJ)
     {
         int[] ranINT = new int[2];
         GameObject[] ranOBJ = new GameObject[2];
@@ -72,7 +66,7 @@ public class Image_FindRightAnswer : MonoBehaviour
                     break;
             }
         }
-        //print("random is : [" + ranINT[0] + ", " + ranINT[1] + "]");
+
         ranOBJ[0] = overedOBJ[ranINT[0]];
         ranOBJ[1] = overedOBJ[ranINT[1]];
         StartCoroutine(Answer_Wrong2_Remove(ranOBJ));
@@ -83,7 +77,6 @@ public class Image_FindRightAnswer : MonoBehaviour
         float Alpha_Remove = RemoveOBJ[0].GetComponent<SpriteRenderer>().color.a;
         if(Alpha_Remove > 0)
         {
-            //print("dis : " + RemoveOBJ[0].GetComponent<SpriteRenderer>().color.a);
             Alpha_Remove -= 0.1f;
 
             for (int i = 0; i < RemoveOBJ.Length; i++)
@@ -97,18 +90,16 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public void DragEndFigureOut()
     {
+
         if (DragBox.sizeDelta.x > 5 || DragBox.sizeDelta.y > 5)
         {
-            if (DragHideCompare())//찾음 여부를 bool로 만들고 다른거랑 함께체크해야하나
+            if (DragHideCompare())
             {
-                //isFindedMMR = true;
                 RightAnswer();
                 print("Right!");
-                //촬영하고 나서도 이부분이 조건에 부합하여 계속 실행됨 방지할 방법 찾아야함
-            }
-            else
+                DragBox.gameObject.SetActive(false);
+            }else
             {
-                //isFindedMMR = false;
                 Answer_Wrong0_GetList();
                 print("Wrong!");
             }

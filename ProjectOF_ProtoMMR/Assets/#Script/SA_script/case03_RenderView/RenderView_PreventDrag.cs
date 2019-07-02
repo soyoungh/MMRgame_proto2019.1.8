@@ -7,19 +7,19 @@ using UnityEngine;
 /// </summary>
 public class RenderView_PreventDrag : MonoBehaviour
 {
-    public GameObject DragControl;
-    public GameObject ZoomControl;
+    public Play_DrawDrag DragControl;
+    public Ui_CamZoom ZoomControl;
 
     public void DisableDragZoom()
     {
         print("??");
-        DragControl.SetActive(false);
-        ZoomControl.SetActive(false);
+        DragControl.enabled = false;
+        ZoomControl.enabled = false;
     }
 
     public void EnableDragZoom()
     {
-        DragControl.SetActive(true);
-        ZoomControl.SetActive(true);
+        DragControl.enabled = true;
+        ZoomControl.enabled = true;
     }
 }

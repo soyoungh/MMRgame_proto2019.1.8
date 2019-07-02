@@ -12,6 +12,7 @@ public class RenderView_UIcontrol : MonoBehaviour
     public Ui_CamOnOff ins_onoff;
     public RenderView_PreventDrag ins_prevent;
     public GameObject RenderView;
+    public Play_DrawDrag ins_drag;
 
     /// <summary>
     /// 돌아가기
@@ -20,9 +21,9 @@ public class RenderView_UIcontrol : MonoBehaviour
     public void OnReturn()
     {
         ins_onoff.Iscam = false;
-        //ins_findRight.isFindedMMR = false;
         ins_prevent.EnableDragZoom();
         print("Return to drag move mode.");
         RenderView.SetActive(false);
+        ins_drag.isClicked_DrawingBox = false;
     }
 }

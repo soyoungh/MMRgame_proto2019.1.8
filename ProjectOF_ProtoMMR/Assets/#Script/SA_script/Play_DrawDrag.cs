@@ -39,7 +39,7 @@ public class Play_DrawDrag : MonoBehaviour
             DragBoxOnDraging();
         //isclicked로 안하고 델리게이트에서 처리하면 드래그 박스 깜빡이는 현상 있을유
         //얘는 본인 스크립트에서 실행하는거니까 그냥냅두쟈
-        
+
     }
 
     private void OnEnable()
@@ -50,6 +50,8 @@ public class Play_DrawDrag : MonoBehaviour
         Ui_CamOnOff.OnDragMode += this.ReturnToDragMode;
     }
 
+
+
     void ReturnToDragMode()
     {
         isClicked_DrawingBox = false;//카메라 버튼 눌러도 비활성화되게(버튼이랑 터치2이내로 제한 적용)
@@ -58,7 +60,9 @@ public class Play_DrawDrag : MonoBehaviour
     }
 
     public void DragBoxStart()
-    {
+    {if (!enabled) return;
+
+
         DragBoxImage.gameObject.SetActive(true);
 
         Vector3 TempMouse;
@@ -76,7 +80,9 @@ public class Play_DrawDrag : MonoBehaviour
     }
 
     public void DragBoxEnd()
-    {
+    {if (!enabled) return;
+
+
         if (isClicked_DrawingBox)//버튼클릭과 동시에 드래그실행됨을 방지
         {
             DragBoxImage.gameObject.SetActive(false);
@@ -91,8 +97,10 @@ public class Play_DrawDrag : MonoBehaviour
     }
 
     public void DragBoxOnDraging()
-    {
-        if(DragLoadImage!=null)
+    {if (!enabled) return;
+
+
+        if (DragLoadImage!=null)
             DragLoadImage.SetActive(false);
 
         Vector3 TempMouse;

@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ins_zoom: {fileID: 5572214536073477976}
   ins_onoff: {fileID: 7472590162597091931}
-  ins_drawbox: {fileID: 1237688296}
+  ins_drawdrag: {fileID: 1237688296}
 --- !u!1 &269045049
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +818,7 @@ MonoBehaviour:
   RangeWarning: {fileID: 2143241167}
   DragBox: {fileID: 1370786378}
   ImagePosition: {x: 0, y: 0, z: 0}
+  isFindedMMR: 0
 --- !u!114 &699649333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,7 +1838,6 @@ MonoBehaviour:
   ins_RVcam: {fileID: 1800320239}
   ins_changeMMR: {fileID: 699649333}
   ins_prevent: {fileID: 1596583831}
-  ins_findRight: {fileID: 699649332}
 --- !u!4 &1596583829
 Transform:
   m_ObjectHideFlags: 0
@@ -1868,6 +1868,7 @@ MonoBehaviour:
   ins_onoff: {fileID: 7472590162597091931}
   ins_prevent: {fileID: 1596583831}
   RenderView: {fileID: 196232072}
+  ins_drag: {fileID: 1237688296}
 --- !u!114 &1596583831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1880,8 +1881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f198016d2ea744bafa77cc97dcec24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DragControl: {fileID: 1237688294}
-  ZoomControl: {fileID: 5572214536073477977}
+  DragControl: {fileID: 1237688296}
+  ZoomControl: {fileID: 5572214536073477976}
 --- !u!1 &1768318045
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,9 +2436,9 @@ MonoBehaviour:
   maxFOV_real: 100
   maxFOV: 110
   cam: {fileID: 1971299885}
+  ins_drawdrag: {fileID: 1237688296}
   IsTouch2: 0
   FrameChangeForGridRot: 0
-  ins_drawdrag: {fileID: 1237688296}
 --- !u!1 &5572214536073477977
 GameObject:
   m_ObjectHideFlags: 0

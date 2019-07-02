@@ -11,13 +11,13 @@ public class Ui_CamZoom : MonoBehaviour
     [SerializeField]
     float minFOV_real, minFOV, maxFOV_real, maxFOV;
     public Camera cam;
+    public Play_DrawDrag ins_drawdrag;
 
     [Tooltip("BOOL, 줌이 끝날때까지 drag move가(touchcount == 1) 실행하는것을 방지")]
     public bool IsTouch2 = false;
     [Tooltip("FLOAT, grid 축회전이랑 줌속도 맞춰줄 드래그 변화량")]
     public float FrameChangeForGridRot;
-
-    public Play_DrawDrag ins_drawdrag;
+    
 
     // Update is called once per frame
     void Update()
