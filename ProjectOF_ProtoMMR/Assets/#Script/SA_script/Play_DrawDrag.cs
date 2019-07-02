@@ -12,9 +12,6 @@ delegate void DelegateDrawDrag();
 
 public class Play_DrawDrag : MonoBehaviour
 {
-    //public ViewFinder_AutoCamZoom ins_VFzoom;
-    [Tooltip("SCRIPT OBJECT, 캠모드인지 이동모드인지 확인용")]
-    public Ui_CamOnOff ins_uicam;
     [Tooltip("SCRIPT OBJECT, 캡쳐이미지 저장함수 실행용")]
     public Picture_Save ins_save;
     [Tooltip("UI_RECTTRANSFORM, 클릭앤 드래그할때 드래그박스 그림")]
@@ -26,10 +23,10 @@ public class Play_DrawDrag : MonoBehaviour
 
 
     public GameObject DragLoadImage, DragRangeWarning;
-    public Vector3 startPos, endPos;
     public Vector3 MovingCenter; //using from viewfinder
-    Vector2 startCanvas, endCanvas;
     public bool isClicked_DrawingBox = false;//using from camzoom
+    Vector3 startPos, endPos;
+    Vector2 startCanvas, endCanvas;
 
     // Update is called once per frame
     void Update()
@@ -39,24 +36,19 @@ public class Play_DrawDrag : MonoBehaviour
             DragBoxOnDraging();
         //isclicked로 안하고 델리게이트에서 처리하면 드래그 박스 깜빡이는 현상 있을유
         //얘는 본인 스크립트에서 실행하는거니까 그냥냅두쟈
-
     }
 
     private void OnEnable()
     {
         Play_CheckTouch.DragBoxStart_FromDrag += this.DragBoxStart;
         Play_CheckTouch.DragBoxEnd_FromDrag += this.DragBoxEnd;
-
         Ui_CamOnOff.OnDragMode += this.ReturnToDragMode;
     }
-
-
-
-    void ReturnToDragMode()
+    
+    void ReturnToDragMode()//cam버튼 눌러서 이동모드 전환시 실행
     {
-        isClicked_DrawingBox = false;//카메라 버튼 눌러도 비활성화되게(버튼이랑 터치2이내로 제한 적용)
+        isClicked_DrawingBox = false;
         DragRangeWarning.SetActive(false);
-        print("드래그 모드");
     }
 
     public void DragBoxStart()
@@ -81,8 +73,7 @@ public class Play_DrawDrag : MonoBehaviour
 
     public void DragBoxEnd()
     {if (!enabled) return;
-
-
+    
         if (isClicked_DrawingBox)//버튼클릭과 동시에 드래그실행됨을 방지
         {
             DragBoxImage.gameObject.SetActive(false);
@@ -98,8 +89,7 @@ public class Play_DrawDrag : MonoBehaviour
 
     public void DragBoxOnDraging()
     {if (!enabled) return;
-
-
+    
         if (DragLoadImage!=null)
             DragLoadImage.SetActive(false);
 

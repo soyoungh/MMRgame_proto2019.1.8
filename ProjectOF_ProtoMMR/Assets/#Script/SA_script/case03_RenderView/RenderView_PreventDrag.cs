@@ -12,7 +12,6 @@ public class RenderView_PreventDrag : MonoBehaviour
 
     public void DisableDragZoom()
     {
-        print("??");
         DragControl.enabled = false;
         ZoomControl.enabled = false;
     }

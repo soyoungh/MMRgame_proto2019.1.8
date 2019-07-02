@@ -18,11 +18,12 @@ public class RenderView_RenderCam : MonoBehaviour
     /// <summary>
     /// 정답일경우 해당위치로 카메라이동
     /// </summary>
-    public void CorrectAnswerMove()
+    public void CorrectAnswerMove()//From AllController
     {
         transform.position = ins_drawdrag.DragBoxImage.transform.position + new Vector3(0,0,-10);
         GetComponent<Camera>().fieldOfView = MainCam.GetComponent<Camera>().fieldOfView;
         //해당위치이동 및 메인캠fov와 동기화
+
         LoadImageMask.sizeDelta = ins_drawdrag.DragBoxImage.sizeDelta;
         //마스크를 드래그범위사이즈만큼 자름
         float ProportionX = DefaulSize.x / LoadImageMask.sizeDelta.x;
