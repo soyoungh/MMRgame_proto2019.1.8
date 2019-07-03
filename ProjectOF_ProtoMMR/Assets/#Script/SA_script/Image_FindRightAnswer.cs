@@ -11,8 +11,11 @@ public class Image_FindRightAnswer : MonoBehaviour
 {
     public delegate void RenderViewDelegate();
     public static event RenderViewDelegate RightAnswer;//RenderView_AllController
+    public delegate void FadeDelegate(SpriteRenderer BeforeSprite, float FirstWait);
+    public static event FadeDelegate FadeOutEvent;
+    //public static event FadeDelegate FadeInEvent;
 
-    public GameObject RangeWarning;
+    public GameObject RangeWarning, RenderView;
     public RectTransform DragBox;
     public Vector3 ImagePosition;
     SpriteRenderer HideSpriteRender;
@@ -69,39 +72,51 @@ public class Image_FindRightAnswer : MonoBehaviour
 
         ranOBJ[0] = overedOBJ[ranINT[0]];
         ranOBJ[1] = overedOBJ[ranINT[1]];
-        StartCoroutine(Answer_Wrong2_Remove(ranOBJ));
+        Answer_Wrong2_Remove_(ranOBJ);
     }
 
-    IEnumerator Answer_Wrong2_Remove(GameObject[] RemoveOBJ)//#####################Fade 따로빼기
-    {
-        float Alpha_Remove = RemoveOBJ[0].GetComponent<SpriteRenderer>().color.a;
-        if(Alpha_Remove > 0)
-        {
-            Alpha_Remove -= 0.1f;
+    //IEnumerator Answer_Wrong2_Remove(GameObject[] RemoveOBJ)//#####################Fade 따로빼기
+    //{
+    //    float Alpha_Remove = RemoveOBJ[0].GetComponent<SpriteRenderer>().color.a;
+    //    if(Alpha_Remove > 0)
+    //    {
+    //        Alpha_Remove -= 0.1f;
 
-            for (int i = 0; i < RemoveOBJ.Length; i++)
-            {
-                RemoveOBJ[i].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, Alpha_Remove);
-            }
-            yield return new WaitForSeconds(0.1f);
-            StartCoroutine(Answer_Wrong2_Remove(RemoveOBJ));
+    //        for (int i = 0; i < RemoveOBJ.Length; i++)
+    //        {
+    //            RemoveOBJ[i].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, Alpha_Remove);
+    //        }
+    //        yield return new WaitForSeconds(0.1f);
+    //        StartCoroutine(Answer_Wrong2_Remove(RemoveOBJ));
+    //    }
+    //}
+
+    void Answer_Wrong2_Remove_(GameObject[] RemoveOBJ)
+    {
+        for (int i = 0; i < RemoveOBJ.Length; i++)
+        {
+            FadeOutEvent(RemoveOBJ[i].GetComponent<SpriteRenderer>(), 0);
         }
+
     }
 
     public void DragEndFigureOut()
-    {
-
-        if (DragBox.sizeDelta.x > 5 || DragBox.sizeDelta.y > 5)
+    {//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는데 막기 0703
+        if (DragBox.sizeDelta.x > 5 || DragBox.sizeDelta.y > 5 )
         {
-            if (DragHideCompare())
+            if(RenderView.activeSelf == false)
             {
-                RightAnswer();
-                print("Right!");
-                DragBox.gameObject.SetActive(false);
-            }else
-            {
-                Answer_Wrong0_GetList();
-                print("Wrong!");
+                if (DragHideCompare())
+                {
+                    RightAnswer();
+                    print("Right!");
+                    DragBox.gameObject.SetActive(false);
+                }
+                else
+                {
+                    Answer_Wrong0_GetList();
+                    print("Wrong!");
+                }
             }
         }
         else

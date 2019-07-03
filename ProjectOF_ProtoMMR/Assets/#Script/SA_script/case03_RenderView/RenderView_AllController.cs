@@ -15,6 +15,9 @@ public class RenderView_AllController : MonoBehaviour
     public RenderView_ChangeMMR ins_changeMMR;
     public RenderView_PreventDrag ins_prevent;
 
+    public GameObject RenderView;
+    public SpriteRenderer BeforeFindMMR, AfterFindMMR;//퍼블릭으로 가져오는건 임시적, 코드로 가져올수있게 수정필요
+
     private void OnEnable()
     {
         Image_FindRightAnswer.RightAnswer += this.RenderViewControl;//From FRA
@@ -23,7 +26,19 @@ public class RenderView_AllController : MonoBehaviour
     public void RenderViewControl()
     {
         ins_RVcam.CorrectAnswerMove();//드래그범위로 캠이동
-        ins_changeMMR.StartCoroutine(ins_changeMMR.ChangeMMR());//정답이미지 변환, 렌더뷰활성화
+        RenderView.SetActive(true);//렌더뷰활성화
+        
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ 수정필요 ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+        //ins_changeMMR.StartCoroutine(ins_changeMMR.ChangeMMR());//정답이미지 변환
+        if (Image_FadeControl.FadeInstance != null)
+        {
+            StartCoroutine(Image_FadeControl.FadeInstance.FadeOut(BeforeFindMMR, 1f));
+            StartCoroutine(Image_FadeControl.FadeInstance.FadeIn(AfterFindMMR, 1f));//정답이미지만 따로 get해와서 넣어줄수 있게 수정하기0703
+        }
+        else
+            print("singleton is null");
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+        
         ins_prevent.DisableDragZoom();//드래그 및 줌 방지
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine;
 /// </summary>
 public class RenderView_ChangeMMR : MonoBehaviour
 {
-    public GameObject RenderViewAnchor;
+    //public GameObject RenderViewAnchor;
     SpriteRenderer BeforeFindMMR, AfterFindMMR;
 
     void Start()
@@ -22,7 +22,7 @@ public class RenderView_ChangeMMR : MonoBehaviour
 
     public IEnumerator ChangeMMR()//#####################Fade 따로빼기
     {
-        RenderViewAnchor.SetActive(true);
+        //RenderViewAnchor.SetActive(true);
         yield return new WaitForSeconds(1f);
         while (AfterFindMMR.color.a < 1)
         {
@@ -31,5 +31,7 @@ public class RenderView_ChangeMMR : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         print("Changed!");
+        //컬러받기
+        //컬러반환
     }
 }
