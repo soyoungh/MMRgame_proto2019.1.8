@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/#Scenes/ProtoScene/SC00_Start.unity
     guid: 8e4f1bbd5bf555a45b1adc829a01cc0e
-  - enabled: 1
+  - enabled: 0
     path: Assets/#Scenes/ProtoScene/SC01_Prologue.unity
     guid: 99ef423305c96bd4fac2308859669732
   - enabled: 1

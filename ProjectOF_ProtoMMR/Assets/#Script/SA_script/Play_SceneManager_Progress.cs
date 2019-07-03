@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Play_SceneManager : MonoBehaviour
+public class Play_SceneManager_Progress : MonoBehaviour
 {
     AsyncOperation asyncOper;
     bool PlayReady = false;
     public RectTransform ProgressBar;
+    public static int NextSceneNum;
 
     private void Start()
     {
@@ -33,7 +34,6 @@ public class Play_SceneManager : MonoBehaviour
                 if (ProgressBar != null)
                 {
                     ProgressBar.localScale = Vector3.one;
-                    ProgressBar.gameObject.GetComponent<Image>().color = Color.cyan;
                 }
                 if (PlayReady == true)
                 {
