@@ -12,8 +12,8 @@ delegate void DelegateDrawDrag();
 
 public class Play_DrawDrag : MonoBehaviour
 {
-    [Tooltip("SCRIPT OBJECT, 캡쳐이미지 저장함수 실행용")]
-    public Picture_Save ins_save;
+    //[Tooltip("SCRIPT OBJECT, 캡쳐이미지 저장함수 실행용")]
+    //public Picture_Save ins_save;
     [Tooltip("UI_RECTTRANSFORM, 클릭앤 드래그할때 드래그박스 그림")]
     public RectTransform DragBoxImage;
     [Tooltip("CANVAS, 여기에 넣는 캔버스의 Local스페이스를 기준으로 recttransform(좌표위치)을 만듦")]
@@ -22,9 +22,9 @@ public class Play_DrawDrag : MonoBehaviour
     public Vector2 firstPoint, lastPoint;
 
 
-    public GameObject DragLoadImage, DragRangeWarning;
-    public Vector3 MovingCenter; //using from viewfinder
+    public GameObject DragRangeWarning;//, DragLoadImage;
     public bool isClicked_DrawingBox = false;//using from camzoom
+    Vector3 MovingCenter; // 원래는 public이었음 문제있음 바꾸셈0703
     Vector3 startPos, endPos;
     Vector2 startCanvas, endCanvas;
 
@@ -79,9 +79,9 @@ public class Play_DrawDrag : MonoBehaviour
             DragBoxImage.gameObject.SetActive(false);
             lastPoint = Play_CheckTouch.touch.position;
 
-            if (DragBoxImage.sizeDelta.x > 5 || DragBoxImage.sizeDelta.y > 5)
-                if(ins_save != null)//랜더뷰모드일때는 캡쳐가 아님
-                    ins_save.StartPicture();
+            //if (DragBoxImage.sizeDelta.x > 5 || DragBoxImage.sizeDelta.y > 5)
+            //    if(ins_save != null)//랜더뷰모드일때는 캡쳐가 아님
+            //        ins_save.StartPicture(); //이미지캡쳐
 
             isClicked_DrawingBox = false;
         }
@@ -90,8 +90,8 @@ public class Play_DrawDrag : MonoBehaviour
     public void DragBoxOnDraging()
     {if (!enabled) return;
     
-        if (DragLoadImage!=null)
-            DragLoadImage.SetActive(false);
+        //if (DragLoadImage!=null)
+        //    DragLoadImage.SetActive(false); //이미지 캡쳐 로드
 
         Vector3 TempMouse;
         TempMouse.x = Mathf.Clamp(Play_CheckTouch.touch.position.x, MovingCenter.x - 530, MovingCenter.x + 540);

@@ -75,36 +75,19 @@ public class Image_FindRightAnswer : MonoBehaviour
         Answer_Wrong2_Remove_(ranOBJ);
     }
 
-    //IEnumerator Answer_Wrong2_Remove(GameObject[] RemoveOBJ)//#####################Fade 따로빼기
-    //{
-    //    float Alpha_Remove = RemoveOBJ[0].GetComponent<SpriteRenderer>().color.a;
-    //    if(Alpha_Remove > 0)
-    //    {
-    //        Alpha_Remove -= 0.1f;
-
-    //        for (int i = 0; i < RemoveOBJ.Length; i++)
-    //        {
-    //            RemoveOBJ[i].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, Alpha_Remove);
-    //        }
-    //        yield return new WaitForSeconds(0.1f);
-    //        StartCoroutine(Answer_Wrong2_Remove(RemoveOBJ));
-    //    }
-    //}
-
     void Answer_Wrong2_Remove_(GameObject[] RemoveOBJ)
     {
         for (int i = 0; i < RemoveOBJ.Length; i++)
         {
             FadeOutEvent(RemoveOBJ[i].GetComponent<SpriteRenderer>(), 0);
         }
-
     }
 
     public void DragEndFigureOut()
-    {//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는데 막기 0703
+    {
         if (DragBox.sizeDelta.x > 5 || DragBox.sizeDelta.y > 5 )
         {
-            if(RenderView.activeSelf == false)
+            if(RenderView.activeSelf == false)//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는걸 방지
             {
                 if (DragHideCompare())
                 {

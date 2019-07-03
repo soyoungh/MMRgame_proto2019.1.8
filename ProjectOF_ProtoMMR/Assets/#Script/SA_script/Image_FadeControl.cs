@@ -20,10 +20,6 @@ public class Image_FadeControl : MonoBehaviour
     {
         StartCoroutine(FadeOut(BeforeSprite, FirstWait));
     }
-    //void StartFadeIn(SpriteRenderer BeforeSprite, float FirstWait)
-    //{
-    //    StartCoroutine(FadeIn(BeforeSprite, FirstWait));
-    //}
 
 
     public IEnumerator FadeOut(SpriteRenderer BeforeSprite, float FirstWait)
