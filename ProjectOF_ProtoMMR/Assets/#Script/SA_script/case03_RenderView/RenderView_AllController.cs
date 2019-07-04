@@ -14,6 +14,7 @@ public class RenderView_AllController : MonoBehaviour
     public RenderView_RenderCam ins_RVcam;
     public RenderView_ChangeMMR ins_changeMMR;
     public RenderView_PreventDrag ins_prevent;
+    public RenderView_Resize ins_resize;
 
     public GameObject RenderView;
     public SpriteRenderer BeforeFindMMR, AfterFindMMR;//퍼블릭으로 가져오는건 임시적, 코드로 가져올수있게 수정필요
@@ -27,6 +28,7 @@ public class RenderView_AllController : MonoBehaviour
     {
         ins_RVcam.CorrectAnswerMove();//드래그범위로 캠이동
         RenderView.SetActive(true);//렌더뷰활성화
+        ins_resize.Resizing();
         
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ 수정필요 ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
         //ins_changeMMR.StartCoroutine(ins_changeMMR.ChangeMMR());//정답이미지 변환

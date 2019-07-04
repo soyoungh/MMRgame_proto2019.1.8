@@ -16,6 +16,7 @@ public class RenderView_UIcontrol : MonoBehaviour
     public RenderView_PreventDrag ins_prevent;
     public GameObject RenderView;
     public Play_DrawDrag ins_drag;
+    public GameObject ViewFinder;
 
     /// <summary>
     /// 돌아가기
@@ -23,6 +24,7 @@ public class RenderView_UIcontrol : MonoBehaviour
     /// </summary>
     public void OnReturn()//From Button
     {
+        ViewFinder.SetActive(false);
         ins_onoff.Iscam = false;
         ins_prevent.EnableDragZoom();
         RenderView.SetActive(false);
