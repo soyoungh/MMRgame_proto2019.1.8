@@ -10,7 +10,6 @@ public class RenderView_RenderCam : MonoBehaviour
 {
     public GameObject MainCam;
     public Play_DrawDrag ins_drawdrag;
-    public RectTransform LoadImageMask;
 
     Vector2 DefaulSize = new Vector2(500, 500);
     
