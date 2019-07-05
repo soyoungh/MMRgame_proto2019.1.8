@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// 숨은그림을 구별하여 찾는 클래스
@@ -16,10 +17,11 @@ public class Image_FindRightAnswer : MonoBehaviour
     //public static event FadeDelegate FadeInEvent;
 
     public GameObject RangeWarning, RenderView;
-    public RectTransform DragBox;
+    public RectTransform DragBox, CheckRange;
     public Vector3 ImagePosition;
     SpriteRenderer HideSpriteRender;
     Rect HideSpriteRect;
+    bool IsSizeFit = false;
 
     Vector3[] DragCornersVector = new Vector3[4];
     Vector3[] ImageCornersVector = new Vector3[4];
@@ -34,6 +36,8 @@ public class Image_FindRightAnswer : MonoBehaviour
     private void OnEnable()
     {
         Play_CheckTouch.TouchMoved_FromAnswer += this.ImageAndDragboxCorners;
+        Play_CheckTouch.TouchMoved_FromAnswer += this.DragMoveSizeCheck;
+        //Play_CheckTouch.TouchMovedSize_FromAnswer += this.ImageAndDragboxCorners;
         Play_CheckTouch.TouchEnd_FromAnswer += this.DragEndFigureOut;
     }
 
@@ -80,6 +84,21 @@ public class Image_FindRightAnswer : MonoBehaviour
         for (int i = 0; i < RemoveOBJ.Length; i++)
         {
             FadeOutEvent(RemoveOBJ[i].GetComponent<SpriteRenderer>(), 0);
+        }
+    }
+
+    public void DragMoveSizeCheck()
+    {
+        if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / 2 && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / 2)
+        {
+            print("최소범위는 [" + CheckRange.sizeDelta.x / 2 + ", " + CheckRange.sizeDelta.x / 2 + "]");
+            IsSizeFit = true;
+            DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1,1,1, 0.5f);
+        }
+        else
+        {
+            IsSizeFit = false;
+            DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
         }
     }
 
@@ -143,6 +162,8 @@ public class Image_FindRightAnswer : MonoBehaviour
         HideSpriteRect.yMin = ImageCornersVector[3].y;
         HideSpriteRect.xMax = ImageCornersVector[2].x;
         HideSpriteRect.yMax = ImageCornersVector[2].y;
+
+        print(HideSpriteRect);
         //이거 너무 더러운뎅, 수정할 방법 찾기
         // Image Corner Save
 
