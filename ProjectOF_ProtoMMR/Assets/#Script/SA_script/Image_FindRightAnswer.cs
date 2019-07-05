@@ -81,6 +81,7 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     void Answer_Wrong2_Remove_(GameObject[] RemoveOBJ)
     {
+        //save
         for (int i = 0; i < RemoveOBJ.Length; i++)
         {
             FadeOutEvent(RemoveOBJ[i].GetComponent<SpriteRenderer>(), 0);

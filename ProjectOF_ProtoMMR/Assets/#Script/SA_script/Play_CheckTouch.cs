@@ -19,7 +19,6 @@ public class Play_CheckTouch : MonoBehaviour
     public static event PlayDelegate DragBoxEnd_FromDrag;
 
     public static event PlayDelegate TouchMoved_FromAnswer;
-    //public static event PlayDelegate TouchMovedSize_FromAnswer;
     public static event PlayDelegate TouchEnd_FromAnswer;
 
     void Update()
