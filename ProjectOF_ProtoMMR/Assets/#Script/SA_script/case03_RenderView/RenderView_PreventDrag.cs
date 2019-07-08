@@ -4,6 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// 이동,확대 방지
+/// 이게 촬영모드에서 전부 사용돼서 필요없다면 지우거나 촬영모드용으로 수정해서 사용하거나 하기
 /// </summary>
 public class RenderView_PreventDrag : MonoBehaviour
 {

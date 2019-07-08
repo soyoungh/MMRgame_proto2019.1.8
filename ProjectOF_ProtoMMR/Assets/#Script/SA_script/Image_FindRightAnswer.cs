@@ -89,9 +89,9 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public void DragMoveSizeCheck()
     {
-        if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / 2 && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / 2)
+        if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / 1.5f && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / 1.5f)
         {
-            print("최소범위는 [" + CheckRange.sizeDelta.x / 2 + ", " + CheckRange.sizeDelta.x / 2 + "]");
+            //print("최소범위는 [" + CheckRange.sizeDelta.x / 2 + ", " + CheckRange.sizeDelta.x / 2 + "]");
             IsSizeFit = true;
             DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1,1,1, 0.5f);
         }
@@ -104,7 +104,7 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public void DragEndFigureOut()
     {
-        if (DragBox.sizeDelta.x > 5 || DragBox.sizeDelta.y > 5 )
+        if (IsSizeFit)//이거랑 정답영역인지 
         {
             if(RenderView.activeSelf == false)//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는걸 방지
             {
@@ -135,10 +135,11 @@ public class Image_FindRightAnswer : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            if (!HideSpriteRect.Contains(DragCornersVector[i], true))
+            if (!HideSpriteRect.Contains(DragCornersVector[i], true))//정답의 코너와 바로 비교하기때문에 따로 콜라이더가 없어도되네
                 return false;
             else if(HideSpriteRect.Contains(DragCornersVector[i]))
                 print("? "+ i +"는 " + HideSpriteRect.Contains(DragCornersVector[i], true));
+            //나중에 이부분을 배열로 이용해서 찾은 정답은 삭제하고 남은애들끼리 다 확인하는 그런게 필요함
         }
         return true;
     }

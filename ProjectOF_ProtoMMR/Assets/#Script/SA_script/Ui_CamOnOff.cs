@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Ui_CamOnOff : MonoBehaviour
 {
+    public Image_SameDegreeCamMove ins_Degree;
+    public Ui_CamZoom ins_camzoom;
     public bool Iscam = false;
     public GameObject ViewFinderUI;
     public delegate void DragModeDelegate();
@@ -11,19 +13,22 @@ public class Ui_CamOnOff : MonoBehaviour
 
     public void OnOff()
     {
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && ins_Degree.isZoomin)
         {
-            if (Iscam)
+            if (Iscam)//캠 > 드래그
             {
                 ViewFinderUI.SetActive(false);
                 Iscam = false;
                 OnDragMode();
+                ins_camzoom.enabled = true;
             }
-            else
+            else//드래그 > 캠
             {
                 ViewFinderUI.SetActive(true);
                 Iscam = true;
+                ins_camzoom.enabled = false;
             }
         }
     }
 }
+//카메라 모드시에는 줌인아웃 비활성화

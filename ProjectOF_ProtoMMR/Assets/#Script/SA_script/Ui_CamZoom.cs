@@ -26,6 +26,7 @@ public class Ui_CamZoom : MonoBehaviour
             ZoomStart();
         else if (Input.touchCount == 0)
             ZoomEnd();
+        
     }
 
     /// <summary>
@@ -33,7 +34,8 @@ public class Ui_CamZoom : MonoBehaviour
     /// 두손가락으로 드래그하는 양으로 줌한다
     /// </summary>
     void ZoomStart()
-    {
+    {if (!enabled) return;
+        
         IsTouch2 = true;
         Touch touch0 = Input.GetTouch(0);
         Touch touch1 = Input.GetTouch(1);
@@ -64,7 +66,7 @@ public class Ui_CamZoom : MonoBehaviour
     /// 드래그가 끝나고 화면이 지정범위를 벗어날경우 화면을 댐핑함
     /// </summary>
     void ZoomEnd()
-    {
+    {if (!enabled) return;
         IsTouch2 = false;
         if (cam.orthographic)
         {
