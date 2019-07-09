@@ -79,19 +79,12 @@ public class Play_DrawDrag : MonoBehaviour
             DragBoxImage.gameObject.SetActive(false);
             lastPoint = Play_CheckTouch.touch.position;
 
-            //if (DragBoxImage.sizeDelta.x > 5 || DragBoxImage.sizeDelta.y > 5)
-            //    if(ins_save != null)//랜더뷰모드일때는 캡쳐가 아님
-            //        ins_save.StartPicture(); //이미지캡쳐
-
             isClicked_DrawingBox = false;
         }
     }
 
     public void DragBoxOnDraging()
     {if (!enabled) return;
-    
-        //if (DragLoadImage!=null)
-        //    DragLoadImage.SetActive(false); //이미지 캡쳐 로드
 
         Vector3 TempMouse;
         TempMouse.x = Mathf.Clamp(Play_CheckTouch.touch.position.x, MovingCenter.x - 530, MovingCenter.x + 540);

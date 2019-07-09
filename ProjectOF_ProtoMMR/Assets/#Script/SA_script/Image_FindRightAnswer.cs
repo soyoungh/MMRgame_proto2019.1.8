@@ -16,7 +16,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     public static event FadeDelegate FadeOutEvent;
     //public static event FadeDelegate FadeInEvent;
 
-    public GameObject RangeWarning, RenderView;
+    public GameObject RenderView;
     public RectTransform DragBox, CheckRange;
     public Vector3 ImagePosition;
     SpriteRenderer HideSpriteRender;
@@ -26,6 +26,8 @@ public class Image_FindRightAnswer : MonoBehaviour
     Vector3[] DragCornersVector = new Vector3[4];
     Vector3[] ImageCornersVector = new Vector3[4];
 
+
+    public Texture temp_gizmo;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,6 @@ public class Image_FindRightAnswer : MonoBehaviour
     {
         Play_CheckTouch.TouchMoved_FromAnswer += this.ImageAndDragboxCorners;
         Play_CheckTouch.TouchMoved_FromAnswer += this.DragMoveSizeCheck;
-        //Play_CheckTouch.TouchMovedSize_FromAnswer += this.ImageAndDragboxCorners;
         Play_CheckTouch.TouchEnd_FromAnswer += this.DragEndFigureOut;
     }
 
@@ -89,11 +90,19 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public void DragMoveSizeCheck()
     {
+        print("최소사이즈 [" + CheckRange.sizeDelta.x / 1.5f + ", " + CheckRange.sizeDelta.y / 1.5f + "]");
+        print("최대사이즈 [" + CheckRange.sizeDelta.x * 3 + ", " + CheckRange.sizeDelta.y * 3 + "]");
         if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / 1.5f && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / 1.5f)
         {
-            //print("최소범위는 [" + CheckRange.sizeDelta.x / 2 + ", " + CheckRange.sizeDelta.x / 2 + "]");
-            IsSizeFit = true;
-            DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1,1,1, 0.5f);
+            if(DragBox.sizeDelta.x < CheckRange.sizeDelta.x * 3 && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * 3)
+            {
+                IsSizeFit = true;
+                DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);
+            }else
+            {
+                IsSizeFit = false;
+                DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
+            }
         }
         else
         {
@@ -121,8 +130,6 @@ public class Image_FindRightAnswer : MonoBehaviour
                 }
             }
         }
-        else
-            RangeWarning.SetActive(true);
     }
 
 
@@ -137,8 +144,6 @@ public class Image_FindRightAnswer : MonoBehaviour
         {
             if (!HideSpriteRect.Contains(DragCornersVector[i], true))//정답의 코너와 바로 비교하기때문에 따로 콜라이더가 없어도되네
                 return false;
-            else if(HideSpriteRect.Contains(DragCornersVector[i]))
-                print("? "+ i +"는 " + HideSpriteRect.Contains(DragCornersVector[i], true));
             //나중에 이부분을 배열로 이용해서 찾은 정답은 삭제하고 남은애들끼리 다 확인하는 그런게 필요함
         }
         return true;
@@ -163,15 +168,25 @@ public class Image_FindRightAnswer : MonoBehaviour
         HideSpriteRect.yMin = ImageCornersVector[3].y;
         HideSpriteRect.xMax = ImageCornersVector[2].x;
         HideSpriteRect.yMax = ImageCornersVector[2].y;
-
-        print(HideSpriteRect);
+        
         //이거 너무 더러운뎅, 수정할 방법 찾기
         // Image Corner Save
-
-        RangeWarning.SetActive(false);
+        
         DragBox.GetWorldCorners(DragCornersVector);
         // DragBox Corner Save
     }
-    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireCube(transform.position, GetComponent<SpriteRenderer>().bounds.size);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 0.05f);
+
+        if(HideSpriteRect != null)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireCube(new Vector2(HideSpriteRect.center.x, HideSpriteRect.center.y), new Vector2(HideSpriteRect.size.x, HideSpriteRect.size.y));
+        }
+    }
 }
 
