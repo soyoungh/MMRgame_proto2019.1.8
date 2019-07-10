@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.EventSystems;
 
 public class Play_CheckTouch : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class Play_CheckTouch : MonoBehaviour
     void Update()
     {
         //print("isClicked " + ins_drawdrag.isClicked_DrawingBox);
-        if (Input.touchCount == 1)
+        if (Input.touchCount == 1 )
         {
             touch = Input.GetTouch(0);
 
@@ -54,3 +55,4 @@ public class Play_CheckTouch : MonoBehaviour
         }
     }
 }
+//포인터가 가리키는게 버튼 유아이일때만 무시하게 하는법 찾기[0710]

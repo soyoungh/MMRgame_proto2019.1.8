@@ -28,7 +28,7 @@ public class RenderView_AllController : MonoBehaviour
     {
         ins_RVcam.CorrectAnswerMove();//드래그범위로 캠이동
         RenderView.SetActive(true);//렌더뷰활성화
-        ins_resize.Resizing();
+        ins_resize.MaskResizing();
         
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ 수정필요 ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
         //ins_changeMMR.StartCoroutine(ins_changeMMR.ChangeMMR());//정답이미지 변환

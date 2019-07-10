@@ -14,9 +14,9 @@ public class RenderView_UIcontrol : MonoBehaviour
 {
     public Ui_CamOnOff ins_onoff;
     public RenderView_PreventDrag ins_prevent;
-    public GameObject RenderView;
     public Play_DrawDrag ins_drag;
-    public GameObject ViewFinder;
+    public GameObject RenderView, ViewFinder;
+    public RectTransform LoadImageAnchor, LoadImage;
 
     /// <summary>
     /// 돌아가기
@@ -29,5 +29,8 @@ public class RenderView_UIcontrol : MonoBehaviour
         ins_prevent.EnableDragZoom();
         RenderView.SetActive(false);
         ins_drag.isClicked_DrawingBox = false;
+        LoadImageAnchor.localScale = Vector3.one;
+        LoadImage.position = Vector3.zero;
+        
     }
 }

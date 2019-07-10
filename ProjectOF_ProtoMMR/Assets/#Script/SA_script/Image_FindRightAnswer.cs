@@ -185,7 +185,7 @@ public class Image_FindRightAnswer : MonoBehaviour
         if(HideSpriteRect != null)
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireCube(new Vector2(HideSpriteRect.center.x, HideSpriteRect.center.y), new Vector2(HideSpriteRect.size.x, HideSpriteRect.size.y));
+            Gizmos.DrawWireCube(HideSpriteRect.center, HideSpriteRect.size);
         }
     }
 }
