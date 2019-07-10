@@ -693,7 +693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172082940}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0123, y: 1.1025, z: 0}
+  m_LocalPosition: {x: 1.809, y: 1.288, z: 0}
   m_LocalScale: {x: 0.06451658, y: 0.07369452, z: 1}
   m_Children: []
   m_Father: {fileID: 4016061617842249020}
@@ -2046,6 +2046,7 @@ GameObject:
   - component: {fileID: 606519559}
   - component: {fileID: 606519561}
   - component: {fileID: 606519560}
+  - component: {fileID: 606519562}
   m_Layer: 5
   m_Name: '#_sand (1)'
   m_TagString: Untagged
@@ -2109,6 +2110,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606519558}
   m_CullTransparentMesh: 0
+--- !u!114 &606519562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606519558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546ed54c2c36f5842af879310e04fc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FindRange: {fileID: 172082942}
+  RenderView: {fileID: 4700541487268336183}
+  DragBox: {fileID: 4700541488778140661}
+  CheckRange: {fileID: 362437785}
+  ImagePosition: {x: 0, y: 0, z: 0}
+  SizeRange_min: 0.7
+  SizeRange_max: 3
+  temp_gizmo: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &636737892
 GameObject:
   m_ObjectHideFlags: 0
@@ -6737,12 +6758,12 @@ PrefabInstance:
         type: 3}
       propertyPath: BeforeFindMMR
       value: 
-      objectReference: {fileID: 4016061616481204606}
+      objectReference: {fileID: 606519560}
     - target: {fileID: 5433562433946553268, guid: 9d447d3d81287e4449ca14bbb46be410,
         type: 3}
       propertyPath: AfterFindMMR
       value: 
-      objectReference: {fileID: 4016061616195564351}
+      objectReference: {fileID: 1534737978}
     - target: {fileID: 5433562433946553268, guid: 9d447d3d81287e4449ca14bbb46be410,
         type: 3}
       propertyPath: ins_resize
@@ -9500,7 +9521,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4016061616481204604}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 546ed54c2c36f5842af879310e04fc6a, type: 3}
   m_Name: 
@@ -9510,7 +9531,7 @@ MonoBehaviour:
   DragBox: {fileID: 4700541488778140661}
   CheckRange: {fileID: 362437785}
   ImagePosition: {x: 0, y: 0, z: 0}
-  SizeRange_min: 1.5
+  SizeRange_min: 0.7
   SizeRange_max: 3
   temp_gizmo: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &4016061616481204604

@@ -12,7 +12,7 @@ public class Image_FindRightAnswer : MonoBehaviour
 {
     public delegate void RenderViewDelegate();
     public static event RenderViewDelegate RightAnswer;//RenderView_AllController
-    public delegate void FadeDelegate(SpriteRenderer BeforeSprite, float FirstWait);
+    public delegate void FadeDelegate(Image BeforeSprite, float FirstWait);
     public static event FadeDelegate FadeOutEvent;
 
 
@@ -89,7 +89,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     {
         for (int i = 0; i < RemoveOBJ.Length; i++)
         {
-            FadeOutEvent(RemoveOBJ[i].GetComponent<SpriteRenderer>(), 0);
+            FadeOutEvent(RemoveOBJ[i].GetComponent<Image>(), 0);
         }
     }
 

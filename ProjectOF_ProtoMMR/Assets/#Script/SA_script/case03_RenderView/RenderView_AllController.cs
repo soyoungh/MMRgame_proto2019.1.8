@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// 정답을 찾을경우, render view관련 컨트롤
@@ -17,7 +18,7 @@ public class RenderView_AllController : MonoBehaviour
     public RenderView_Retransform ins_resize;
 
     public GameObject RenderView;
-    public SpriteRenderer BeforeFindMMR, AfterFindMMR;//퍼블릭으로 가져오는건 임시적, 코드로 가져올수있게 수정필요
+    public Image BeforeFindMMR, AfterFindMMR;//퍼블릭으로 가져오는건 임시적, 코드로 가져올수있게 수정필요
 
     private void OnEnable()
     {

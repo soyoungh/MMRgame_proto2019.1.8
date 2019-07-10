@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class Image_FadeControl : MonoBehaviour
 {
@@ -17,13 +17,13 @@ public class Image_FadeControl : MonoBehaviour
         Image_FindRightAnswer.FadeOutEvent += this.StartFadeOut;
     }
 
-    void StartFadeOut(SpriteRenderer BeforeSprite, float FirstWait)
+    void StartFadeOut(Image BeforeSprite, float FirstWait)
     {
         StartCoroutine(FadeOut(BeforeSprite, FirstWait));
     }
 
 
-    public IEnumerator FadeOut(SpriteRenderer BeforeSprite, float FirstWait)
+    public IEnumerator FadeOut(Image BeforeSprite, float FirstWait)
     {
         yield return new WaitForSeconds(FirstWait);
         while(BeforeSprite.color.a > 0)
@@ -32,7 +32,7 @@ public class Image_FadeControl : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
     }
-    public IEnumerator FadeIn(SpriteRenderer BeforeSprite, float FirstWait)
+    public IEnumerator FadeIn(Image BeforeSprite, float FirstWait)
     {
         yield return new WaitForSeconds(FirstWait);
         while (BeforeSprite.color.a < 1)
