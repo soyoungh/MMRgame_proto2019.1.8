@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Image_FadeControl : MonoBehaviour
 {
     public static Image_FadeControl FadeInstance = null;

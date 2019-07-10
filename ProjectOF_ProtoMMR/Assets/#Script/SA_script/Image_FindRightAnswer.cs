@@ -1,5 +1,4 @@
-﻿//#define DEBUG_CenterPoint_ContainCheck
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,11 +14,15 @@ public class Image_FindRightAnswer : MonoBehaviour
     public static event RenderViewDelegate RightAnswer;//RenderView_AllController
     public delegate void FadeDelegate(SpriteRenderer BeforeSprite, float FirstWait);
     public static event FadeDelegate FadeOutEvent;
-    //public static event FadeDelegate FadeInEvent;
 
+
+    public SpriteRenderer FindRange;
     public GameObject RenderView;
     public RectTransform DragBox, CheckRange;
     public Vector3 ImagePosition;
+    public float SizeRange_min, SizeRange_max;
+
+
     SpriteRenderer HideSpriteRender;
     Rect HideSpriteRect;
     bool IsSizeFit = false;
@@ -92,11 +95,11 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public void DragMoveSizeCheck()
     {
-        print("최소사이즈 [" + CheckRange.sizeDelta.x / 1.5f + ", " + CheckRange.sizeDelta.y / 1.5f + "]");
-        print("최대사이즈 [" + CheckRange.sizeDelta.x * 2 + ", " + CheckRange.sizeDelta.y * 2 + "]");
-        if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / 1.5f && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / 1.5f)
+        print("최소사이즈 [" + CheckRange.sizeDelta.x / SizeRange_min + ", " + CheckRange.sizeDelta.y / SizeRange_min + "]");
+        print("최대사이즈 [" + CheckRange.sizeDelta.x * SizeRange_max + ", " + CheckRange.sizeDelta.y * SizeRange_max + "]");
+        if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / SizeRange_min && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / SizeRange_min)
         {
-            if(DragBox.sizeDelta.x < CheckRange.sizeDelta.x * 2 && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * 2)
+            if(DragBox.sizeDelta.x < CheckRange.sizeDelta.x * SizeRange_max && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * SizeRange_max)
             {
                 IsSizeFit = true;
                 DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);
@@ -142,25 +145,12 @@ public class Image_FindRightAnswer : MonoBehaviour
     /// <returns>bool값을(찾았는지 아닌지의 여부) 리턴</returns>
     public bool DragHideCompare()
     {
-#if DEBUG_CenterPoint_ContainCheck
-        //GetComponent<SpriteRenderer>().bounds.Contains
-        for (int i = 0; i < 4; i++)
-        {
-            //spriterender가 월드에 배치된 오브젝트의 것이기때문에 드래그 코너도 월드로 들어와야함 확인하기
-            //getworldcorners라 월드좌표는 맞는데 ui의 z축이 정답이미지의 z축과 같아야 판별할수있음 시바(변환필요)
-            //이게 되면 hidespriterect 구하는 부분은 지워도됨
-            if (!GetComponent<SpriteRenderer>().bounds.Contains(DragCornersVector[i]))//정답의 코너와 바로 비교하기때문에 따로 콜라이더가 없어도되네
-                return false;
-            //나중에 이부분을 배열로 이용해서 찾은 정답은 삭제하고 남은애들끼리 다 확인하는 그런게 필요함
-        }
-        return true;
-#else
-        if (!GetComponent<SpriteRenderer>().bounds.Contains(world_DtagBoxPos))
+        //정답 이미지의 모든 코너가 박스안에 들어왔을때로 수정하기
+        if (!FindRange.GetComponent<SpriteRenderer>().bounds.Contains(world_DtagBoxPos))
         {
             return false;
         }
         return true;
-#endif
     }
 
     /// <summary>
@@ -170,58 +160,18 @@ public class Image_FindRightAnswer : MonoBehaviour
     /// </summary>
     void ImageAndDragboxCorners()
     {
-#if DEBUG_CenterPoint_ContainCheck
-        ImagePosition = gameObject.transform.position;
-        Vector3 HalfLength = HideSpriteRender.bounds.size * 0.5f;
-
-        ImageCornersVector[0] = ImagePosition + HalfLength;
-        ImageCornersVector[1] = ImagePosition - HalfLength;
-        ImageCornersVector[2] = new Vector3(ImageCornersVector[0].x, ImageCornersVector[1].y, 0);
-        ImageCornersVector[3] = new Vector3(ImageCornersVector[1].x, ImageCornersVector[0].y, ImageCornersVector[0].z);
-
-        HideSpriteRect.xMin = ImageCornersVector[3].x;
-        HideSpriteRect.yMin = ImageCornersVector[3].y;
-        HideSpriteRect.xMax = ImageCornersVector[2].x;
-        HideSpriteRect.yMax = ImageCornersVector[2].y;
-        
-        //이거 너무 더러운뎅, 수정할 방법 찾기
-        // Image Corner Save
-        
-        DragBox.GetWorldCorners(DragCornersVector);
-        for (int i = 0; i < DragCornersVector.Length; i++)
-        {
-            DragCornersVector[i].z = GetComponent<SpriteRenderer>().bounds.center.z;
-        }
-        // DragBox Corner Save
-
-#else
-
-        world_DtagBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, GetComponent<SpriteRenderer>().bounds.center.z);
-#endif
+        world_DtagBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
     }
+    
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(GetComponent<SpriteRenderer>().bounds.center, GetComponent<SpriteRenderer>().bounds.size);
+        Gizmos.color = Color.blue;//정답이미지
+        Gizmos.DrawWireCube(FindRange.GetComponent<SpriteRenderer>().bounds.center, FindRange.GetComponent<SpriteRenderer>().bounds.size);
 
-#if DEBUG_CenterPoint_ContainCheck
-        for (int i = 0; i < DragCornersVector.Length; i++)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(DragCornersVector[i], 0.1f);
-        }
-        Vector3 world_DtagBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, GetComponent<SpriteRenderer>().bounds.center.z);
-        Gizmos.color = Color.green;
+        Gizmos.color = Color.black;//월드_드래그박스센터
         Gizmos.DrawWireSphere(world_DtagBoxPos, 0.05f);
-        Gizmos.color = Color.cyan;
+        Gizmos.color = Color.grey;//스크린_드래그박스센터
         Gizmos.DrawWireSphere(DragBox.position, 0.05f);
-#else
-
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(world_DtagBoxPos, 0.05f);
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(DragBox.position, 0.05f);
-#endif
     }
 }
 

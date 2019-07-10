@@ -19,6 +19,6 @@ public class RenderView_Retransform : MonoBehaviour
     {
         RectTransform FirstChild = gameObject.transform.GetChild(0).gameObject.GetComponent<RectTransform>();
         FirstChild.localPosition = new Vector3(-DragBox.localPosition.x, -DragBox.localPosition.y, DragBox.localPosition.z);
-        gameObject.transform.parent.gameObject.GetComponent<RectTransform>().localScale = new Vector3(2, 2, 1);
+        //gameObject.transform.parent.gameObject.GetComponent<RectTransform>().localScale = new Vector3(2, 2, 1);
     }
 }
