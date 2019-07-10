@@ -5,9 +5,10 @@ using UnityEngine;
 //리펙토링 끝나면 주석처리하기
 /// <summary>
 /// 화면을 드래그하여 마우스의 위치 차이를 이용하여 오브젝트를 움직이는 함수입니다.
-/// #캠zoomIN이동 #캠zoomOUT이동 #이동거리제한 #z축고정
+/// #캠zoomIN이동 #캠zoomOUT이동 #이동거리제한 #z축고정 
 /// </summary>
 
+    //이동거리 밖으로 빼놓기
 //delegate void DelegateMove();
 public class Play_MouseGapMove : MonoBehaviour
 {

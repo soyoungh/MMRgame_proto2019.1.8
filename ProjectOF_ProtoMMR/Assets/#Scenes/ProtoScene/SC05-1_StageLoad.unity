@@ -354,7 +354,7 @@ Animator:
   m_GameObject: {fileID: 386499573}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 657238d69a702d84285cc2e4ba7294ca, type: 2}
+  m_Controller: {fileID: 9100000, guid: 48149c54f5bf85243a5cacdccc802cb9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -678,7 +678,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d1e067bff17841b4188d94c935f4b0d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba1519a59745dc440a5edc864d6b63f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1051,7 +1051,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bf83b493f24233a418419b684ecc9bfb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bd8db1455c31a742a88c613394ae2de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
