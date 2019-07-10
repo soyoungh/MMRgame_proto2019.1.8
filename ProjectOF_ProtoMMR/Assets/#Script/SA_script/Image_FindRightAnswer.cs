@@ -177,19 +177,21 @@ public class Image_FindRightAnswer : MonoBehaviour
         // Image Corner Save
         
         DragBox.GetWorldCorners(DragCornersVector);
+        for (int i = 0; i < DragCornersVector.Length; i++)
+        {
+            DragCornersVector[i].z = GetComponent<SpriteRenderer>().bounds.center.z;
+        }
         // DragBox Corner Save
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.black;
-        Gizmos.DrawWireCube(transform.position, GetComponent<SpriteRenderer>().bounds.size);
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 0.05f);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(GetComponent<SpriteRenderer>().bounds.center, GetComponent<SpriteRenderer>().bounds.size);
 
-        if(HideSpriteRect != null)
+        for (int i = 0; i < DragCornersVector.Length; i++)
         {
-            Gizmos.color = Color.blue;
-            Gizmos.DrawWireCube(GetComponent<SpriteRenderer>().bounds.center, GetComponent<SpriteRenderer>().bounds.size);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(DragCornersVector[i], 0.1f);
         }
     }
 }
