@@ -31,6 +31,5 @@ public class RenderView_UIcontrol : MonoBehaviour
         ins_drag.isClicked_DrawingBox = false;
         LoadImageAnchor.localScale = Vector3.one;
         LoadImage.position = Vector3.zero;
-        
     }
 }

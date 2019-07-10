@@ -140,9 +140,13 @@ public class Image_FindRightAnswer : MonoBehaviour
     /// <returns>bool값을(찾았는지 아닌지의 여부) 리턴</returns>
     public bool DragHideCompare()
     {
+        //GetComponent<SpriteRenderer>().bounds.Contains
         for (int i = 0; i < 4; i++)
         {
-            if (!HideSpriteRect.Contains(DragCornersVector[i], true))//정답의 코너와 바로 비교하기때문에 따로 콜라이더가 없어도되네
+            //spriterender가 월드에 배치된 오브젝트의 것이기때문에 드래그 코너도 월드로 들어와야함 확인하기
+            //getworldcorners라 월드좌표는 맞는데 ui의 z축이 정답이미지의 z축과 같아야 판별할수있음 시바(변환필요)
+            //이게 되면 hidespriterect 구하는 부분은 지워도됨
+            if (!GetComponent<SpriteRenderer>().bounds.Contains(DragCornersVector[i]))//정답의 코너와 바로 비교하기때문에 따로 콜라이더가 없어도되네
                 return false;
             //나중에 이부분을 배열로 이용해서 찾은 정답은 삭제하고 남은애들끼리 다 확인하는 그런게 필요함
         }
@@ -185,7 +189,7 @@ public class Image_FindRightAnswer : MonoBehaviour
         if(HideSpriteRect != null)
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireCube(HideSpriteRect.center, HideSpriteRect.size);
+            Gizmos.DrawWireCube(GetComponent<SpriteRenderer>().bounds.center, GetComponent<SpriteRenderer>().bounds.size);
         }
     }
 }

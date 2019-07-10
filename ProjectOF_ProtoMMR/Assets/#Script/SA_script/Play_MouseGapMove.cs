@@ -92,7 +92,7 @@ public class Play_MouseGapMove : MonoBehaviour
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         CamAnchor.transform.localPosition = Vector3.MoveTowards(CamAnchor.transform.localPosition,
             new Vector3(CamAnchor.transform.localPosition.x, CamAnchor.transform.localPosition.y, 0), 0.02f);
-        //z축 0으로 고정 (엄청 크게는 상관없는데 값변하는게 신경쓰여서 냅둠)0617
+        //z축 0으로 고정 (엄청 크게는 상관없는데 값변하는게 신경쓰여서 추가함)0617
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     }
