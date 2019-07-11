@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 /// <summary>
 /// 숨은그림을 구별하여 찾는 클래스
+/// ##____[UI와 2d Sprite중 결정필요]____##
 /// #이미지의rect생성 #이미지모서리찾기 #드래그박스모서리찾기 #기즈모그리기 #드래그최소범위구분
 /// 드래그영역내에 오답이 3개 이상일경우 그중 2개지워버리기
 /// </summary>
@@ -12,7 +13,7 @@ public class Image_FindRightAnswer : MonoBehaviour
 {
     public delegate void RenderViewDelegate();
     public static event RenderViewDelegate RightAnswer;//RenderView_AllController
-    public delegate void FadeDelegate(Image BeforeSprite, float FirstWait);
+    public delegate void FadeDelegate(Image BeforeSprite, float FirstWait);//##____[UI와 2d Sprite중 결정필요]____##
     public static event FadeDelegate FadeOutEvent;
 
 
@@ -30,7 +31,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     Vector3[] DragCornersVector = new Vector3[4];
     Vector3[] ImageCornersVector = new Vector3[4];
 
-    Vector3 world_DtagBoxPos;
+    Vector3 world_DragBoxPos;
 
     public Texture temp_gizmo;
     // Start is called before the first frame update
@@ -89,7 +90,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     {
         for (int i = 0; i < RemoveOBJ.Length; i++)
         {
-            FadeOutEvent(RemoveOBJ[i].GetComponent<Image>(), 0);
+            FadeOutEvent(RemoveOBJ[i].GetComponent<Image>(), 0);//##____[UI와 2d Sprite중 결정필요]____##
         }
     }
 
@@ -102,17 +103,18 @@ public class Image_FindRightAnswer : MonoBehaviour
             if(DragBox.sizeDelta.x < CheckRange.sizeDelta.x * SizeRange_max && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * SizeRange_max)
             {
                 IsSizeFit = true;
-                DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);
-            }else
+                DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);//##____[UI와 2d Sprite중 결정필요]____##
+            }
+            else
             {
                 IsSizeFit = false;
-                DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
+                DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;//##____[UI와 2d Sprite중 결정필요]____##
             }
         }
         else
         {
             IsSizeFit = false;
-            DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
+            DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;//##____[UI와 2d Sprite중 결정필요]____##
         }
     }
 
@@ -146,7 +148,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     public bool DragHideCompare()
     {
         //정답 이미지의 모든 코너가 박스안에 들어왔을때로 수정하기
-        if (!FindRange.GetComponent<SpriteRenderer>().bounds.Contains(world_DtagBoxPos))
+        if (!FindRange.GetComponent<SpriteRenderer>().bounds.Contains(world_DragBoxPos))
         {
             return false;
         }
@@ -160,7 +162,8 @@ public class Image_FindRightAnswer : MonoBehaviour
     /// </summary>
     void ImageAndDragboxCorners()
     {
-        world_DtagBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
+        DragBox.GetWorldCorners(DragCornersVector);
+        world_DragBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
     }
     
     private void OnDrawGizmos()
@@ -169,9 +172,15 @@ public class Image_FindRightAnswer : MonoBehaviour
         Gizmos.DrawWireCube(FindRange.GetComponent<SpriteRenderer>().bounds.center, FindRange.GetComponent<SpriteRenderer>().bounds.size);
 
         Gizmos.color = Color.black;//월드_드래그박스센터
-        Gizmos.DrawWireSphere(world_DtagBoxPos, 0.05f);
+        Gizmos.DrawWireSphere(world_DragBoxPos, 0.05f);
         Gizmos.color = Color.grey;//스크린_드래그박스센터
         Gizmos.DrawWireSphere(DragBox.position, 0.05f);
+
+        for (int i = 0; i < DragCornersVector.Length; i++)//월드 드래그박스 각 모서리
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(DragCornersVector[i], 0.1f);
+        }
     }
 }
 

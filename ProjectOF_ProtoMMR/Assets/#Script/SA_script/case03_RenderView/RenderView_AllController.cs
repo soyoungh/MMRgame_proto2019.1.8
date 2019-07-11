@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
+/// //##____[UI와 2d Sprite중 결정필요]____##
 /// 정답을 찾을경우, render view관련 컨트롤
 /// # 랜더뷰활성화
 /// # 드래그 및 줌 방지
