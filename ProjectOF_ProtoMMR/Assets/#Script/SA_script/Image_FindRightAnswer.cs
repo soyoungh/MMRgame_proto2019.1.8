@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Spine.Unity;
 
 /// <summary>
 /// 숨은그림을 구별하여 찾는 클래스
-/// ##____[UI와 2d Sprite중 결정필요]____##
 /// #이미지의rect생성 #이미지모서리찾기 #드래그박스모서리찾기 #기즈모그리기 #드래그최소범위구분
 /// 드래그영역내에 오답이 3개 이상일경우 그중 2개지워버리기
 /// </summary>
@@ -13,8 +13,12 @@ public class Image_FindRightAnswer : MonoBehaviour
 {
     public delegate void RenderViewDelegate();
     public static event RenderViewDelegate RightAnswer;//RenderView_AllController
-    public delegate void FadeDelegate(Image BeforeSprite, float FirstWait);//##____[UI와 2d Sprite중 결정필요]____##
+
+    public delegate void FadeDelegate(SkeletonAnimation BeforeSprite, float FirstWait);
     public static event FadeDelegate FadeOutEvent;
+    public delegate void FadeDelegate_sprite(SpriteRenderer BeforeSprite, float FirstWait);
+    public static event FadeDelegate_sprite FadeOutEvent_sprite;
+    //페이드 부분 관련 델리게이트, 이벤트
 
 
     public SpriteRenderer FindRange;
@@ -33,7 +37,6 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     Vector3 world_DragBoxPos;
 
-    public Texture temp_gizmo;
     // Start is called before the first frame update
     void Start()
     {
@@ -88,9 +91,12 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     void Answer_Wrong2_Remove_(GameObject[] RemoveOBJ)
     {
-        for (int i = 0; i < RemoveOBJ.Length; i++)
+        for (int i = 0; i < RemoveOBJ.Length; i++)//스켈레톤 혹은 스프라이트 이미지
         {
-            FadeOutEvent(RemoveOBJ[i].GetComponent<Image>(), 0);//##____[UI와 2d Sprite중 결정필요]____##
+            if (RemoveOBJ[i].GetComponent<SkeletonAnimation>() != null)
+                FadeOutEvent(RemoveOBJ[i].GetComponent<SkeletonAnimation>(), 0);
+            else
+                FadeOutEvent_sprite(RemoveOBJ[i].GetComponent<SpriteRenderer>(), 0);
         }
     }
 
@@ -103,18 +109,18 @@ public class Image_FindRightAnswer : MonoBehaviour
             if(DragBox.sizeDelta.x < CheckRange.sizeDelta.x * SizeRange_max && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * SizeRange_max)
             {
                 IsSizeFit = true;
-                DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);//##____[UI와 2d Sprite중 결정필요]____##
+                DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);
             }
             else
             {
                 IsSizeFit = false;
-                DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;//##____[UI와 2d Sprite중 결정필요]____##
+                DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
             }
         }
         else
         {
             IsSizeFit = false;
-            DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;//##____[UI와 2d Sprite중 결정필요]____##
+            DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
         }
     }
 
@@ -157,11 +163,10 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     /// <summary>
     /// 이미지의 각 코너를 찾아주는 함수(이미지범위)
-    /// 드래그박스의 각 코너를 저장해줌
-    /// 이미지의 범위를 각각 계산해서 rect로 재정의(후에 contain명령어를 쓰기위함)
     /// </summary>
     void ImageAndDragboxCorners()
     {
+        //이미지 코너 구하는거 추가해서 드래그박스가 이미지를 포함하는지 확인해야합니다[0712]
         DragBox.GetWorldCorners(DragCornersVector);
         world_DragBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
     }
