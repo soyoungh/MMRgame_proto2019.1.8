@@ -1,0 +1,48 @@
+
+character_05-1_momi_sit.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: true
+  xy: 2, 2
+  size: 139, 229
+  orig: 139, 229
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: true
+  xy: 236, 57
+  size: 139, 229
+  orig: 139, 229
+  offset: 0, 0
+  index: -1
+face_happy
+  rotate: true
+  xy: 381, 351
+  size: 131, 48
+  orig: 131, 48
+  offset: 0, 0
+  index: -1
+face_sad
+  rotate: true
+  xy: 381, 218
+  size: 131, 48
+  orig: 131, 48
+  offset: 0, 0
+  index: -1
+leg
+  rotate: true
+  xy: 236, 198
+  size: 284, 143
+  orig: 284, 143
+  offset: 0, 0
+  index: -1
+mom
+  rotate: false
+  xy: 2, 143
+  size: 232, 339
+  orig: 232, 339
+  offset: 0, 0
+  index: -1

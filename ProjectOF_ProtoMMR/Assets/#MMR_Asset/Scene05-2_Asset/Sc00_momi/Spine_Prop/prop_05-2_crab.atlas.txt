@@ -1,0 +1,13 @@
+
+prop_05-2_crab.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+prop_05-2_crab
+  rotate: false
+  xy: 2, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

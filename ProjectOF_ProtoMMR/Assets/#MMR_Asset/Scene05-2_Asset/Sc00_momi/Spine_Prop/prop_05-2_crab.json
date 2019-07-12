@@ -1,0 +1,36 @@
+{
+"skeleton": { "hash": "H1WNqbCa1EFYDNVy/NGpYPh4Ar0", "spine": "3.7.94", "width": 128, "height": 128, "images": "/Users/edayeong/Desktop/mmr/_Map/coconut/images/crab", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "prop_05-2_crab", "bone": "root", "attachment": "prop_05-2_crab" }
+],
+"skins": {
+	"default": {
+		"prop_05-2_crab": {
+			"prop_05-2_crab": { "y": 15.5, "width": 128, "height": 128 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1333, "angle": -3.17 },
+					{ "time": 0.2667, "angle": 6.36 },
+					{ "time": 0.4, "angle": -3.17 },
+					{ "time": 0.5333, "angle": 6.36 },
+					{ "time": 0.6667, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.6667, "x": 303.19, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

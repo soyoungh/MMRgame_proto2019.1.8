@@ -1,0 +1,48 @@
+
+x_05-2_swim.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sw_body
+  rotate: false
+  xy: 2, 74
+  size: 253, 297
+  orig: 253, 297
+  offset: 0, 0
+  index: -1
+sw_hand1
+  rotate: false
+  xy: 495, 642
+  size: 164, 132
+  orig: 164, 132
+  offset: 0, 0
+  index: -1
+sw_hand2
+  rotate: false
+  xy: 2, 2
+  size: 189, 70
+  orig: 189, 70
+  offset: 0, 0
+  index: -1
+sw_nose
+  rotate: false
+  xy: 257, 230
+  size: 64, 141
+  orig: 64, 141
+  offset: 0, 0
+  index: -1
+sw_tube
+  rotate: false
+  xy: 2, 373
+  size: 427, 216
+  orig: 427, 216
+  offset: 0, 0
+  index: -1
+sw_water
+  rotate: false
+  xy: 2, 591
+  size: 491, 183
+  orig: 491, 183
+  offset: 0, 0
+  index: -1

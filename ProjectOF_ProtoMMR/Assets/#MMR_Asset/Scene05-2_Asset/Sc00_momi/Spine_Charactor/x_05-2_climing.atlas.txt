@@ -1,0 +1,48 @@
+
+x_05-2_climing.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cl_arm
+  rotate: false
+  xy: 2, 9
+  size: 260, 135
+  orig: 260, 135
+  offset: 0, 0
+  index: -1
+cl_body
+  rotate: false
+  xy: 2, 146
+  size: 361, 362
+  orig: 361, 362
+  offset: 0, 0
+  index: -1
+cl_leg
+  rotate: true
+  xy: 365, 269
+  size: 239, 96
+  orig: 239, 96
+  offset: 0, 0
+  index: -1
+cl_sweat
+  rotate: false
+  xy: 264, 87
+  size: 21, 57
+  orig: 21, 57
+  offset: 0, 0
+  index: -1
+cl_sweat2
+  rotate: false
+  xy: 365, 230
+  size: 18, 37
+  orig: 18, 37
+  offset: 0, 0
+  index: -1
+cl_sweat3
+  rotate: true
+  xy: 463, 490
+  size: 18, 47
+  orig: 18, 47
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+character_05-1_momi_walk.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 243, 325
+  size: 160, 180
+  orig: 160, 180
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: true
+  xy: 243, 214
+  size: 109, 211
+  orig: 109, 211
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 250
+  size: 239, 255
+  orig: 239, 255
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 79
+  size: 185, 169
+  orig: 185, 169
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 405, 331
+  size: 102, 174
+  orig: 102, 174
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: true
+  xy: 189, 93
+  size: 119, 152
+  orig: 119, 152
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+
+x_05-2_dive.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+di_arm
+  rotate: false
+  xy: 383, 335
+  size: 54, 144
+  orig: 54, 144
+  offset: 0, 0
+  index: -1
+di_arm2
+  rotate: false
+  xy: 2, 11
+  size: 264, 103
+  orig: 264, 103
+  offset: 0, 0
+  index: -1
+di_body
+  rotate: false
+  xy: 2, 116
+  size: 275, 363
+  orig: 275, 363
+  offset: 0, 0
+  index: -1
+di_glass
+  rotate: true
+  xy: 439, 389
+  size: 90, 42
+  orig: 90, 42
+  offset: 0, 0
+  index: -1
+di_leg1
+  rotate: false
+  xy: 351, 192
+  size: 77, 117
+  orig: 77, 117
+  offset: 0, 0
+  index: -1
+di_leg2
+  rotate: false
+  xy: 279, 179
+  size: 70, 130
+  orig: 70, 130
+  offset: 0, 0
+  index: -1
+di_nose
+  rotate: false
+  xy: 279, 311
+  size: 102, 168
+  orig: 102, 168
+  offset: 0, 0
+  index: -1
