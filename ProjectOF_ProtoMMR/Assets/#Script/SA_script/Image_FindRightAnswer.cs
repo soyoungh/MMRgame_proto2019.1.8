@@ -27,15 +27,13 @@ public class Image_FindRightAnswer : MonoBehaviour
     public Vector3 ImagePosition;
     public float SizeRange_min, SizeRange_max;
 
-
     SpriteRenderer HideSpriteRender;
     Rect HideSpriteRect;
     bool IsSizeFit = false;
 
     Vector3[] DragCornersVector = new Vector3[4];
     Vector3[] ImageCornersVector = new Vector3[4];
-
-    Vector3 world_DragBoxPos;
+    Vector3 world_DragBoxPos;//드래그박스의 센터
 
     // Start is called before the first frame update
     void Start()
@@ -89,7 +87,7 @@ public class Image_FindRightAnswer : MonoBehaviour
         Answer_Wrong2_Remove_(ranOBJ);
     }
 
-    void Answer_Wrong2_Remove_(GameObject[] RemoveOBJ)
+    void Answer_Wrong2_Remove_(GameObject[] RemoveOBJ)//알파애님
     {
         for (int i = 0; i < RemoveOBJ.Length; i++)//스켈레톤 혹은 스프라이트 이미지
         {
@@ -168,7 +166,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     {
         //이미지 코너 구하는거 추가해서 드래그박스가 이미지를 포함하는지 확인해야합니다[0712]
         DragBox.GetWorldCorners(DragCornersVector);
-        world_DragBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
+        //world_DragBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
     }
     
     private void OnDrawGizmos()
@@ -176,8 +174,8 @@ public class Image_FindRightAnswer : MonoBehaviour
         Gizmos.color = Color.blue;//정답이미지
         Gizmos.DrawWireCube(FindRange.GetComponent<SpriteRenderer>().bounds.center, FindRange.GetComponent<SpriteRenderer>().bounds.size);
 
-        Gizmos.color = Color.black;//월드_드래그박스센터
-        Gizmos.DrawWireSphere(world_DragBoxPos, 0.05f);
+        //Gizmos.color = Color.black;//월드_드래그박스센터
+        //Gizmos.DrawWireSphere(world_DragBoxPos, 0.05f);
         Gizmos.color = Color.grey;//스크린_드래그박스센터
         Gizmos.DrawWireSphere(DragBox.position, 0.05f);
 
