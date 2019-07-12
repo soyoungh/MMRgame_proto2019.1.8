@@ -24,11 +24,12 @@ public class Image_FindRightAnswer : MonoBehaviour
     public SpriteRenderer FindRange;
     public GameObject RenderView;
     public RectTransform DragBox, CheckRange;
-    public Vector3 ImagePosition;
+    //public Vector3 ImagePosition;
     public float SizeRange_min, SizeRange_max;
 
-    SpriteRenderer HideSpriteRender;
+    public GameObject HideSpriteRender;
     Rect HideSpriteRect;
+    Rect DragRect;
     bool IsSizeFit = false;
 
     Vector3[] DragCornersVector = new Vector3[4];
@@ -38,7 +39,6 @@ public class Image_FindRightAnswer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HideSpriteRender = GetComponent<SpriteRenderer>();
     }
 
 
@@ -152,9 +152,12 @@ public class Image_FindRightAnswer : MonoBehaviour
     public bool DragHideCompare()
     {
         //정답 이미지의 모든 코너가 박스안에 들어왔을때로 수정하기
-        if (!FindRange.GetComponent<SpriteRenderer>().bounds.Contains(world_DragBoxPos))
+        for (int i = 0; i < ImageCornersVector.Length; i++)
         {
-            return false;
+            if (DragRect.Contains(ImageCornersVector[i]))
+                return false;
+            else
+                return true;
         }
         return true;
     }
@@ -167,12 +170,23 @@ public class Image_FindRightAnswer : MonoBehaviour
         //이미지 코너 구하는거 추가해서 드래그박스가 이미지를 포함하는지 확인해야합니다[0712]
         DragBox.GetWorldCorners(DragCornersVector);
         //world_DragBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
+        Vector3 center = FindRange.GetComponent<SpriteRenderer>().bounds.center;
+        Vector3 size_2 = FindRange.GetComponent<SpriteRenderer>().bounds.size / 2;
+
+        ImageCornersVector[0] = center + size_2;
+        ImageCornersVector[1] = center - size_2;
+        ImageCornersVector[2] = new Vector3(ImageCornersVector[0].x, ImageCornersVector[1].y, 0);
+        ImageCornersVector[3] = new Vector3(ImageCornersVector[1].x, ImageCornersVector[0].y, ImageCornersVector[0].z);
+
+        DragRect = new Rect(FindRange.GetComponent<SpriteRenderer>().bounds.min, FindRange.GetComponent<SpriteRenderer>().bounds.size);
     }
     
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;//정답이미지
-        Gizmos.DrawWireCube(FindRange.GetComponent<SpriteRenderer>().bounds.center, FindRange.GetComponent<SpriteRenderer>().bounds.size);
+        Gizmos.DrawWireCube(FindRange.GetComponent<SpriteRenderer>().bounds.center, FindRange.GetComponent<SpriteRenderer>().bounds.size);//이거 각코너 구해서 해보기
+        Gizmos.color = Color.black;//정답이미지
+        Gizmos.DrawWireCube(DragRect.center, DragRect.size);//이거 각코너 구해서 해보기
 
         //Gizmos.color = Color.black;//월드_드래그박스센터
         //Gizmos.DrawWireSphere(world_DragBoxPos, 0.05f);
@@ -183,7 +197,15 @@ public class Image_FindRightAnswer : MonoBehaviour
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(DragCornersVector[i], 0.1f);
+            Gizmos.color = Color.black - new Color(0,0,0, i * 0.2f) ;
+            Gizmos.DrawWireSphere(ImageCornersVector[i], 0.1f);
         }
+    }
+
+    private void OnGUI()
+    {
+        //DragBox.rect.position = DragBox.position;
+        GUI.Box(new Rect(0,0,100,100), "개시발");
     }
 }
 
