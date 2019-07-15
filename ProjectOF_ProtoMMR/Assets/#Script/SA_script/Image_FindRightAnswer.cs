@@ -27,7 +27,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     //public Vector3 ImagePosition;
     public float SizeRange_min, SizeRange_max;
 
-    public GameObject HideSpriteRender;
+    public GameObject ImageContain;
     Rect HideSpriteRect;
     Rect DragRect;
     bool IsSizeFit = false;
@@ -35,11 +35,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     Vector3[] DragCornersVector = new Vector3[4];
     Vector3[] ImageCornersVector = new Vector3[4];
     Vector3 world_DragBoxPos;//드래그박스의 센터
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+    public Canvas DrawBoxCanvas;
 
 
     private void OnEnable()
@@ -154,7 +150,7 @@ public class Image_FindRightAnswer : MonoBehaviour
         //정답 이미지의 모든 코너가 박스안에 들어왔을때로 수정하기
         for (int i = 0; i < ImageCornersVector.Length; i++)
         {
-            if (DragRect.Contains(ImageCornersVector[i]))
+            if (!DragRect.Contains(ImageCornersVector[i]))
                 return false;
             else
                 return true;
@@ -168,7 +164,39 @@ public class Image_FindRightAnswer : MonoBehaviour
     void ImageAndDragboxCorners()
     {
         //이미지 코너 구하는거 추가해서 드래그박스가 이미지를 포함하는지 확인해야합니다[0712]
-        DragBox.GetWorldCorners(DragCornersVector);
+
+        DragBox.GetWorldCorners(DragCornersVector);//드래그박스 월드코너 확인완료1
+        ImageContain.GetComponent<RectTransform>().GetWorldCorners(ImageCornersVector);//이미지월드코너 확인완료2
+        for (int i = 0; i < ImageCornersVector.Length; i++)
+        {
+            ImageCornersVector[i].z = 0;
+        }
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        DragRect.xMin = DragCornersVector[0].x;
+        DragRect.xMax = DragCornersVector[2].x;
+        DragRect.yMin = DragCornersVector[2].y;
+        DragRect.yMax = DragCornersVector[0].y;
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~드래그박스의 rect gizmo확인3
+    }
+    
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;//정답이미지
+        Gizmos.DrawWireCube(FindRange.GetComponent<SpriteRenderer>().bounds.center, FindRange.GetComponent<SpriteRenderer>().bounds.size);//이거 각코너 구해서 해보기
+        Gizmos.color = Color.red;//3
+        Gizmos.DrawWireCube(DragRect.center, DragRect.size);//이거 각코너 구해서 해보기
+
+        for (int i = 0; i < DragCornersVector.Length; i++)//월드 드래그박스 각 모서리
+        {
+            Gizmos.color = Color.red;//1
+            Gizmos.DrawWireSphere(DragCornersVector[i], 0.1f);
+            Gizmos.color = Color.blue;//2
+            Gizmos.DrawWireSphere(ImageCornersVector[i], 0.1f);
+        }
+    }
+}
+
+/*
         //world_DragBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
         Vector3 center = FindRange.GetComponent<SpriteRenderer>().bounds.center;
         Vector3 size_2 = FindRange.GetComponent<SpriteRenderer>().bounds.size / 2;
@@ -178,34 +206,17 @@ public class Image_FindRightAnswer : MonoBehaviour
         ImageCornersVector[2] = new Vector3(ImageCornersVector[0].x, ImageCornersVector[1].y, 0);
         ImageCornersVector[3] = new Vector3(ImageCornersVector[1].x, ImageCornersVector[0].y, ImageCornersVector[0].z);
 
-        DragRect = new Rect(FindRange.GetComponent<SpriteRenderer>().bounds.min, FindRange.GetComponent<SpriteRenderer>().bounds.size);
-    }
-    
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;//정답이미지
-        Gizmos.DrawWireCube(FindRange.GetComponent<SpriteRenderer>().bounds.center, FindRange.GetComponent<SpriteRenderer>().bounds.size);//이거 각코너 구해서 해보기
-        Gizmos.color = Color.black;//정답이미지
-        Gizmos.DrawWireCube(DragRect.center, DragRect.size);//이거 각코너 구해서 해보기
+     */
 
+/*
+ 
         //Gizmos.color = Color.black;//월드_드래그박스센터
         //Gizmos.DrawWireSphere(world_DragBoxPos, 0.05f);
-        Gizmos.color = Color.grey;//스크린_드래그박스센터
-        Gizmos.DrawWireSphere(DragBox.position, 0.05f);
-
-        for (int i = 0; i < DragCornersVector.Length; i++)//월드 드래그박스 각 모서리
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(DragCornersVector[i], 0.1f);
-            Gizmos.color = Color.black - new Color(0,0,0, i * 0.2f) ;
-            Gizmos.DrawWireSphere(ImageCornersVector[i], 0.1f);
-        }
-    }
-
-    private void OnGUI()
-    {
-        //DragBox.rect.position = DragBox.position;
-        GUI.Box(new Rect(0,0,100,100), "개시발");
-    }
-}
-
+        //Gizmos.color = Color.grey;//스크린_드래그박스센터
+        //Gizmos.DrawWireSphere(DragBox.position, 0.05f);
+     */
+//private void OnGUI()
+//{
+//    //DragBox.rect.position = DragBox.position;
+//    GUI.Box(new Rect(Screen.width / 2, Screen.height / 2, 100,100), "개시발");
+//}
