@@ -27,13 +27,15 @@ public class Image_FindRightAnswer : MonoBehaviour
     //public Vector3 ImagePosition;
     public float SizeRange_min, SizeRange_max;
 
-    public GameObject ImageContain;
+    public RectTransform[] ImageContain = new RectTransform[4];
     Rect HideSpriteRect;
     Rect DragRect;
     bool IsSizeFit = false;
 
     Vector3[] DragCornersVector = new Vector3[4];
+    //Vector3[] DragCornersVector2 = new Vector3[4];
     Vector3[] ImageCornersVector = new Vector3[4];
+    //Vector3[] ImageCornersVector2 = new Vector3[4];
     Vector3 world_DragBoxPos;//드래그박스의 센터
     public Canvas DrawBoxCanvas;
 
@@ -150,10 +152,8 @@ public class Image_FindRightAnswer : MonoBehaviour
         //정답 이미지의 모든 코너가 박스안에 들어왔을때로 수정하기
         for (int i = 0; i < ImageCornersVector.Length; i++)
         {
-            if (!DragRect.Contains(ImageCornersVector[i]))
+            if (!RectTransformUtility.RectangleContainsScreenPoint(DragBox, ImageContain[i].position))
                 return false;
-            else
-                return true;
         }
         return true;
     }
@@ -166,17 +166,8 @@ public class Image_FindRightAnswer : MonoBehaviour
         //이미지 코너 구하는거 추가해서 드래그박스가 이미지를 포함하는지 확인해야합니다[0712]
 
         DragBox.GetWorldCorners(DragCornersVector);//드래그박스 월드코너 확인완료1
-        ImageContain.GetComponent<RectTransform>().GetWorldCorners(ImageCornersVector);//이미지월드코너 확인완료2
-        for (int i = 0; i < ImageCornersVector.Length; i++)
-        {
-            ImageCornersVector[i].z = 0;
-        }
-        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        DragRect.xMin = DragCornersVector[0].x;
-        DragRect.xMax = DragCornersVector[2].x;
-        DragRect.yMin = DragCornersVector[2].y;
-        DragRect.yMax = DragCornersVector[0].y;
-        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~드래그박스의 rect gizmo확인3
+        //드래그박스에서 스크린위치의 이미지 코너 비교하기
+        
     }
     
     private void OnDrawGizmos()
