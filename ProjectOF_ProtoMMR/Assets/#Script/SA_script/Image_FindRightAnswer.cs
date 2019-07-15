@@ -195,28 +195,3 @@ public class Image_FindRightAnswer : MonoBehaviour
         }
     }
 }
-
-/*
-        //world_DragBoxPos = new Vector3(DragBox.position.x, DragBox.position.y, FindRange.GetComponent<SpriteRenderer>().bounds.center.z);
-        Vector3 center = FindRange.GetComponent<SpriteRenderer>().bounds.center;
-        Vector3 size_2 = FindRange.GetComponent<SpriteRenderer>().bounds.size / 2;
-
-        ImageCornersVector[0] = center + size_2;
-        ImageCornersVector[1] = center - size_2;
-        ImageCornersVector[2] = new Vector3(ImageCornersVector[0].x, ImageCornersVector[1].y, 0);
-        ImageCornersVector[3] = new Vector3(ImageCornersVector[1].x, ImageCornersVector[0].y, ImageCornersVector[0].z);
-
-     */
-
-/*
- 
-        //Gizmos.color = Color.black;//월드_드래그박스센터
-        //Gizmos.DrawWireSphere(world_DragBoxPos, 0.05f);
-        //Gizmos.color = Color.grey;//스크린_드래그박스센터
-        //Gizmos.DrawWireSphere(DragBox.position, 0.05f);
-     */
-//private void OnGUI()
-//{
-//    //DragBox.rect.position = DragBox.position;
-//    GUI.Box(new Rect(Screen.width / 2, Screen.height / 2, 100,100), "개시발");
-//}

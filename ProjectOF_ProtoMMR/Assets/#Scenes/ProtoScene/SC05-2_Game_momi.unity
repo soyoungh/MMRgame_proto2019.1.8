@@ -1067,6 +1067,7 @@ GameObject:
   - component: {fileID: 373678065}
   - component: {fileID: 373678068}
   - component: {fileID: 373678067}
+  - component: {fileID: 373678071}
   - component: {fileID: 373678066}
   - component: {fileID: 373678070}
   - component: {fileID: 373678069}
@@ -1209,6 +1210,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.0590405, y: 3.8404443}
   m_EdgeRadius: 0
+--- !u!114 &373678071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373678064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: swim_touch
 --- !u!1 &380760260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,8 +1395,10 @@ GameObject:
   - component: {fileID: 456238609}
   - component: {fileID: 456238612}
   - component: {fileID: 456238611}
+  - component: {fileID: 456238614}
   - component: {fileID: 456238610}
   - component: {fileID: 456238613}
+  - component: {fileID: 456238615}
   m_Layer: 0
   m_Name: '#SP_PR_grass2'
   m_TagString: Untagged
@@ -1437,7 +1453,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &456238611
 MeshRenderer:
@@ -1496,6 +1512,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &456238614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456238608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch
+--- !u!61 &456238615
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456238608}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09175515, y: -0.067514}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.555412, y: 1.9217356}
+  m_EdgeRadius: 0
 --- !u!1 &472387553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1636,7 @@ GameObject:
   - component: {fileID: 482718482}
   - component: {fileID: 482718485}
   - component: {fileID: 482718484}
+  - component: {fileID: 482718487}
   - component: {fileID: 482718483}
   - component: {fileID: 482718486}
   m_Layer: 0
@@ -1637,7 +1693,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &482718484
 MeshRenderer:
@@ -1710,6 +1766,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.221214, y: 3.8501527}
   m_EdgeRadius: 0
+--- !u!114 &482718487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482718481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: animation
 --- !u!1 &520858312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,8 +2243,10 @@ GameObject:
   - component: {fileID: 603079515}
   - component: {fileID: 603079518}
   - component: {fileID: 603079517}
+  - component: {fileID: 603079520}
   - component: {fileID: 603079516}
   - component: {fileID: 603079519}
+  - component: {fileID: 603079521}
   m_Layer: 0
   m_Name: '#SP_PR_palm (6)'
   m_TagString: Untagged
@@ -2231,7 +2302,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &603079517
 MeshRenderer:
@@ -2290,6 +2361,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &603079520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603079514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch2
+--- !u!60 &603079521
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603079514}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7793585, y: 6.628622}
+      - {x: -1.3684338, y: 6.3674555}
+      - {x: -0.63258475, y: -0.08421638}
+      - {x: 0.5916522, y: 0.03811056}
+      - {x: 0.7278001, y: 0.9053937}
+      - {x: -0.3750801, y: 1.3921287}
+      - {x: -0.3909328, y: 2.6314762}
+      - {x: 0.89062214, y: 3.44564}
+      - {x: 2.564759, y: 4.1650896}
+      - {x: 2.889512, y: 5.7370048}
 --- !u!1 &634668166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,6 +2507,7 @@ GameObject:
   - component: {fileID: 674993932}
   - component: {fileID: 674993935}
   - component: {fileID: 674993934}
+  - component: {fileID: 674993938}
   - component: {fileID: 674993933}
   - component: {fileID: 674993936}
   - component: {fileID: 674993937}
@@ -2446,7 +2566,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &674993934
 MeshRenderer:
@@ -2525,6 +2645,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &674993938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674993931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: playing
 --- !u!1 &689358048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,8 +3139,10 @@ GameObject:
   - component: {fileID: 784297282}
   - component: {fileID: 784297285}
   - component: {fileID: 784297284}
+  - component: {fileID: 784297287}
   - component: {fileID: 784297283}
   - component: {fileID: 784297286}
+  - component: {fileID: 784297288}
   m_Layer: 0
   m_Name: '#SP_PR_palm (5)'
   m_TagString: Untagged
@@ -3063,7 +3198,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &784297284
 MeshRenderer:
@@ -3122,6 +3257,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &784297287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784297281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch2
+--- !u!61 &784297288
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784297281}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.7793585, y: 5.0423384}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.9095938, y: 3.1725678}
+  m_EdgeRadius: 0
 --- !u!1001 &815792634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3202,7 +3376,9 @@ GameObject:
   - component: {fileID: 851553533}
   - component: {fileID: 851553536}
   - component: {fileID: 851553535}
+  - component: {fileID: 851553538}
   - component: {fileID: 851553534}
+  - component: {fileID: 851553537}
   m_Layer: 0
   m_Name: '#SP_CH_dive'
   m_TagString: Untagged
@@ -3304,6 +3480,45 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851553532}
   m_Mesh: {fileID: 0}
+--- !u!61 &851553537
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851553532}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.011605501, y: 2.0932908}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.195229, y: 4.640155}
+  m_EdgeRadius: 0
+--- !u!114 &851553538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851553532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: animation
 --- !u!1 &856203043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,6 +3759,7 @@ GameObject:
   - component: {fileID: 913551054}
   - component: {fileID: 913551057}
   - component: {fileID: 913551056}
+  - component: {fileID: 913551060}
   - component: {fileID: 913551055}
   - component: {fileID: 913551059}
   - component: {fileID: 913551058}
@@ -3686,6 +3902,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.0590405, y: 3.840444}
   m_EdgeRadius: 0
+--- !u!114 &913551060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913551053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: swim_touch
 --- !u!1 &915970398
 GameObject:
   m_ObjectHideFlags: 0
@@ -4326,6 +4555,7 @@ GameObject:
   - component: {fileID: 1111989899}
   - component: {fileID: 1111989902}
   - component: {fileID: 1111989901}
+  - component: {fileID: 1111989905}
   - component: {fileID: 1111989900}
   - component: {fileID: 1111989904}
   - component: {fileID: 1111989903}
@@ -4468,6 +4698,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.0590405, y: 3.8404443}
   m_EdgeRadius: 0
+--- !u!114 &1111989905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111989898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: swim_touch
 --- !u!1 &1138991245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4799,6 +5042,7 @@ GameObject:
   - component: {fileID: 1185667556}
   - component: {fileID: 1185667559}
   - component: {fileID: 1185667558}
+  - component: {fileID: 1185667562}
   - component: {fileID: 1185667557}
   - component: {fileID: 1185667561}
   - component: {fileID: 1185667560}
@@ -4941,6 +5185,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.0590405, y: 3.840444}
   m_EdgeRadius: 0
+--- !u!114 &1185667562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185667555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: swim_touch
 --- !u!1 &1192569200
 GameObject:
   m_ObjectHideFlags: 0
@@ -4952,8 +5209,10 @@ GameObject:
   - component: {fileID: 1192569201}
   - component: {fileID: 1192569204}
   - component: {fileID: 1192569203}
+  - component: {fileID: 1192569206}
   - component: {fileID: 1192569202}
   - component: {fileID: 1192569205}
+  - component: {fileID: 1192569207}
   m_Layer: 0
   m_Name: '#SP_PR_palm (3)'
   m_TagString: Untagged
@@ -5008,7 +5267,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1192569203
 MeshRenderer:
@@ -5067,6 +5326,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1192569206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192569200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch2
+--- !u!61 &1192569207
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192569200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.7793585, y: 3.281965}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.9095938, y: 6.693314}
+  m_EdgeRadius: 0
 --- !u!1 &1202664966
 GameObject:
   m_ObjectHideFlags: 0
@@ -5078,6 +5376,7 @@ GameObject:
   - component: {fileID: 1202664967}
   - component: {fileID: 1202664970}
   - component: {fileID: 1202664969}
+  - component: {fileID: 1202664973}
   - component: {fileID: 1202664968}
   - component: {fileID: 1202664972}
   - component: {fileID: 1202664971}
@@ -5135,7 +5434,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1202664969
 MeshRenderer:
@@ -5220,6 +5519,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3945746, y: 4.220021}
   m_EdgeRadius: 0
+--- !u!114 &1202664973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202664966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: playing
 --- !u!1 &1219461570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5231,8 +5543,10 @@ GameObject:
   - component: {fileID: 1219461571}
   - component: {fileID: 1219461574}
   - component: {fileID: 1219461573}
+  - component: {fileID: 1219461576}
   - component: {fileID: 1219461572}
   - component: {fileID: 1219461575}
+  - component: {fileID: 1219461577}
   m_Layer: 0
   m_Name: '#SP_PR_palm'
   m_TagString: Untagged
@@ -5287,7 +5601,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1219461573
 MeshRenderer:
@@ -5346,6 +5660,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1219461576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219461570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch2
+--- !u!60 &1219461577
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219461570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.77935845, y: 6.6286216}
+      - {x: -0.54137623, y: 6.536598}
+      - {x: -1.5553426, y: 4.7089686}
+      - {x: 0.090999596, y: 3.451852}
+      - {x: -0.50923026, y: 0.06556788}
+      - {x: 0.50555146, y: -0.06835199}
+      - {x: 0.66917175, y: 3.3695328}
+      - {x: 2.6286123, y: 4.218391}
+      - {x: 2.7837243, y: 5.833895}
 --- !u!1 &1337834614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5431,8 +5792,10 @@ GameObject:
   - component: {fileID: 1347243147}
   - component: {fileID: 1347243150}
   - component: {fileID: 1347243149}
+  - component: {fileID: 1347243152}
   - component: {fileID: 1347243148}
   - component: {fileID: 1347243151}
+  - component: {fileID: 1347243153}
   m_Layer: 0
   m_Name: '#SP_PR_palm (2)'
   m_TagString: Untagged
@@ -5487,7 +5850,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1347243149
 MeshRenderer:
@@ -5546,6 +5909,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1347243152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347243146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch2
+--- !u!61 &1347243153
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347243146}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.77935845, y: 4.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.9095936, y: 4}
+  m_EdgeRadius: 0
 --- !u!1 &1373923814
 GameObject:
   m_ObjectHideFlags: 0
@@ -5644,7 +6046,10 @@ GameObject:
   - component: {fileID: 1376605292}
   - component: {fileID: 1376605295}
   - component: {fileID: 1376605294}
+  - component: {fileID: 1376605296}
   - component: {fileID: 1376605293}
+  - component: {fileID: 1376605297}
+  - component: {fileID: 1376605298}
   m_Layer: 0
   m_Name: '#SP_PR_palm4'
   m_TagString: Untagged
@@ -5699,7 +6104,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1376605294
 MeshRenderer:
@@ -5746,6 +6151,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376605291}
   m_Mesh: {fileID: 0}
+--- !u!114 &1376605296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376605291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch2
+--- !u!114 &1376605297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376605291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &1376605298
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376605291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.81547153, y: 6.910301}
+      - {x: -0.60155725, y: 6.5393457}
+      - {x: -1.4212288, y: 5.1900716}
+      - {x: -0.7583907, y: 3.866866}
+      - {x: 0.048744276, y: 3.5063267}
+      - {x: -0.43660736, y: -0.053903256}
+      - {x: 0.48580304, y: 1.5856253}
+      - {x: 0.6877672, y: 3.383771}
+      - {x: 2.5655904, y: 4.3948755}
+      - {x: 2.7993813, y: 5.883441}
 --- !u!1 &1378784403
 GameObject:
   m_ObjectHideFlags: 0
@@ -5947,8 +6412,10 @@ GameObject:
   - component: {fileID: 1430381973}
   - component: {fileID: 1430381976}
   - component: {fileID: 1430381975}
+  - component: {fileID: 1430381978}
   - component: {fileID: 1430381974}
   - component: {fileID: 1430381977}
+  - component: {fileID: 1430381979}
   m_Layer: 0
   m_Name: '#SP_PR_palm (4)'
   m_TagString: Untagged
@@ -6004,7 +6471,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1430381975
 MeshRenderer:
@@ -6063,6 +6530,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1430381978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430381972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch2
+--- !u!61 &1430381979
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430381972}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.7793584, y: 5.1398234}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.9095936, y: 2.9775956}
+  m_EdgeRadius: 0
 --- !u!1 &1465559647
 GameObject:
   m_ObjectHideFlags: 0
@@ -6747,6 +7253,7 @@ GameObject:
   - component: {fileID: 1620819030}
   - component: {fileID: 1620819033}
   - component: {fileID: 1620819032}
+  - component: {fileID: 1620819035}
   - component: {fileID: 1620819031}
   - component: {fileID: 1620819034}
   m_Layer: 0
@@ -6803,7 +7310,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1620819032
 MeshRenderer:
@@ -6876,6 +7383,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.221214, y: 3.850153}
   m_EdgeRadius: 0
+--- !u!114 &1620819035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620819029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: animation
 --- !u!1 &1646121799
 GameObject:
   m_ObjectHideFlags: 0
@@ -6962,6 +7482,7 @@ GameObject:
   - component: {fileID: 1648715957}
   - component: {fileID: 1648715960}
   - component: {fileID: 1648715959}
+  - component: {fileID: 1648715963}
   - component: {fileID: 1648715958}
   - component: {fileID: 1648715962}
   - component: {fileID: 1648715961}
@@ -7019,7 +7540,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1648715959
 MeshRenderer:
@@ -7104,6 +7625,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3945746, y: 4.220021}
   m_EdgeRadius: 0
+--- !u!114 &1648715963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648715956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: playing
 --- !u!1 &1753955011
 GameObject:
   m_ObjectHideFlags: 0
@@ -7115,8 +7649,10 @@ GameObject:
   - component: {fileID: 1753955012}
   - component: {fileID: 1753955015}
   - component: {fileID: 1753955014}
+  - component: {fileID: 1753955017}
   - component: {fileID: 1753955013}
   - component: {fileID: 1753955016}
+  - component: {fileID: 1753955018}
   m_Layer: 0
   m_Name: '#SP_PR_grass2_1'
   m_TagString: Untagged
@@ -7171,7 +7707,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1753955014
 MeshRenderer:
@@ -7230,6 +7766,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1753955017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753955011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch
+--- !u!61 &1753955018
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753955011}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09175515, y: -0.067514}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.555412, y: 1.9217356}
+  m_EdgeRadius: 0
 --- !u!1 &1764770305
 GameObject:
   m_ObjectHideFlags: 0
@@ -7658,8 +8233,10 @@ GameObject:
   - component: {fileID: 1911783194}
   - component: {fileID: 1911783197}
   - component: {fileID: 1911783196}
+  - component: {fileID: 1911783199}
   - component: {fileID: 1911783195}
   - component: {fileID: 1911783198}
+  - component: {fileID: 1911783200}
   m_Layer: 0
   m_Name: '#SP_PR_crab'
   m_TagString: Untagged
@@ -7714,7 +8291,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &1911783196
 MeshRenderer:
@@ -7773,6 +8350,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1911783199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911783193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: animation
+--- !u!61 &1911783200
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911783193}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.155}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1 &1931288046
 GameObject:
   m_ObjectHideFlags: 0
@@ -7986,7 +8602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8288,6 +8904,7 @@ GameObject:
   - component: {fileID: 2039069165}
   - component: {fileID: 2039069168}
   - component: {fileID: 2039069167}
+  - component: {fileID: 2039069170}
   - component: {fileID: 2039069166}
   - component: {fileID: 2039069169}
   m_Layer: 0
@@ -8344,7 +8961,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &2039069167
 MeshRenderer:
@@ -8417,6 +9034,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.221215, y: 3.8501534}
   m_EdgeRadius: 0
+--- !u!114 &2039069170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039069164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: animation
 --- !u!1 &2063266086
 GameObject:
   m_ObjectHideFlags: 0
@@ -8428,8 +9058,10 @@ GameObject:
   - component: {fileID: 2063266087}
   - component: {fileID: 2063266090}
   - component: {fileID: 2063266089}
+  - component: {fileID: 2063266092}
   - component: {fileID: 2063266088}
   - component: {fileID: 2063266091}
+  - component: {fileID: 2063266093}
   m_Layer: 0
   m_Name: '#SP_PR_palm (1)'
   m_TagString: Untagged
@@ -8484,7 +9116,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &2063266089
 MeshRenderer:
@@ -8543,6 +9175,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2063266092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063266086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim_name: touch2
+--- !u!60 &2063266093
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063266086}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.77935845, y: 6.6286216}
+      - {x: -0.35655892, y: 6.6482615}
+      - {x: -1.39284, y: 5.654971}
+      - {x: -1.2606652, y: 4.1018777}
+      - {x: 0.050755735, y: 3.4826171}
+      - {x: -0.5317449, y: -0.05067825}
+      - {x: 0.4851611, y: -0.027525423}
+      - {x: 0.6214296, y: 3.4747765}
+      - {x: 2.6173275, y: 4.409896}
+      - {x: 2.7505257, y: 5.759366}
 --- !u!1 &2119525646
 GameObject:
   m_ObjectHideFlags: 0
@@ -9546,7 +10226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &4700541488805118596
 CanvasRenderer:
   m_ObjectHideFlags: 0
