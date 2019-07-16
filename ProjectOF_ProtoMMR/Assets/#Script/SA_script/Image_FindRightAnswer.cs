@@ -12,8 +12,8 @@ using Spine.Unity;
 public class Image_FindRightAnswer : MonoBehaviour
 {
     public delegate void RenderViewDelegate();
-    public static event RenderViewDelegate RightAnswer;//RenderView_AllController
-
+    public static event RenderViewDelegate RightAnswer;
+    //RenderView_AllController에서 처리할 델리게이트, 이벤트
     public delegate void FadeDelegate(SkeletonAnimation BeforeSprite, float FirstWait);
     public static event FadeDelegate FadeOutEvent;
     public delegate void FadeDelegate_sprite(SpriteRenderer BeforeSprite, float FirstWait);
