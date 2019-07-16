@@ -39,7 +39,7 @@ public class Play_CheckTouch : MonoBehaviour
 
             if (touch.phase == TouchPhase.Moved)
             {
-                if (ins_drawdrag.isClicked_DrawingBox)//이거 체크해야지 오류안나네 시발
+                if (ins_drawdrag.isClicked_DrawingBox)
                     TouchMoved_FromAnswer();//FRA
                 if (!ins_zoom.IsTouch2 && !ins_onoff.Iscam)
                     OnTouchMoved_FromGapMove();//드래그이동(MouseGapMove) Moved
@@ -48,8 +48,9 @@ public class Play_CheckTouch : MonoBehaviour
             {
                 if(ins_drawdrag.isClicked_DrawingBox)
                     TouchEnd_FromAnswer();//FRA
-                if (ins_onoff.Iscam && Input.touchCount < 2)
+                if (DragBoxEnd_FromDrag != null && ins_onoff.Iscam && Input.touchCount < 2) 
                     DragBoxEnd_FromDrag();// 드래그박스(DrawDrag) 끝
+                //랜더뷰때 drawdrag가 비활성화돼서 널체크로 오류방지해야함
             }
 
         }

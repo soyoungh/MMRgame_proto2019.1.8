@@ -1562,7 +1562,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 14.983334
-    functionName: Ready
+    functionName: NextScene
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

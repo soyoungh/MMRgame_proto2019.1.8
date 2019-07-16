@@ -28,16 +28,6 @@ public class Play_DrawDrag : MonoBehaviour
     Vector3 startPos, endPos;
     Vector2 startCanvas, endCanvas;
 
-    // Update is called once per frame
-    void Update()
-    {
-        MovingCenter = Camera.main.WorldToScreenPoint(myCanvas.transform.position);//카메라의 중심
-        if (isClicked_DrawingBox)
-            DragBoxOnDraging();
-        //isclicked로 안하고 델리게이트에서 처리하면 드래그 박스 깜빡이는 현상 있을유
-        //얘는 본인 스크립트에서 실행하는거니까 그냥냅두쟈
-    }
-
     private void OnEnable()
     {
         Play_CheckTouch.DragBoxStart_FromDrag += this.DragBoxStart;
@@ -49,6 +39,16 @@ public class Play_DrawDrag : MonoBehaviour
         Play_CheckTouch.DragBoxStart_FromDrag -= this.DragBoxStart;
         Play_CheckTouch.DragBoxEnd_FromDrag -= this.DragBoxEnd;
         Ui_CamOnOff.OnDragMode -= this.ReturnToDragMode;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        MovingCenter = Camera.main.WorldToScreenPoint(myCanvas.transform.position);//카메라의 중심
+        if (isClicked_DrawingBox)
+            DragBoxOnDraging();
+        //isclicked로 안하고 델리게이트에서 처리하면 드래그 박스 깜빡이는 현상 있을유
+        //얘는 본인 스크립트에서 실행하는거니까 그냥냅두쟈
     }
 
 
