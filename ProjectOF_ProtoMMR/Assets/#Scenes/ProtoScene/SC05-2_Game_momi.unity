@@ -1217,7 +1217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: swim_touch
+  anim_name:
+  - swim_touch
 --- !u!1 &380760260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,7 +1520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch
+  anim_name:
+  - touch
 --- !u!60 &456238615
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1785,7 +1787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: animation
+  anim_name:
+  - animation
 --- !u!1 &520858312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,7 +2026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0.1764706}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2393,7 +2396,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch2
+  anim_name:
+  - touch
+  - touch2
 --- !u!60 &603079521
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2676,7 +2681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: playing
+  anim_name:
+  - playing
 --- !u!60 &674993939
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3206,7 +3212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch2
+  anim_name:
+  - touch
+  - touch2
 --- !u!60 &784297288
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3459,7 +3467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: animation
+  anim_name:
+  - animation
 --- !u!1 &856203043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,7 +3864,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: swim_touch
+  anim_name:
+  - swim_touch
 --- !u!1 &915970398
 GameObject:
   m_ObjectHideFlags: 0
@@ -4000,7 +4010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0.1764706}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4706,7 +4716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: swim_touch
+  anim_name:
+  - swim_touch
 --- !u!1 &1138991245
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,7 +5205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: swim_touch
+  anim_name:
+  - swim_touch
 --- !u!1 &1192569200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5335,7 +5347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch2
+  anim_name:
+  - touch
+  - touch2
 --- !u!60 &1192569207
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5533,7 +5547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: playing
+  anim_name:
+  - playing
 --- !u!1 &1219461570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,7 +5689,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch2
+  anim_name:
+  - touch
+  - touch2
 --- !u!60 &1219461577
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5845,7 +5862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch2
+  anim_name:
+  - touch
+  - touch2
 --- !u!60 &1347243153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5939,7 +5958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0.1764706}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6178,7 +6197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch2
+  anim_name:
+  - touch
+  - touch2
 --- !u!114 &1376605297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6552,7 +6573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch2
+  anim_name:
+  - touch
+  - touch2
 --- !u!60 &1430381979
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7385,7 +7408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: animation
+  anim_name:
+  - animation
 --- !u!1 &1646121799
 GameObject:
   m_ObjectHideFlags: 0
@@ -7627,7 +7651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: playing
+  anim_name:
+  - playing
 --- !u!1 &1753955011
 GameObject:
   m_ObjectHideFlags: 0
@@ -7768,7 +7793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch
+  anim_name:
+  - touch
 --- !u!60 &1753955018
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8419,7 +8445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: animation
+  anim_name:
+  - animation
 --- !u!60 &1911783200
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8589,7 +8616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0.1764706}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8959,7 +8986,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: animation
+  anim_name:
+  - animation
 --- !u!1 &2063266086
 GameObject:
   m_ObjectHideFlags: 0
@@ -9100,7 +9128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim_name: touch2
+  anim_name:
+  - touch
+  - touch2
 --- !u!60 &2063266093
 PolygonCollider2D:
   m_ObjectHideFlags: 0
