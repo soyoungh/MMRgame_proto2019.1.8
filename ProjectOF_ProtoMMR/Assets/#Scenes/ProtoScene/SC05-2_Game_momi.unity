@@ -1279,7 +1279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
+  - swim
   - swim_touch
+  isitLOOP: 1
 --- !u!1 &380760260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - touch
+  isitLOOP: 1
 --- !u!60 &456238615
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1915,6 +1918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - animation
+  isitLOOP: 0
 --- !u!1 &520858312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,6 +2529,7 @@ MonoBehaviour:
   anim_name:
   - touch
   - touch2
+  isitLOOP: 0
 --- !u!60 &603079521
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2809,6 +2814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - playing
+  isitLOOP: 1
 --- !u!60 &674993939
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3341,6 +3347,7 @@ MonoBehaviour:
   anim_name:
   - touch
   - touch2
+  isitLOOP: 0
 --- !u!60 &784297288
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3595,6 +3602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - animation
+  isitLOOP: 0
 --- !u!1 &856203043
 GameObject:
   m_ObjectHideFlags: 0
@@ -3991,7 +3999,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
+  - swim
   - swim_touch
+  isitLOOP: 1
 --- !u!1 &915970398
 GameObject:
   m_ObjectHideFlags: 0
@@ -4972,7 +4982,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
+  - swim
   - swim_touch
+  isitLOOP: 1
 --- !u!1 &1138991245
 GameObject:
   m_ObjectHideFlags: 0
@@ -5587,7 +5599,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
+  - swim
   - swim_touch
+  isitLOOP: 1
 --- !u!1 &1192569200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5731,6 +5745,7 @@ MonoBehaviour:
   anim_name:
   - touch
   - touch2
+  isitLOOP: 0
 --- !u!60 &1192569207
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5930,6 +5945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - playing
+  isitLOOP: 1
 --- !u!1 &1219461570
 GameObject:
   m_ObjectHideFlags: 0
@@ -6073,6 +6089,7 @@ MonoBehaviour:
   anim_name:
   - touch
   - touch2
+  isitLOOP: 0
 --- !u!60 &1219461577
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6246,6 +6263,7 @@ MonoBehaviour:
   anim_name:
   - touch
   - touch2
+  isitLOOP: 0
 --- !u!60 &1347243153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6581,6 +6599,7 @@ MonoBehaviour:
   anim_name:
   - touch
   - touch2
+  isitLOOP: 0
 --- !u!114 &1376605297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6957,6 +6976,7 @@ MonoBehaviour:
   anim_name:
   - touch
   - touch2
+  isitLOOP: 0
 --- !u!60 &1430381979
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7856,6 +7876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - animation
+  isitLOOP: 0
 --- !u!1 &1646121799
 GameObject:
   m_ObjectHideFlags: 0
@@ -8099,6 +8120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - playing
+  isitLOOP: 1
 --- !u!1 &1753955011
 GameObject:
   m_ObjectHideFlags: 0
@@ -8241,6 +8263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - touch
+  isitLOOP: 1
 --- !u!60 &1753955018
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8893,6 +8916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - animation
+  isitLOOP: 0
 --- !u!60 &1911783200
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9436,6 +9460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim_name:
   - animation
+  isitLOOP: 0
 --- !u!1 &2063266086
 GameObject:
   m_ObjectHideFlags: 0
@@ -9579,6 +9604,7 @@ MonoBehaviour:
   anim_name:
   - touch
   - touch2
+  isitLOOP: 0
 --- !u!60 &2063266093
 PolygonCollider2D:
   m_ObjectHideFlags: 0

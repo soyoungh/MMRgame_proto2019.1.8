@@ -16,6 +16,9 @@ public class Sprite_Touch : MonoBehaviour
             SpriteIndex++;
         }
         else
+        {
+            GetComponent<Image>().raycastTarget = false;
             print("끝");
+        }
     }
 }
