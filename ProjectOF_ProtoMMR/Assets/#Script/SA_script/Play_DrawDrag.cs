@@ -44,7 +44,14 @@ public class Play_DrawDrag : MonoBehaviour
         Play_CheckTouch.DragBoxEnd_FromDrag += this.DragBoxEnd;
         Ui_CamOnOff.OnDragMode += this.ReturnToDragMode;
     }
-    
+    private void OnDisable()
+    {
+        Play_CheckTouch.DragBoxStart_FromDrag -= this.DragBoxStart;
+        Play_CheckTouch.DragBoxEnd_FromDrag -= this.DragBoxEnd;
+        Ui_CamOnOff.OnDragMode -= this.ReturnToDragMode;
+    }
+
+
     void ReturnToDragMode()//cam버튼 눌러서 이동모드 전환시 실행
     {
         isClicked_DrawingBox = false;

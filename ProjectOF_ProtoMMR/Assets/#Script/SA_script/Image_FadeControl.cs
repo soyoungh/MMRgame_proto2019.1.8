@@ -25,6 +25,11 @@ public class Image_FadeControl : MonoBehaviour
         Image_FindRightAnswer.FadeOutEvent += this.StartFadeOut;
         Image_FindRightAnswer.FadeOutEvent_sprite += this.StartFadeOut_sprite;
     }
+    private void OnDisable()
+    {
+        Image_FindRightAnswer.FadeOutEvent -= this.StartFadeOut;
+        Image_FindRightAnswer.FadeOutEvent_sprite -= this.StartFadeOut_sprite;
+    }
 
     void StartFadeOut(SkeletonAnimation BeforeSprite, float FirstWait)
     {

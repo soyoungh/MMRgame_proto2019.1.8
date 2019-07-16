@@ -25,9 +25,13 @@ public class RenderView_AllController : MonoBehaviour
 
     private void OnEnable()
     {
-        Image_FindRightAnswer.RightAnswer += this.RenderViewControl;//From FRA
+        Image_FindRightAnswer.RightAnswer += this.RenderViewControl;
     }
-    
+    private void OnDisable()
+    {
+        Image_FindRightAnswer.RightAnswer -= this.RenderViewControl;
+    }
+
     public void RenderViewControl()
     {
         ins_RVcam.CorrectAnswerMove();//드래그범위로 캠이동

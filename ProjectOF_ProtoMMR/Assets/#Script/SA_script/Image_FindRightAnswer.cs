@@ -33,10 +33,15 @@ public class Image_FindRightAnswer : MonoBehaviour
         Play_CheckTouch.TouchMoved_FromAnswer += this.DragMoveSizeCheck;
         Play_CheckTouch.TouchEnd_FromAnswer += this.DragEndFigureOut;
     }
+    private void OnDisable()
+    {
+        Play_CheckTouch.TouchMoved_FromAnswer -= this.DragMoveSizeCheck;
+        Play_CheckTouch.TouchEnd_FromAnswer -= this.DragEndFigureOut;
+    }
 
     public void Answer_Wrong0_GetList()
     {
-        Collider2D[] Overlaped = Physics2D.OverlapBoxAll(DragBox.position, DragBox.sizeDelta, 0);
+        Collider2D[] Overlaped = Physics2D.OverlapBoxAll(DragBox.position, DragBox.sizeDelta, 0);//다먹음, 해당영역이 아닌게 사라짐 시발
         GameObject[] OverlapObject = new GameObject[Overlaped.Length];
         int i = 0;
         while(i < Overlaped.Length)

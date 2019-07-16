@@ -23,13 +23,19 @@ public class Play_MouseGapMove : MonoBehaviour
 
     Vector3 StartTouch, StartMouse;
     Vector3 StartTouch_world;
-
+    
 
     private void OnEnable()
     {
         Play_CheckTouch.OnTouchBegan_FromGapMove += this.OnTouchBegan;
         Play_CheckTouch.OnTouchMoved_FromGapMove += this.OnTouchMoved;
     }
+    private void OnDisable()//이게 없을경우 이전에 등록된 이벤트?를 계속찾음 
+    {
+        Play_CheckTouch.OnTouchBegan_FromGapMove -= this.OnTouchBegan;
+        Play_CheckTouch.OnTouchMoved_FromGapMove -= this.OnTouchMoved;
+    }
+
 
     public void OnTouchMoved()
     {
