@@ -20,34 +20,23 @@ public class Image_FindRightAnswer : MonoBehaviour
     public static event FadeDelegate_sprite FadeOutEvent_sprite;
     //페이드 부분 관련 델리게이트, 이벤트
 
-
-    public SpriteRenderer FindRange;
     public GameObject RenderView;
     public RectTransform DragBox, CheckRange;
-    //public Vector3 ImagePosition;
+    public RectTransform[] ImageContain = new RectTransform[4];
     public float SizeRange_min, SizeRange_max;
 
-    public RectTransform[] ImageContain = new RectTransform[4];
-    Rect HideSpriteRect;
-    Rect DragRect;
     bool IsSizeFit = false;
-
-    Vector3[] DragCornersVector = new Vector3[4];
-    Vector3[] ImageCornersVector = new Vector3[4];
-    Vector3 world_DragBoxPos;//드래그박스의 센터
-    public Canvas DrawBoxCanvas;
-
+    
 
     private void OnEnable()
     {
-        Play_CheckTouch.TouchMoved_FromAnswer += this.ImageAndDragboxCorners;
         Play_CheckTouch.TouchMoved_FromAnswer += this.DragMoveSizeCheck;
         Play_CheckTouch.TouchEnd_FromAnswer += this.DragEndFigureOut;
     }
 
     public void Answer_Wrong0_GetList()
     {
-        Collider2D[] Overlaped = Physics2D.OverlapBoxAll(DragBox.position, DragBox.sizeDelta, 0);//OverlapAreaAll(DragCornersVector[0], DragCornersVector[2]);
+        Collider2D[] Overlaped = Physics2D.OverlapBoxAll(DragBox.position, DragBox.sizeDelta, 0);
         GameObject[] OverlapObject = new GameObject[Overlaped.Length];
         int i = 0;
         while(i < Overlaped.Length)
@@ -96,8 +85,6 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public void DragMoveSizeCheck()
     {
-        print("최소사이즈 [" + CheckRange.sizeDelta.x / SizeRange_min + ", " + CheckRange.sizeDelta.y / SizeRange_min + "]");
-        print("최대사이즈 [" + CheckRange.sizeDelta.x * SizeRange_max + ", " + CheckRange.sizeDelta.y * SizeRange_max + "]");
         if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / SizeRange_min && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / SizeRange_min)
         {
             if(DragBox.sizeDelta.x < CheckRange.sizeDelta.x * SizeRange_max && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * SizeRange_max)
@@ -139,7 +126,6 @@ public class Image_FindRightAnswer : MonoBehaviour
         }
     }
 
-
     /// <summary>
     /// 드래그와 찾은이미지 비교
     /// 손이 떨어졌을때 드래그박스가 이미지범위에서 벗어났는지를 확인
@@ -148,39 +134,11 @@ public class Image_FindRightAnswer : MonoBehaviour
     public bool DragHideCompare()
     {
         //정답 이미지의 모든 코너가 박스안에 들어왔을때로 수정하기
-        for (int i = 0; i < ImageCornersVector.Length; i++)
+        for (int i = 0; i < ImageContain.Length; i++)
         {
             if (!RectTransformUtility.RectangleContainsScreenPoint(DragBox, ImageContain[i].position))
                 return false;
         }
         return true;
-    }
-
-    /// <summary>
-    /// 이미지의 각 코너를 찾아주는 함수(이미지범위)
-    /// </summary>
-    void ImageAndDragboxCorners()
-    {
-        //이미지 코너 구하는거 추가해서 드래그박스가 이미지를 포함하는지 확인해야합니다[0712]
-
-        DragBox.GetWorldCorners(DragCornersVector);//드래그박스 월드코너 확인완료1
-        //드래그박스에서 스크린위치의 이미지 코너 비교하기
-        
-    }
-    
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;//정답이미지
-        Gizmos.DrawWireCube(FindRange.GetComponent<SpriteRenderer>().bounds.center, FindRange.GetComponent<SpriteRenderer>().bounds.size);//이거 각코너 구해서 해보기
-        Gizmos.color = Color.red;//3
-        Gizmos.DrawWireCube(DragRect.center, DragRect.size);//이거 각코너 구해서 해보기
-
-        for (int i = 0; i < DragCornersVector.Length; i++)//월드 드래그박스 각 모서리
-        {
-            Gizmos.color = Color.red;//1
-            Gizmos.DrawWireSphere(DragCornersVector[i], 0.1f);
-            Gizmos.color = Color.blue;//2
-            Gizmos.DrawWireSphere(ImageCornersVector[i], 0.1f);
-        }
     }
 }
