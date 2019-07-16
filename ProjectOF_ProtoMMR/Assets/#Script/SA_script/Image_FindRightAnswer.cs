@@ -33,9 +33,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     bool IsSizeFit = false;
 
     Vector3[] DragCornersVector = new Vector3[4];
-    //Vector3[] DragCornersVector2 = new Vector3[4];
     Vector3[] ImageCornersVector = new Vector3[4];
-    //Vector3[] ImageCornersVector2 = new Vector3[4];
     Vector3 world_DragBoxPos;//드래그박스의 센터
     public Canvas DrawBoxCanvas;
 
@@ -49,7 +47,7 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public void Answer_Wrong0_GetList()
     {
-        Collider2D[] Overlaped = Physics2D.OverlapAreaAll(DragCornersVector[0], DragCornersVector[2]);
+        Collider2D[] Overlaped = Physics2D.OverlapBoxAll(DragBox.position, DragBox.sizeDelta, 0);//OverlapAreaAll(DragCornersVector[0], DragCornersVector[2]);
         GameObject[] OverlapObject = new GameObject[Overlaped.Length];
         int i = 0;
         while(i < Overlaped.Length)
