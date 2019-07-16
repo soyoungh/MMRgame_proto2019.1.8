@@ -19,7 +19,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     public delegate void FadeDelegate_sprite(SpriteRenderer BeforeSprite, float FirstWait);
     public static event FadeDelegate_sprite FadeOutEvent_sprite;
     //페이드 부분 관련 델리게이트, 이벤트
-
+    
     public GameObject RenderView;
     public RectTransform DragBox, CheckRange;
     public RectTransform[] ImageContain = new RectTransform[4];

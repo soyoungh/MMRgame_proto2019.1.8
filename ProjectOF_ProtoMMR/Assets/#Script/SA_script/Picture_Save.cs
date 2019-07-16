@@ -19,6 +19,7 @@ public class Picture_Save : MonoBehaviour
 
     [Tooltip("UI_RECTTRANSFORM, this transform's size will be captured image's size")]
     public RectTransform DragBoxImage;
+    public RectTransform CaptureMask;
 
     [Tooltip("GAME OBJECT, 캡쳐된 이미지가 들어갈 게임오브젝트")]
     public GameObject Photo;
@@ -27,7 +28,7 @@ public class Picture_Save : MonoBehaviour
     public bool canPicture = false;
     public bool canPicture_Screen = false;//0618
     public Vector3 DragCenterScreen;
-    public Canvas AllUi;
+    //public Canvas AllUi;
 
     //0619 정답사진 이미지 변환
 
@@ -61,11 +62,22 @@ public class Picture_Save : MonoBehaviour
         yield return new WaitForEndOfFrame();
         //미리 너무 빠르게읽어버려서 빈정보를 읽어올까봐 한프레임 대기
 
-        Texture2D screenShot = new Texture2D((int)DragBoxImage.sizeDelta.x,
-                                              (int)DragBoxImage.sizeDelta.y,
+        // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~캡쳐사이즈 수정전~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+        //Texture2D screenShot = new Texture2D((int)DragBoxImage.sizeDelta.x,
+        //                                      (int)DragBoxImage.sizeDelta.y,
+        //                                      TextureFormat.RGB24, false);
+        //새로운 투디텍스쳐를 만든다. 사이즈는 드래그박스의 사이즈로 설정
+        //사이즈 델타는 부모 오브젝트에 종속되었을때 부모에 비교해서의??사이즈값
+        // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+        // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~캡쳐사이즈 수정후~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+        Texture2D screenShot = new Texture2D((int)CaptureMask.sizeDelta.x,
+                                              (int)CaptureMask.sizeDelta.y,
                                               TextureFormat.RGB24, false);
         //새로운 투디텍스쳐를 만든다. 사이즈는 드래그박스의 사이즈로 설정
         //사이즈 델타는 부모 오브젝트에 종속되었을때 부모에 비교해서의??사이즈값
+        // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+
+
 
 
 
@@ -90,8 +102,10 @@ public class Picture_Save : MonoBehaviour
 
 
 
-        screenShot.ReadPixels(new Rect(alwaysStart.x, alwaysStart.y,
+        screenShot.ReadPixels(new Rect(CaptureMask.position.x,
+                                       CaptureMask.position.y,
                                        screenShot.width, screenShot.height), 0, 0);
+        print(CaptureMask.position.x + "," + CaptureMask.position.y);
 
         //마우스 위치(스크린기준 좌표)와 텍스쳐투디(스크린기준 좌표)의 가로세로
         //여기에 최대사이즈를 피하고, 최소사이즈를 정하여 피하면오류 ㄴㄴ일듯(attempting RT bound out)
@@ -126,9 +140,9 @@ public class Picture_Save : MonoBehaviour
     {
         Texture2D screenShot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
         yield return null;
-        AllUi.enabled = false;
+        //AllUi.enabled = false;
         yield return new WaitForEndOfFrame();
-        Debug.Log("VF활성화 " + AllUi.enabled);
+        //Debug.Log("VF활성화 " + AllUi.enabled);
 
         screenShot.ReadPixels(new Rect(0, 0, screenShot.width, screenShot.height), 0, 0);
         screenShot.Apply();
@@ -144,9 +158,9 @@ public class Picture_Save : MonoBehaviour
         {
             byte[] bytes = screenShot.EncodeToPNG();
             System.IO.File.WriteAllBytes(Path.Combine(Application.persistentDataPath, "capture.png"), bytes);
-            AllUi.enabled = true;
+            //AllUi.enabled = true;
             Photo.SetActive(true);
-            Debug.Log("VF활성화 " + AllUi.enabled);//flickering
+            //Debug.Log("VF활성화 " + AllUi.enabled);//flickering
             ins_load.LoadA_Picture();
         }
 
