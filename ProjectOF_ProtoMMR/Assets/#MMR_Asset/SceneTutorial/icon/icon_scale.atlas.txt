@@ -1,0 +1,27 @@
+
+icon_scale.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle1
+  rotate: false
+  xy: 2, 2
+  size: 119, 119
+  orig: 119, 119
+  offset: 0, 0
+  index: -1
+circle2
+  rotate: false
+  xy: 2, 2
+  size: 119, 119
+  orig: 119, 119
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 2, 123
+  size: 251, 350
+  orig: 251, 350
+  offset: 0, 0
+  index: -1

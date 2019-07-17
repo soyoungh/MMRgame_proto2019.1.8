@@ -1,0 +1,34 @@
+
+icon_drag.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+circle
+  rotate: false
+  xy: 2, 2
+  size: 119, 119
+  orig: 119, 119
+  offset: 0, 0
+  index: -1
+circle_
+  rotate: false
+  xy: 275, 383
+  size: 115, 113
+  orig: 115, 113
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 2, 123
+  size: 252, 373
+  orig: 252, 373
+  offset: 0, 0
+  index: -1
+line
+  rotate: true
+  xy: 256, 130
+  size: 366, 17
+  orig: 366, 17
+  offset: 0, 0
+  index: -1

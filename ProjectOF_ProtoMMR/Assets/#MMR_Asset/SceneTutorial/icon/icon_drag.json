@@ -1,0 +1,62 @@
+{
+"skeleton": { "hash": "+yVrfoAGRXhB+EH0039rOq9oxIg", "spine": "3.7.94", "width": 524.35, "height": 740.61, "images": "../images/drag/", "audio": "/Users/edayeong/Desktop/mmr/_Prolog/drag" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -206.76, "y": 272.86 },
+	{ "name": "bone2", "parent": "bone", "x": 332.69, "y": -323.6 },
+	{ "name": "bone3", "parent": "bone", "length": 362.03, "rotation": -44.82, "x": 33.03, "y": -35.77 }
+],
+"slots": [
+	{ "name": "circle", "bone": "bone2", "attachment": "circle" },
+	{ "name": "line", "bone": "bone3", "attachment": "line" },
+	{ "name": "circle_", "bone": "bone", "attachment": "circle_" },
+	{ "name": "hand", "bone": "bone2", "attachment": "hand" }
+],
+"skins": {
+	"default": {
+		"circle": {
+			"circle": { "x": 1.13, "y": -3.44, "width": 119, "height": 119 }
+		},
+		"circle_": {
+			"circle_": { "x": -0.24, "y": 3.09, "width": 115, "height": 113 }
+		},
+		"hand": {
+			"hand": { "x": 7.91, "y": -170.91, "width": 252, "height": 373 }
+		},
+		"line": {
+			"line": { "x": 181.48, "y": 0.84, "rotation": -0.18, "width": 366, "height": 17 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"bone2": {
+				"translate": [
+					{ "time": 0, "x": -332.35, "y": 330.2, "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"x": -332.35,
+						"y": 330.2,
+						"curve": [ 0.347, 0.01, 0.658, 1 ]
+					},
+					{ "time": 1, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone3": {
+				"scale": [
+					{ "time": 0, "x": 0.022, "y": 1, "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"x": 0.022,
+						"y": 1,
+						"curve": [ 0.347, 0.01, 0.658, 1 ]
+					},
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}
