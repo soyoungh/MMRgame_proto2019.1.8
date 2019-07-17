@@ -12,23 +12,23 @@ public class Picture_Save : MonoBehaviour
 {
     //test
     [Tooltip("SCRIPT OBJECT, script for execute captured image load function")]
-    public Picture_Load ins_load;
+    public Picture_Load ins_load;//No Need Full
 
     [Tooltip("SCRIPT OBJECT, script for bring VECTOR to use 드래그 좌표 구하기")]
-    public Play_DrawDrag ins_drag;
+    public Play_DrawDrag ins_drag;//No Need Full
 
     [Tooltip("UI_RECTTRANSFORM, this transform's size will be captured image's size")]
-    public RectTransform DragBoxImage;
-    public RectTransform CaptureMask;
+    public RectTransform DragBoxImage;//No Need Full
+    public RectTransform CaptureMask;//No Need Full
 
     [Tooltip("GAME OBJECT, 캡쳐된 이미지가 들어갈 게임오브젝트")]
-    public GameObject Photo;
-    
+    public GameObject Photo;//No Need Full
+
     //public Vector3 DragCenter, DragCenterForRay;
     public bool canPicture = false;
     public bool canPicture_Screen = false;//0618
     public Vector3 DragCenterScreen;
-    public Canvas CanvasCamera;
+    public Canvas CanvasCamera;//No Need Full
     //public Canvas AllUi;
 
     //0619 정답사진 이미지 변환
@@ -114,25 +114,20 @@ public class Picture_Save : MonoBehaviour
         {
             byte[] bytes = screenShot.EncodeToPNG();
             System.IO.File.WriteAllBytes(Path.Combine(Application.persistentDataPath, "capture.png"), bytes);
-            Photo.SetActive(true);//이미지 활성화
-            ins_load.LoadA_Picture();//이미지 로드
+            if (Photo != null) Photo.SetActive(true);//이미지 활성화
+            if(ins_load != null) ins_load.LoadA_Picture();//이미지 로드
         }
         else
         {
             byte[] bytes = screenShot.EncodeToPNG();
-            System.IO.File.WriteAllBytes(Path.Combine(Application.persistentDataPath, "capture.png"), bytes);
-            //AllUi.enabled = true;
-            Photo.SetActive(true);
+            System.IO.File.WriteAllBytes(Path.Combine(Application.persistentDataPath, "fullscreen.png"), bytes);
+            print(Path.Combine(Application.persistentDataPath, "fullscreen.png"));
+            if (Photo != null) Photo.SetActive(true);
             //Debug.Log("VF활성화 " + AllUi.enabled);//flickering
-            ins_load.LoadA_Picture();
+            if (ins_load != null) ins_load.LoadA_Picture();
         }
 
         canPicture_Screen = false;
         RenderTexture.active = null;
-    }
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(CaptureMask.rect.position, CaptureMask.rect.size);
     }
 }

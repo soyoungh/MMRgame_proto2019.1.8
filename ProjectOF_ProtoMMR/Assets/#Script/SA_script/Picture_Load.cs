@@ -11,25 +11,37 @@ using UnityEngine;
 public class Picture_Load : MonoBehaviour
 {
     Texture2D CustomTexture;//0618
+    public bool IsStartShow = false;
+    string LoadImageName;
     // Start is called before the first frame update
     private void Awake()
     {
-        CustomTexture = new Texture2D(
-            (int)gameObject.GetComponent<RectTransform>().rect.width,
-            (int)gameObject.GetComponent<RectTransform>().rect.height);
         //원래 loada_picture내용이 여기있었음
+        if (IsStartShow)
+        {
+            CustomTexture = new Texture2D(1080, 1920);
+            LoadImageName = "fullscreen.png";
+            LoadA_Picture();
+        }
+        else
+        {
+            CustomTexture = new Texture2D(
+                (int)gameObject.GetComponent<RectTransform>().rect.width,
+                (int)gameObject.GetComponent<RectTransform>().rect.height);
+            LoadImageName = "capture.png";
+        }
     }
     public void LoadA_Picture()
     {
         if (SystemInfo.deviceType == DeviceType.Handheld)//기기가 모바일인 경우
         {
-            Texture2D LoadTextureA = OnAndroid(Path.Combine(Application.persistentDataPath, "capture.png"));
+            Texture2D LoadTextureA = OnAndroid(Path.Combine(Application.persistentDataPath, LoadImageName));
             gameObject.GetComponent<Image>().sprite =
                 Sprite.Create(LoadTextureA, new Rect(0, 0, LoadTextureA.width, LoadTextureA.height), gameObject.transform.position);
         }
         else//그외의 기기
         {
-            Texture2D LoadTextureP = OnPc(Path.Combine(Application.persistentDataPath, "capture.png"));
+            Texture2D LoadTextureP = OnPc(Path.Combine(Application.persistentDataPath, LoadImageName));
             //1. 텍스쳐 변수를 만들어서 onpc라는 함수를 실행시키며 ""안의 주소를 보냄
             //8. 반환된 텍스쳐 변수를 저장시킴
             gameObject.GetComponent<Image>().sprite =

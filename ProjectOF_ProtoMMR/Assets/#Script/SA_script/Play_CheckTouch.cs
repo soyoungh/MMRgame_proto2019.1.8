@@ -33,8 +33,9 @@ public class Play_CheckTouch : MonoBehaviour
             if(touch.phase == TouchPhase.Began)
             {
                 OnTouchBegan_FromGapMove();// 드래그이동(MouseGapMove) Began
-                if (ins_onoff.Iscam && Input.touchCount < 2)
+                if (DragBoxEnd_FromDrag != null && ins_onoff.Iscam && Input.touchCount < 2)
                     DragBoxStart_FromDrag();// 드래그박스(DrawDrag) 시작
+                //랜더뷰때 drawdrag가 비활성화돼서 널체크로 오류방지해야함
             }
 
             if (touch.phase == TouchPhase.Moved)
