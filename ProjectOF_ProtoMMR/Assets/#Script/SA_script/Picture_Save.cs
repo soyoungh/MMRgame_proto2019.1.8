@@ -28,6 +28,7 @@ public class Picture_Save : MonoBehaviour
     public bool canPicture = false;
     public bool canPicture_Screen = false;//0618
     public Vector3 DragCenterScreen;
+    public Canvas CanvasCamera;
     //public Canvas AllUi;
 
     //0619 정답사진 이미지 변환
@@ -61,14 +62,7 @@ public class Picture_Save : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         //미리 너무 빠르게읽어버려서 빈정보를 읽어올까봐 한프레임 대기
-
-        // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~캡쳐사이즈 수정전~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
-        //Texture2D screenShot = new Texture2D((int)DragBoxImage.sizeDelta.x,
-        //                                      (int)DragBoxImage.sizeDelta.y,
-        //                                      TextureFormat.RGB24, false);
-        //새로운 투디텍스쳐를 만든다. 사이즈는 드래그박스의 사이즈로 설정
-        //사이즈 델타는 부모 오브젝트에 종속되었을때 부모에 비교해서의??사이즈값
-        // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+        
         // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~캡쳐사이즈 수정후~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
         Texture2D screenShot = new Texture2D((int)CaptureMask.sizeDelta.x,
                                               (int)CaptureMask.sizeDelta.y,
@@ -78,44 +72,14 @@ public class Picture_Save : MonoBehaviour
         // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
 
 
-
-
-
         // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
-        // *
-        // * [ 드래그 방향에 관계없이 항산 드래그 박스의 좌측하단의 좌표값 구하기 ] 
-        Vector2 dragLine = new Vector2(Mathf.Abs(ins_drag.lastPoint.x - ins_drag.firstPoint.x),
-                                     Mathf.Abs(ins_drag.lastPoint.y - ins_drag.firstPoint.y));
-
-        //시작점과 끝점의 x와y의 길이값, 사실 변수명이 드래그 라인이아니라 드래그 박스의 width,height의미여야함
-        Vector2 center = new Vector2((ins_drag.lastPoint.x + ins_drag.firstPoint.x) / 2,
-                                     (ins_drag.lastPoint.y + ins_drag.firstPoint.y) / 2);
-
-        DragCenterScreen = (Vector3)center + (Vector3.forward * -10);//using from viewfinder autozoom
-        //DragCenterForRay = center;//Picture스크립트에서 쓰임 (주석처리0618)계속문제없다면 지우기
-
-        //시작점과 끝점의 중간지점 저장
-        Vector2 alwaysStart = center - (dragLine / 2);
-        //중간 지점에서 가로길이와 세로길이의 절반을 빼서 항상 좌측하단의 좌표값을 시작점으로 함
-        // *
-        // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
-
-
-
-        screenShot.ReadPixels(new Rect(CaptureMask.position.x,
-                                       CaptureMask.position.y,
-                                       screenShot.width, screenShot.height), 0, 0);
-        print(CaptureMask.position.x + "," + CaptureMask.position.y);
-
-        //마우스 위치(스크린기준 좌표)와 텍스쳐투디(스크린기준 좌표)의 가로세로
-        //여기에 최대사이즈를 피하고, 최소사이즈를 정하여 피하면오류 ㄴㄴ일듯(attempting RT bound out)
-        // read pixel로 부터 사이즈를 구해야한다_0605
-        
+        screenShot.ReadPixels(new Rect(Screen.width/2 - CaptureMask.sizeDelta.x/2, Screen.height/2 - CaptureMask.sizeDelta.y/2,
+                                       CaptureMask.sizeDelta.x, CaptureMask.sizeDelta.y), 0, 0);
+        Photo.GetComponent<RectTransform>().sizeDelta = CaptureMask.sizeDelta;
         screenShot.Apply();
+        // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
 
-        //print("캔버스기준 드래그박스 사이즈 : " + screenShot.width + ", " + screenShot.height);//?
-
-        if(SystemInfo.deviceType == DeviceType.Handheld)
+        if (SystemInfo.deviceType == DeviceType.Handheld)
         {
             byte[] bytes = screenShot.EncodeToPNG();
             System.IO.File.WriteAllBytes(Path.Combine(Application.persistentDataPath, "capture.png"), bytes);
@@ -132,7 +96,6 @@ public class Picture_Save : MonoBehaviour
         }
 
         canPicture = false;
-        //RenderTexture.active = null;
 
     }
 
@@ -166,5 +129,10 @@ public class Picture_Save : MonoBehaviour
 
         canPicture_Screen = false;
         RenderTexture.active = null;
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(CaptureMask.rect.position, CaptureMask.rect.size);
     }
 }
