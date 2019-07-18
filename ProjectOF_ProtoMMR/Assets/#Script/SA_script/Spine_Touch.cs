@@ -46,14 +46,11 @@ public class Spine_Touch : MonoBehaviour
             {
                 anim.AnimationName = anim_name[ListIndex];
                 ListIndex++;
-                print("현재 애니메이션 번호 : " + ListIndex);
                 if (isitLOOP && ListIndex == anim_name.Count)
                 {
                     StartCoroutine(WaitAnimEnd_HaveNothing());
                 }
             }
-            else
-                print("애니메이션 끝!");
         }
     }
 

@@ -77,7 +77,11 @@ public class Tutorial_control : MonoBehaviour
 
             if (!ismoved && Play_CheckTouch.touch.phase == TouchPhase.Moved) ismoved2 = false;
             if (RenderView.activeSelf == true) PlayAnim();// 카메라모드시 플레이
-            if (ins_FRA.DragHideCompare()) PlayAnim();// 사진을 찍을시 플레이
+            if (ins_FRA.DragHideCompare())
+            {
+                PlayAnim();// 사진을 찍을시 플레이
+                print("드래그캡쳐(사진찍음)");
+            }
             if (end.activeSelf == true && Play_CheckTouch.touch.phase == TouchPhase.Ended)
             {
                 PlayAnim();

@@ -22,7 +22,7 @@ public class Play_DrawDrag : MonoBehaviour
     public Vector2 firstPoint, lastPoint;
 
 
-    public GameObject DragRangeWarning;//, DragLoadImage;
+    public GameObject DragRangeWarning;
     public bool isClicked_DrawingBox = false;//using from camzoom
     Vector3 MovingCenter; // 원래는 public이었음 문제있음 바꾸셈0703
     Vector3 startPos, endPos;
@@ -55,7 +55,7 @@ public class Play_DrawDrag : MonoBehaviour
     void ReturnToDragMode()//cam버튼 눌러서 이동모드 전환시 실행
     {
         isClicked_DrawingBox = false;
-        DragRangeWarning.SetActive(false);
+        //DragRangeWarning.SetActive(false);
     }
 
     public void DragBoxStart()
