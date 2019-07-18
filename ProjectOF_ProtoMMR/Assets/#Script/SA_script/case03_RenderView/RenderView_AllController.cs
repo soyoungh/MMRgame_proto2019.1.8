@@ -32,7 +32,7 @@ public class RenderView_AllController : MonoBehaviour
         Image_FindRightAnswer.RightAnswer -= this.RenderViewControl;
     }
 
-    public void RenderViewControl()
+    public void RenderViewControl()//정답이미지(랜더뷰) 활성화
     {
         ins_RVcam.CorrectAnswerMove();//드래그범위로 캠이동
         RenderView.SetActive(true);//렌더뷰활성화
@@ -53,4 +53,5 @@ public class RenderView_AllController : MonoBehaviour
         
         ins_prevent.DisableDragZoom();//드래그 및 줌 방지
     }
+    
 }

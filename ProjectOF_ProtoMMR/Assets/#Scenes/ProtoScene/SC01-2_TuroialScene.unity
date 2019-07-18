@@ -3465,7 +3465,7 @@ PrefabInstance:
     - target: {fileID: 310217019824709217, guid: d8c752d2aa247944eb244041e1576e31,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8c752d2aa247944eb244041e1576e31, type: 3}
@@ -4164,6 +4164,13 @@ MonoBehaviour:
   ins_touch: {fileID: 1153524773}
   CameraMode: {fileID: 2776562342517951457}
   RenderView: {fileID: 4700541487268336183}
+  hint: {fileID: 1792495757}
+  back: {fileID: 1601429114}
+  RightAnswer:
+  - {fileID: 1951875599}
+  - {fileID: 940771133}
+  - {fileID: 1364153684}
+  - {fileID: 560248851}
 --- !u!1 &907384321
 GameObject:
   m_ObjectHideFlags: 0
@@ -5629,7 +5636,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1177689772}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03347f40679f8c14381068f31ec0d346, type: 3}
   m_Name: 
@@ -5645,6 +5652,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TouchManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: ins_zoom
+      value: 
+      objectReference: {fileID: 310217019347977235}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: ins_onoff
+      value: 
+      objectReference: {fileID: 2776562342517951460}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: ins_drawdrag
+      value: 
+      objectReference: {fileID: 28552155121135768}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7206247008345390785, guid: aa7108ad754c7ee45b613e5341f524b6,
         type: 3}
@@ -5699,26 +5726,6 @@ PrefabInstance:
     - target: {fileID: 7206247008345390785, guid: aa7108ad754c7ee45b613e5341f524b6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
-        type: 3}
-      propertyPath: ins_zoom
-      value: 
-      objectReference: {fileID: 310217019347977235}
-    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
-        type: 3}
-      propertyPath: ins_onoff
-      value: 
-      objectReference: {fileID: 2776562342517951460}
-    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
-        type: 3}
-      propertyPath: ins_drawdrag
-      value: 
-      objectReference: {fileID: 28552155121135768}
-    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8354,7 +8361,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601429114}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -9481,7 +9488,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792495757}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -10923,7 +10930,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 745200242}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 641d5370a102d314b9a4e429424c0f7a, type: 3}
   m_Name: 
@@ -11074,7 +11081,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2776562342517951471}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
