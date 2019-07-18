@@ -7,9 +7,9 @@ public class PrologueNextScene : MonoBehaviour
 {
     void Update()
     {
-        if(GetComponent<VideoPlayer>().frame > 900)
+        if (GetComponent<VideoPlayer>().isPrepared)
         {
-            GetComponent<Play_SceneManager_Button>().NextScene();
+            if (!GetComponent<VideoPlayer>().isPlaying) GetComponent<Play_SceneManager_Button>().NextScene();
         }
     }
 }
