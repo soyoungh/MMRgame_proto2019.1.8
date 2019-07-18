@@ -13,7 +13,9 @@ public class Image_FindRightAnswer : MonoBehaviour
 {
     public delegate void RenderViewDelegate();
     public static event RenderViewDelegate RightAnswer;
+    public static event RenderViewDelegate PhotoActive;
     //RenderView_AllController에서 처리할 델리게이트, 이벤트
+
     public delegate void FadeDelegate(SkeletonAnimation BeforeSprite, float FirstWait);
     public static event FadeDelegate FadeOutEvent;
     public delegate void FadeDelegate_sprite(SpriteRenderer BeforeSprite, float FirstWait);
@@ -118,12 +120,15 @@ public class Image_FindRightAnswer : MonoBehaviour
             {
                 if (DragHideCompare())
                 {
+                    DragBox.gameObject.SetActive(false);
+                    PhotoActive();
                     RightAnswer();
                     print("Right!");
-                    DragBox.gameObject.SetActive(false);
                 }
                 else
                 {
+                    DragBox.gameObject.SetActive(false);
+                    PhotoActive();
                     Answer_Wrong0_GetList();
                     print("Wrong!");
                 }

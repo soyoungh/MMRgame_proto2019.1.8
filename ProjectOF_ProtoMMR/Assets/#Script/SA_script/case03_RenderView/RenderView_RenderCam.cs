@@ -19,7 +19,6 @@ public class RenderView_RenderCam : MonoBehaviour
     /// </summary>
     public void CorrectAnswerMove()//From AllController
     {
-        print("cam move");
         transform.position = MainCam.transform.position;//ins_drawdrag.DragBoxImage.transform.position + new Vector3(0,0,-10);
         GetComponent<Camera>().fieldOfView = MainCam.GetComponent<Camera>().fieldOfView;
         //해당위치이동 및 메인캠fov와 동기화

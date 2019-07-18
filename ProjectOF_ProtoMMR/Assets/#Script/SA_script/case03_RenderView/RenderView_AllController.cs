@@ -22,22 +22,29 @@ public class RenderView_AllController : MonoBehaviour
     public SkeletonAnimation BeforeFindMMR, AfterFindMMR;//퍼블릭으로 가져오는건 임시적, 코드로 가져올수있게 수정필요
     public SpriteRenderer BeforeFindMMR_sprite, AfterFindMMR_sprite;
     //이거를 스켈레톤알파랑 이미지알파 둘다 가능하게바꾸기
+    
 
     private void OnEnable()
     {
-        Image_FindRightAnswer.RightAnswer += this.RenderViewControl;
+        Image_FindRightAnswer.RightAnswer += this.RightAnswerActive;
+        Image_FindRightAnswer.PhotoActive += this.RenderPhotoActive;
     }
     private void OnDisable()
     {
-        Image_FindRightAnswer.RightAnswer -= this.RenderViewControl;
+        Image_FindRightAnswer.RightAnswer -= this.RightAnswerActive;
+        Image_FindRightAnswer.PhotoActive -= this.RenderPhotoActive;
     }
 
-    public void RenderViewControl()//정답이미지(랜더뷰) 활성화
+    public void RenderPhotoActive()//정답이미지(랜더뷰) 활성화
     {
         ins_RVcam.CorrectAnswerMove();//드래그범위로 캠이동
         RenderView.SetActive(true);//렌더뷰활성화
         ins_resize.MaskResizing();
-        
+        ins_prevent.DisableDragZoom();//드래그 및 줌 방지
+    }
+
+    public void RightAnswerActive()//정답일경우 이미지 변화
+    {
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ 수정필요 ]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
         //ins_changeMMR.StartCoroutine(ins_changeMMR.ChangeMMR());//정답이미지 변환
         if (Image_FadeControl.FadeInstance != null)
@@ -50,8 +57,5 @@ public class RenderView_AllController : MonoBehaviour
         else
             print("singleton is null");
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
-        
-        ins_prevent.DisableDragZoom();//드래그 및 줌 방지
     }
-    
 }
