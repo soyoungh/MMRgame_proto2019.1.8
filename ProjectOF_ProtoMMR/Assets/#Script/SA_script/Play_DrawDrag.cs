@@ -55,7 +55,6 @@ public class Play_DrawDrag : MonoBehaviour
     void ReturnToDragMode()//cam버튼 눌러서 이동모드 전환시 실행
     {
         isClicked_DrawingBox = false;
-        //DragRangeWarning.SetActive(false);
     }
 
     public void DragBoxStart()

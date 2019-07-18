@@ -75,7 +75,7 @@ public class Play_MouseGapMove : MonoBehaviour
         Vector3 CurrentGap = StartTouch - (Vector3)Play_CheckTouch.touch.position;
         Vector3 PreviousGap = StartTouch - PreviousPos;
 
-        float EachFrameMag = Mathf.Abs((PreviousGap.magnitude - CurrentGap.magnitude) * 0.2f);//0.02f
+        float EachFrameMag = Mathf.Abs((PreviousGap.magnitude - CurrentGap.magnitude) * 0.1f);//0.02f
         //속도(지금은 0.02f가 젤 적절한데 씬마다 다른지 확인해야함)랑 방향 수정
         Vector3 EachFrameDiff = -(PreviousGap - CurrentGap).normalized * 0.1f * EachFrameMag;
         CamAnchor.transform.Translate(EachFrameDiff);
