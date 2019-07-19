@@ -1,0 +1,62 @@
+
+x_05-2_ballplay.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+amr1
+  rotate: false
+  xy: 109, 156
+  size: 42, 35
+  orig: 42, 35
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 177, 212
+  size: 42, 31
+  orig: 42, 31
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 34, 29
+  size: 24, 32
+  orig: 24, 32
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 74, 78
+  size: 31, 54
+  orig: 31, 54
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 2, 2
+  size: 30, 59
+  orig: 30, 59
+  offset: 0, 0
+  index: -1
+mmr 복사
+  rotate: false
+  xy: 2, 134
+  size: 105, 109
+  orig: 105, 109
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 109, 193
+  size: 66, 50
+  orig: 66, 50
+  offset: 0, 0
+  index: -1
+레이어 3
+  rotate: false
+  xy: 2, 63
+  size: 70, 69
+  orig: 70, 69
+  offset: 0, 0
+  index: -1

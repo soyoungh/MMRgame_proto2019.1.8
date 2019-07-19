@@ -1,0 +1,55 @@
+
+x_05-2_napping.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 2, 40
+  size: 63, 30
+  orig: 63, 30
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 2, 10
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 246, 310
+  size: 120, 101
+  orig: 120, 101
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 246, 280
+  size: 55, 28
+  orig: 55, 28
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 368, 387
+  size: 45, 24
+  orig: 45, 24
+  offset: 0, 0
+  index: -1
+sunbed
+  rotate: false
+  xy: 2, 240
+  size: 242, 171
+  orig: 242, 171
+  offset: 0, 0
+  index: -1
+레이어 2
+  rotate: false
+  xy: 2, 72
+  size: 239, 166
+  orig: 239, 166
+  offset: 0, 0
+  index: -1

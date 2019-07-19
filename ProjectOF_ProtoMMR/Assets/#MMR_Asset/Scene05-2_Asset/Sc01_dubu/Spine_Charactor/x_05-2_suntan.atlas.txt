@@ -1,0 +1,41 @@
+
+x_05-2_suntan.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: false
+  xy: 2, 103
+  size: 55, 31
+  orig: 55, 31
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 136
+  size: 120, 86
+  orig: 120, 86
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 262, 279
+  size: 62, 43
+  orig: 62, 43
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 124, 190
+  size: 53, 32
+  orig: 53, 32
+  offset: 0, 0
+  index: -1
+mat
+  rotate: false
+  xy: 2, 224
+  size: 258, 98
+  orig: 258, 98
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+x_05-2_fishing.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 174, 327
+  size: 60, 51
+  orig: 60, 51
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 174, 267
+  size: 21, 58
+  orig: 21, 58
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 53
+  size: 108, 116
+  orig: 108, 116
+  offset: 0, 0
+  index: -1
+fishingrod
+  rotate: false
+  xy: 2, 171
+  size: 170, 207
+  orig: 170, 207
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 2, 2
+  size: 56, 49
+  orig: 56, 49
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 112, 103
+  size: 27, 66
+  orig: 27, 66
+  offset: 0, 0
+  index: -1

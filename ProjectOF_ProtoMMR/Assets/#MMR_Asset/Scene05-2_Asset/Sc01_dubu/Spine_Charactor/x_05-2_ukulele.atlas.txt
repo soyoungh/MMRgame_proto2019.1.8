@@ -1,0 +1,69 @@
+
+x_05-2_ukulele.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 102, 120
+  size: 44, 50
+  orig: 44, 50
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 178, 128
+  size: 22, 42
+  orig: 22, 42
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 108
+  size: 98, 133
+  orig: 98, 133
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 148, 121
+  size: 28, 49
+  orig: 28, 49
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 2, 29
+  size: 37, 41
+  orig: 37, 41
+  offset: 0, 0
+  index: -1
+music1
+  rotate: true
+  xy: 78, 83
+  size: 23, 20
+  orig: 23, 20
+  offset: 0, 0
+  index: -1
+music2
+  rotate: false
+  xy: 2, 2
+  size: 13, 25
+  orig: 13, 25
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 2, 72
+  size: 74, 34
+  orig: 74, 34
+  offset: 0, 0
+  index: -1
+ukulele
+  rotate: false
+  xy: 102, 172
+  size: 140, 69
+  orig: 140, 69
+  offset: 0, 0
+  index: -1

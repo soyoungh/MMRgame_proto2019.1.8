@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/#Scenes/ProtoScene/SC06_Ending.unity
     guid: 863391eaec3505a4fa2275ffea5bed90
+  - enabled: 1
+    path: Assets/#Scenes/ProtoScene/SC05-1_StageLoad_dubu.unity
+    guid: 2dfbf710e0eae8c4fa3016e05560f135
   m_configObjects: {}

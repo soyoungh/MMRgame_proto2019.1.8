@@ -1,0 +1,125 @@
+
+x_05-2_boat.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boat
+  rotate: false
+  xy: 2, 280
+  size: 239, 123
+  orig: 239, 123
+  offset: 0, 0
+  index: -1
+m_arm
+  rotate: false
+  xy: 2, 35
+  size: 31, 51
+  orig: 31, 51
+  offset: 0, 0
+  index: -1
+m_bodyy
+  rotate: false
+  xy: 2, 170
+  size: 77, 108
+  orig: 77, 108
+  offset: 0, 0
+  index: -1
+m_ear
+  rotate: false
+  xy: 51, 115
+  size: 27, 53
+  orig: 27, 53
+  offset: 0, 0
+  index: -1
+m_eye
+  rotate: false
+  xy: 35, 75
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+m_leg
+  rotate: true
+  xy: 147, 246
+  size: 32, 39
+  orig: 32, 39
+  offset: 0, 0
+  index: -1
+m_nose
+  rotate: false
+  xy: 81, 204
+  size: 39, 38
+  orig: 39, 38
+  offset: 0, 0
+  index: -1
+w_arm
+  rotate: false
+  xy: 355, 370
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+w_body
+  rotate: false
+  xy: 243, 295
+  size: 71, 108
+  orig: 71, 108
+  offset: 0, 0
+  index: -1
+w_ear
+  rotate: true
+  xy: 2, 88
+  size: 80, 47
+  orig: 80, 47
+  offset: 0, 0
+  index: -1
+w_eye
+  rotate: false
+  xy: 243, 280
+  size: 27, 13
+  orig: 27, 13
+  offset: 0, 0
+  index: -1
+w_flower
+  rotate: false
+  xy: 51, 90
+  size: 25, 23
+  orig: 25, 23
+  offset: 0, 0
+  index: -1
+w_leg
+  rotate: false
+  xy: 81, 244
+  size: 64, 34
+  orig: 64, 34
+  offset: 0, 0
+  index: -1
+w_nose
+  rotate: false
+  xy: 316, 356
+  size: 37, 47
+  orig: 37, 47
+  offset: 0, 0
+  index: -1
+레이어 5
+  rotate: false
+  xy: 316, 314
+  size: 29, 40
+  orig: 29, 40
+  offset: 0, 0
+  index: -1
+레이어 6
+  rotate: false
+  xy: 81, 174
+  size: 27, 28
+  orig: 27, 28
+  offset: 0, 0
+  index: -1
+레이어 7
+  rotate: false
+  xy: 2, 2
+  size: 30, 31
+  orig: 30, 31
+  offset: 0, 0
+  index: -1

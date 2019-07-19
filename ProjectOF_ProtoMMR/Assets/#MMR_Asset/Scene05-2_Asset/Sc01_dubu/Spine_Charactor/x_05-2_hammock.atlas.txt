@@ -1,0 +1,13 @@
+
+x_05-2_hammock.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hammock
+  rotate: false
+  xy: 2, 2
+  size: 506, 515
+  orig: 506, 515
+  offset: 0, 0
+  index: -1

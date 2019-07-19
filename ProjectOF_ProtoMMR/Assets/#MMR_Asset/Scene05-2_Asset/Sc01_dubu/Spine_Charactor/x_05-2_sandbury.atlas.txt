@@ -1,0 +1,34 @@
+
+x_05-2_sandbury.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+doodle
+  rotate: false
+  xy: 2, 65
+  size: 87, 49
+  orig: 87, 49
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 2, 116
+  size: 104, 65
+  orig: 104, 65
+  offset: 0, 0
+  index: -1
+foot
+  rotate: false
+  xy: 2, 25
+  size: 45, 38
+  orig: 45, 38
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 108, 140
+  size: 75, 41
+  orig: 75, 41
+  offset: 0, 0
+  index: -1

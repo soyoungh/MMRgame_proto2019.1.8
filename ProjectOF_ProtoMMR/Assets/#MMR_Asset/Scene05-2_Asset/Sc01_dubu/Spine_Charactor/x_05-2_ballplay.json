@@ -1,0 +1,184 @@
+{
+"skeleton": { "hash": "YioWumW8EEFu0IyR+kZ2PtQPE7U", "spine": "3.7.94", "width": 169, "height": 223, "images": "../images/ballplay/", "audio": "/Users/edayeong/Desktop/mmr/_Character/02_dubu/ballplay" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 103.13, "rotation": 90.24, "x": 0.22, "y": 37.05 },
+	{ "name": "bone2", "parent": "bone", "length": 33.21, "rotation": 179.76, "x": 2.24, "y": 13.54 },
+	{ "name": "bone3", "parent": "bone", "length": 37.31, "rotation": -174.87, "x": 3.01, "y": -10.94 },
+	{ "name": "bone4", "parent": "bone", "length": 34.85, "rotation": -120.34, "x": 43.99, "y": -34.71 },
+	{ "name": "bone5", "parent": "bone", "length": 35.63, "rotation": 123.25, "x": 39.49, "y": 36.98 },
+	{ "name": "bone6", "parent": "bone", "length": 30.4, "rotation": 71.32, "x": 80.93, "y": 20.63 },
+	{ "name": "bone8", "parent": "root", "rotation": 112.17, "x": -64.9, "y": 183.89 }
+],
+"slots": [
+	{ "name": "leg1", "bone": "bone2", "attachment": "leg1" },
+	{ "name": "leg2", "bone": "bone3", "attachment": "leg2" },
+	{ "name": "amr1", "bone": "bone5", "attachment": "amr1" },
+	{ "name": "arm2", "bone": "bone4", "attachment": "arm2" },
+	{ "name": "mmr 복사", "bone": "bone", "attachment": "mmr 복사" },
+	{ "name": "face", "bone": "bone", "attachment": "face" },
+	{ "name": "nose", "bone": "bone6", "attachment": "nose" },
+	{ "name": "레이어 3", "bone": "bone8", "attachment": "레이어 3" }
+],
+"skins": {
+	"default": {
+		"amr1": {
+			"amr1": { "x": 15.6, "y": -1.14, "rotation": 146.5, "width": 42, "height": 35 }
+		},
+		"arm2": {
+			"arm2": { "x": 16.96, "y": 0.05, "rotation": 30.1, "width": 42, "height": 31 }
+		},
+		"face": {
+			"face": { "x": 79.2, "y": 5.45, "rotation": -90.24, "width": 24, "height": 32 }
+		},
+		"leg1": {
+			"leg1": { "x": 14.01, "y": -4.74, "rotation": 90, "width": 31, "height": 54 }
+		},
+		"leg2": {
+			"leg2": { "x": 11.93, "y": 5.2, "rotation": 84.62, "width": 30, "height": 59 }
+		},
+		"mmr 복사": {
+			"mmr 복사": { "x": 52.66, "y": -2.94, "rotation": -90.24, "width": 105, "height": 109 }
+		},
+		"nose": {
+			"nose": {
+				"type": "mesh",
+				"uvs": [ 0.6988, 1, 0.47504, 0.95637, 0.25559, 0.80301, 0.13295, 0.61273, 0.01247, 0.3401, 0, 0, 0.36532, 0.01066, 0.36747, 0.18106, 0.4858, 0.37702, 0.63426, 0.49913, 1, 0.59285, 1, 1 ],
+				"triangles": [ 7, 4, 5, 7, 5, 6, 8, 3, 4, 8, 4, 7, 2, 3, 8, 2, 8, 9, 1, 2, 9, 0, 9, 10, 1, 9, 0, 0, 10, 11 ],
+				"vertices": [ 2.02, 11.92, 16.72, 14.52, 32.88, 11.83, 43.57, 5.36, 55.43, -5.06, 61.58, -20.93, 38.54, -28.05, 35.71, -20.01, 25.21, -13.18, 13.98, -10.49, -10.4, -13.68, -16.84, 5.64 ],
+				"hull": 12,
+				"edges": [ 0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22, 0, 22 ],
+				"width": 66,
+				"height": 50
+			}
+		},
+		"레이어 3": {
+			"레이어 3": { "x": 2.13, "y": -2.3, "rotation": -112.17, "width": 70, "height": 69 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"bones": {
+			"bone6": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0.1667, "x": 1, "y": 1 },
+					{ "time": 0.6667, "x": 0.959, "y": 1 },
+					{ "time": 1, "x": 1, "y": 1 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -2.77 },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": 4.25, "y": 0 },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -4.8 },
+					{ "time": 1, "angle": 0 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": -2.34 },
+					{ "time": 1, "angle": 0 }
+				]
+			},
+			"bone8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.0667, "x": -0.7, "y": 0.11 },
+					{ "time": 0.5, "x": 12.17, "y": 1.6 },
+					{ "time": 0.5667, "x": 12.2, "y": 1.39 },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"touch1": {
+		"bones": {
+			"bone8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.1667, "x": 0, "y": 6.64 },
+					{
+						"time": 0.3333,
+						"x": 0,
+						"y": -1.81,
+						"curve": [ 0.153, 0.2, 0.75, 1 ]
+					},
+					{
+						"time": 0.6667,
+						"x": 0,
+						"y": 87.04,
+						"curve": [ 0.26, 0, 0.808, 0.77 ]
+					},
+					{ "time": 1, "x": 0, "y": 0.01 }
+				]
+			},
+			"bone6": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.2667, "angle": 12.62 },
+					{ "time": 0.4, "angle": -9.75 },
+					{ "time": 0.6667, "angle": 0, "curve": "stepped" },
+					{ "time": 1, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.2667, "x": -0.92, "y": 0 },
+					{ "time": 0.4, "x": 1.38, "y": 1.37 },
+					{ "time": 0.6667, "x": 0, "y": 0 }
+				]
+			},
+			"bone4": {
+				"rotate": [
+					{ "time": 0.3667, "angle": 0 },
+					{ "time": 0.5333, "angle": 8.98 },
+					{ "time": 0.7, "angle": 0 }
+				]
+			},
+			"bone5": {
+				"rotate": [
+					{ "time": 0.3667, "angle": 0 },
+					{ "time": 0.5333, "angle": -12.33 },
+					{ "time": 0.7, "angle": 0 }
+				]
+			},
+			"bone": {
+				"translate": [
+					{ "time": 0.3333, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": 0, "y": 6.15 },
+					{ "time": 0.6667, "x": 0, "y": 0 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{ "time": 0.3333, "angle": 0 },
+					{ "time": 0.5, "angle": 4.44 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "time": 0.3333, "angle": 0 },
+					{ "time": 0.5, "angle": -9.6 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

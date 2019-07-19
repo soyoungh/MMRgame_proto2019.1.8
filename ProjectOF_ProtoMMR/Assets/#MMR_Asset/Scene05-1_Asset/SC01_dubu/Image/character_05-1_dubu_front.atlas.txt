@@ -1,0 +1,27 @@
+
+character_05-1_dubu_front.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+face
+  rotate: false
+  xy: 2, 193
+  size: 508, 315
+  orig: 508, 315
+  offset: 0, 0
+  index: -1
+handleft
+  rotate: false
+  xy: 78, 133
+  size: 63, 58
+  orig: 63, 58
+  offset: 0, 0
+  index: -1
+handright
+  rotate: false
+  xy: 2, 44
+  size: 74, 147
+  orig: 74, 147
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+character_05-1_dubu_side.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+face
+  rotate: false
+  xy: 2, 225
+  size: 509, 284
+  orig: 509, 284
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 2, 121
+  size: 116, 102
+  orig: 116, 102
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+
+x_05-2_guest.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 71
+  size: 147, 170
+  orig: 147, 170
+  offset: 0, 0
+  index: -1
+cocktail
+  rotate: false
+  xy: 151, 204
+  size: 31, 37
+  orig: 31, 37
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 2, 2
+  size: 107, 67
+  orig: 107, 67
+  offset: 0, 0
+  index: -1
