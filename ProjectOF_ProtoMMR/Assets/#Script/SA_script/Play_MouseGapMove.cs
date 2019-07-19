@@ -19,7 +19,8 @@ public class Play_MouseGapMove : MonoBehaviour
 
     public bool iszoom = false;
     public float CamMoveSpeed;
-    float CamMoveClamp_ZoomOut = 15.05f;
+    float CamMoveClamp_ZoomOut = 6.5f;
+    float CamMoveClamp_ZoomOut_OnZoomed = 10.5f;
 
     Vector3 StartTouch, StartMouse;
     Vector3 StartTouch_world;
@@ -44,10 +45,6 @@ public class Play_MouseGapMove : MonoBehaviour
         else
             OnTouchMoved_ZoomOff();
 
-        CamAnchor.transform.localPosition = new Vector3(
-            Mathf.Clamp(CamAnchor.transform.localPosition.x, -CamMoveClamp_ZoomOut, CamMoveClamp_ZoomOut),
-            Mathf.Clamp(CamAnchor.transform.localPosition.y, -CamMoveClamp_ZoomOut, CamMoveClamp_ZoomOut),
-            CamAnchor.transform.localPosition.z);
     }
 
     /// <summary>
@@ -80,6 +77,11 @@ public class Play_MouseGapMove : MonoBehaviour
         Vector3 EachFrameDiff = -(PreviousGap - CurrentGap).normalized * 0.1f * EachFrameMag;
         CamAnchor.transform.Translate(EachFrameDiff);
 
+        CamAnchor.transform.localPosition = new Vector3(
+            Mathf.Clamp(CamAnchor.transform.localPosition.x, -CamMoveClamp_ZoomOut_OnZoomed, CamMoveClamp_ZoomOut_OnZoomed),
+            Mathf.Clamp(CamAnchor.transform.localPosition.y, -CamMoveClamp_ZoomOut_OnZoomed, CamMoveClamp_ZoomOut_OnZoomed),
+            CamAnchor.transform.localPosition.z);
+
     }
 
     /// <summary>
@@ -93,7 +95,11 @@ public class Play_MouseGapMove : MonoBehaviour
 
         Vector3 TouchGap_WorldTouch = EndTouch_world - StartTouch_world;
         CamAnchor.transform.localPosition -= TouchGap_WorldTouch;
-        
+
+        CamAnchor.transform.localPosition = new Vector3(
+            Mathf.Clamp(CamAnchor.transform.localPosition.x, -CamMoveClamp_ZoomOut, CamMoveClamp_ZoomOut),
+            Mathf.Clamp(CamAnchor.transform.localPosition.y, -CamMoveClamp_ZoomOut, CamMoveClamp_ZoomOut),
+            CamAnchor.transform.localPosition.z);
 
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         CamAnchor.transform.localPosition = Vector3.MoveTowards(CamAnchor.transform.localPosition,

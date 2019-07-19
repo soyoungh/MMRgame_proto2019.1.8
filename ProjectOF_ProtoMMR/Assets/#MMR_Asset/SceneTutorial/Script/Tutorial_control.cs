@@ -23,7 +23,7 @@ public class Tutorial_control : MonoBehaviour
     private void OnEnable()
     {
         ins_zoom.enabled = false;
-        ins_touch.enabled = false;
+        ins_touch.enabled = false;//flickering의 원인인거 같음
         hint.SetActive(false);
         back.SetActive(false);
         CameraMode.enabled = false;
@@ -46,6 +46,7 @@ public class Tutorial_control : MonoBehaviour
         {
             RightAnswer[i].SetActive(true);
         }
+        print("5. 줌인아웃, 드래그이동, ui(hint, back, 카메라, 정답포인트 활성화)");
     }
 
     private void Update()
@@ -127,6 +128,7 @@ public class Tutorial_control : MonoBehaviour
     public void DisableTutorialAnimator()
     {
         GetComponent<Animator>().enabled = false;
+        this.gameObject.SetActive(false);
         this.enabled = false;
     }
     
