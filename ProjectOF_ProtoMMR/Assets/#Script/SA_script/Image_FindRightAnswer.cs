@@ -28,7 +28,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     public float SizeRange_min, SizeRange_max;
 
     bool IsSizeFit = false;
-    
+
 
     private void OnEnable()
     {

@@ -4125,7 +4125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &899300092
 Animator:
   serializedVersion: 3
@@ -5393,6 +5393,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097293668}
   m_CullTransparentMesh: 0
+--- !u!114 &1100945262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2950635875803896600, guid: a5634c6a31513184fb62cb6d23d8b13a,
+    type: 3}
+  m_PrefabInstance: {fileID: 147798818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5ef06e96b1e7b449d96cb457bfa6ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1111989898
 GameObject:
   m_ObjectHideFlags: 0
@@ -5831,6 +5843,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: temp_FRA
+      value: 
+      objectReference: {fileID: 674993936}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: temp_MGM
+      value: 
+      objectReference: {fileID: 1100945262}
     - target: {fileID: 7206247008345390785, guid: aa7108ad754c7ee45b613e5341f524b6,
         type: 3}
       propertyPath: m_LocalPosition.x

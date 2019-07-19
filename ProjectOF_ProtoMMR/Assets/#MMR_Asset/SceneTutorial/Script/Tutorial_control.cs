@@ -23,7 +23,7 @@ public class Tutorial_control : MonoBehaviour
     private void OnEnable()
     {
         ins_zoom.enabled = false;
-        ins_touch.enabled = false;//flickering의 원인인거 같음
+        ins_touch.TutorialCheck = true;//flickering의 원인인거 같음// 여기에 있는 델리케이트들을 널체크하자
         hint.SetActive(false);
         back.SetActive(false);
         CameraMode.enabled = false;
@@ -37,7 +37,7 @@ public class Tutorial_control : MonoBehaviour
     private void OnDisable()
     {
         ins_zoom.enabled = true;
-        ins_touch.enabled = true;
+        ins_touch.TutorialCheck = false;
         hint.SetActive(true);
         back.SetActive(true);
         CameraMode.enabled = true;
@@ -99,7 +99,7 @@ public class Tutorial_control : MonoBehaviour
     }
     public void MoveActive()//드래그이동 가능
     {
-        ins_touch.enabled = true;
+        ins_touch.TutorialCheck = true;
         ismoved = false;
         print("2. 드래그 이동 활성화");
     }
