@@ -59,7 +59,7 @@ public class Tutorial_control : MonoBehaviour
     {
         if(Input.touchCount > 0)
         {
-            if (ins_zoom.IsTouch2 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            if (ins_zoom != null && ins_zoom.IsTouch2 && Input.GetTouch(0).phase == TouchPhase.Ended)
             {
                 if (!iszoomed)
                 {
@@ -166,7 +166,7 @@ public class Tutorial_control : MonoBehaviour
         if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / SizeRange_min && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / SizeRange_min)
         {
             if (DragBox.sizeDelta.x < CheckRange.sizeDelta.x * SizeRange_max && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * SizeRange_max)
-            {//true
+            {
                 DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);
                 return true;
             }
