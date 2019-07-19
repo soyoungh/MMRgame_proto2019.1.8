@@ -21,7 +21,7 @@ public class Tutorial_control : MonoBehaviour
     bool isCamOn = true;
 
     private void OnEnable()
-    {
+    {//
         ins_zoom.enabled = false;
         ins_touch.TutorialCheck = false;
         hint.SetActive(false);
