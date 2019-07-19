@@ -5449,6 +5449,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: TouchManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: ins_zoom
+      value: 
+      objectReference: {fileID: 310217019347977235}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: ins_onoff
+      value: 
+      objectReference: {fileID: 2776562342517951460}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: ins_drawdrag
+      value: 
+      objectReference: {fileID: 28552155121135768}
     - target: {fileID: 7206247008345390785, guid: aa7108ad754c7ee45b613e5341f524b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5504,21 +5519,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
-        type: 3}
-      propertyPath: ins_zoom
-      value: 
-      objectReference: {fileID: 310217019347977235}
-    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
-        type: 3}
-      propertyPath: ins_onoff
-      value: 
-      objectReference: {fileID: 2776562342517951460}
-    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
-        type: 3}
-      propertyPath: ins_drawdrag
-      value: 
-      objectReference: {fileID: 28552155121135768}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa7108ad754c7ee45b613e5341f524b6, type: 3}
 --- !u!1 &1178042564
