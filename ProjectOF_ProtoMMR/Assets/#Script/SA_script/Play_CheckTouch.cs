@@ -48,9 +48,10 @@ public class Play_CheckTouch : MonoBehaviour
                     if (OnTouchMoved_FromGapMove != null && !ins_zoom.IsTouch2 && !ins_onoff.Iscam)
                         OnTouchMoved_FromGapMove();//드래그이동(MouseGapMove) Moved
                 }
+
                 else if (touch.phase == TouchPhase.Ended)
                 {
-                    if (ins_drawdrag.isClicked_DrawingBox)
+                    if (TouchMoved_FromAnswer != null && ins_drawdrag.isClicked_DrawingBox)
                         TouchEnd_FromAnswer();//FRA
                     if (DragBoxEnd_FromDrag != null && ins_onoff.Iscam && Input.touchCount < 2)
                         DragBoxEnd_FromDrag();// 드래그박스(DrawDrag) 끝

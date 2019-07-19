@@ -114,7 +114,7 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public void DragEndFigureOut()
     {
-        if (IsSizeFit)//이거랑 정답영역인지 
+        if (IsSizeFit )//이거랑 정답영역인지 
         {
             if(RenderView.activeSelf == false)//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는걸 방지
             {

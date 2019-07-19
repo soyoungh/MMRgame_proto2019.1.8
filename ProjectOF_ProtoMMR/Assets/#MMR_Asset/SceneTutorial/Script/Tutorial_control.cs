@@ -15,15 +15,20 @@ public class Tutorial_control : MonoBehaviour
     public GameObject RenderView, hint, back, end;
     public GameObject[] RightAnswer = new GameObject[4];
 
+    public RectTransform DragBox, CheckRange;
+    public float SizeRange_min, SizeRange_max;
+
     bool iszoomed = true;
     bool ismoved = true;
     bool ismoved2 = true;
     bool isCamOn = true;
+    bool isdrag = true;
 
     private void OnEnable()
     {
         ins_zoom.enabled = false;
         ins_touch.TutorialCheck = false;
+        ins_FRA.enabled = false;
         hint.SetActive(false);
         back.SetActive(false);
         CameraMode.enabled = false;
@@ -37,6 +42,7 @@ public class Tutorial_control : MonoBehaviour
     private void OnDisable()
     {
         ins_zoom.enabled = true;
+        ins_FRA.enabled = true;
         ins_touch.TutorialCheck = true;
         hint.SetActive(true);
         back.SetActive(true);
@@ -67,6 +73,7 @@ public class Tutorial_control : MonoBehaviour
                 PlayAnim();
                 ismoved = true;
                 ismoved2 = true;
+                ins_FRA.enabled = false;
                 print("# 이동 anim play");
             }
             if (!isCamOn && CameraMode.gameObject.GetComponent<Ui_CamOnOff>().Iscam)
@@ -76,12 +83,19 @@ public class Tutorial_control : MonoBehaviour
                 print("# 카메라버튼 anim play");
             }
 
+
+
             if (!ismoved && Play_CheckTouch.touch.phase == TouchPhase.Moved) ismoved2 = false;
             if (RenderView.activeSelf == true) PlayAnim();// 카메라모드시 플레이
-            if (ins_FRA.DragHideCompare())
+
+            if (!isdrag)//여기수정[0719]
             {
-                PlayAnim();// 사진을 찍을시 플레이
-                print("드래그캡쳐(사진찍음)");
+                DragMoveSizeCheck();
+                if (Input.GetTouch(0).phase == TouchPhase.Ended && DragMoveSizeCheck())
+                {
+                    PlayAnim();// 사진을 찍을시 플레이
+                    print("드래그캡쳐(사진찍음)");
+                }
             }
             if (end.activeSelf == true && Play_CheckTouch.touch.phase == TouchPhase.Ended)
             {
@@ -121,6 +135,11 @@ public class Tutorial_control : MonoBehaviour
     }
     // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
 
+    public void DragBoxColoring()
+    {
+        isdrag = false;
+    }
+
     public void EndActive()
     {
         end.SetActive(true);
@@ -141,5 +160,26 @@ public class Tutorial_control : MonoBehaviour
     {
         GetComponent<Animator>().speed = 1;
     }
-    
+
+    public bool DragMoveSizeCheck()
+    {
+        if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / SizeRange_min && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / SizeRange_min)
+        {
+            if (DragBox.sizeDelta.x < CheckRange.sizeDelta.x * SizeRange_max && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * SizeRange_max)
+            {//true
+                DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);
+                return true;
+            }
+            else
+            {
+                DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f);
+                return false;
+            }
+        }
+        else
+        {
+            DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f);
+            return false;
+        }
+    }
 }
