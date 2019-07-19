@@ -23,7 +23,7 @@ public class Tutorial_control : MonoBehaviour
     private void OnEnable()
     {
         ins_zoom.enabled = false;
-        ins_touch.TutorialCheck = true;//flickering의 원인인거 같음// 여기에 있는 델리케이트들을 널체크하자
+        ins_touch.TutorialCheck = false;
         hint.SetActive(false);
         back.SetActive(false);
         CameraMode.enabled = false;
@@ -37,7 +37,7 @@ public class Tutorial_control : MonoBehaviour
     private void OnDisable()
     {
         ins_zoom.enabled = true;
-        ins_touch.TutorialCheck = false;
+        ins_touch.TutorialCheck = true;
         hint.SetActive(true);
         back.SetActive(true);
         CameraMode.enabled = true;
@@ -120,6 +120,7 @@ public class Tutorial_control : MonoBehaviour
         CameraMode.gameObject.GetComponent<Image>().color = Color.white;
     }
     // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+
     public void EndActive()
     {
         end.SetActive(true);
