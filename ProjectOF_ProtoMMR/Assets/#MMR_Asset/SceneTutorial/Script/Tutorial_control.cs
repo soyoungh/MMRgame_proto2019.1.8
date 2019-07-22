@@ -80,6 +80,7 @@ public class Tutorial_control : MonoBehaviour
             {
                 PlayAnim();
                 isCamOn = true;
+                CameraMode.gameObject.GetComponent<Animator>().enabled = false;
                 print("# 카메라버튼 anim play");
             }
 
@@ -117,23 +118,16 @@ public class Tutorial_control : MonoBehaviour
         ismoved = false;
         print("2. 드래그 이동 활성화");
     }
-
-    // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~카메라모드~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+    public void CameraModeAnim()
+    {
+        CameraMode.gameObject.GetComponent<Animator>().enabled = true;
+    }
     public void CameraModeActive()//카메라 버튼 가능
     {
         CameraMode.enabled = true;
         isCamOn = false;
         print("3. 카메라버튼 활성화");
     }
-    public void CameraModeActive_yellow()
-    {
-        CameraMode.gameObject.GetComponent<Image>().color = Color.yellow;
-    }
-    public void CameraModeActive_white()
-    {
-        CameraMode.gameObject.GetComponent<Image>().color = Color.white;
-    }
-    // * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
 
     public void DragBoxColoring()
     {
