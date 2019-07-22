@@ -1,0 +1,83 @@
+
+prop_05-2_palm.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coconut
+  rotate: false
+  xy: 176, 602
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+leaf
+  rotate: false
+  xy: 2, 123
+  size: 116, 186
+  orig: 116, 186
+  offset: 0, 0
+  index: -1
+leaf1
+  rotate: false
+  xy: 176, 864
+  size: 166, 158
+  orig: 166, 158
+  offset: 0, 0
+  index: -1
+leaf2
+  rotate: true
+  xy: 2, 311
+  size: 206, 127
+  orig: 206, 127
+  offset: 0, 0
+  index: -1
+leaf3
+  rotate: false
+  xy: 344, 909
+  size: 186, 113
+  orig: 186, 113
+  offset: 0, 0
+  index: -1
+leaf4
+  rotate: true
+  xy: 176, 656
+  size: 206, 94
+  orig: 206, 94
+  offset: 0, 0
+  index: -1
+leaf5
+  rotate: true
+  xy: 2, 2
+  size: 119, 150
+  orig: 119, 150
+  offset: 0, 0
+  index: -1
+leaf6
+  rotate: true
+  xy: 679, 942
+  size: 80, 151
+  orig: 80, 151
+  offset: 0, 0
+  index: -1
+leaf7
+  rotate: true
+  xy: 532, 902
+  size: 120, 145
+  orig: 120, 145
+  offset: 0, 0
+  index: -1
+leaf8
+  rotate: false
+  xy: 272, 706
+  size: 62, 156
+  orig: 62, 156
+  offset: 0, 0
+  index: -1
+palmtree
+  rotate: false
+  xy: 2, 519
+  size: 172, 503
+  orig: 172, 503
+  offset: 0, 0
+  index: -1
