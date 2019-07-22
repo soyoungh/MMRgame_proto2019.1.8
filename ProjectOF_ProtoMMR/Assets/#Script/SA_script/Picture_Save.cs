@@ -113,7 +113,7 @@ public class Picture_Save : MonoBehaviour
         if (SystemInfo.deviceType == DeviceType.Handheld)
         {
             byte[] bytes = screenShot.EncodeToPNG();
-            System.IO.File.WriteAllBytes(Path.Combine(Application.persistentDataPath, "capture.png"), bytes);
+            System.IO.File.WriteAllBytes(Path.Combine(Application.persistentDataPath, "fullscreen.png"), bytes);
             if (Photo != null) Photo.SetActive(true);//이미지 활성화
             if(ins_load != null) ins_load.LoadA_Picture();//이미지 로드
         }
