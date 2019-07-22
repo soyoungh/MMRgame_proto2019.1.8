@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 56493406}
   - component: {fileID: 56493405}
   - component: {fileID: 56493408}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#sand (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1110,7 +1110,7 @@ GameObject:
   - component: {fileID: 338153374}
   - component: {fileID: 338153373}
   - component: {fileID: 338153372}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#Touchable_stone3'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1361,9 +1361,9 @@ GameObject:
   - component: {fileID: 373678066}
   - component: {fileID: 373678070}
   - component: {fileID: 373678069}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_swim'
-  m_TagString: Wrong
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1530,7 +1530,7 @@ GameObject:
   - component: {fileID: 380760264}
   - component: {fileID: 380760266}
   - component: {fileID: 380760265}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#bubble2'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1774,7 +1774,7 @@ Transform:
   m_Children:
   - {fileID: 219276738}
   m_Father: {fileID: 899300096}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &420719631
 MonoBehaviour:
@@ -1871,7 +1871,7 @@ GameObject:
   - component: {fileID: 456238610}
   - component: {fileID: 456238613}
   - component: {fileID: 456238615}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_grass2'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2048,7 +2048,7 @@ GameObject:
   - component: {fileID: 472387554}
   - component: {fileID: 472387556}
   - component: {fileID: 472387555}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#grass1 (4)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2199,7 +2199,7 @@ GameObject:
   - component: {fileID: 482718487}
   - component: {fileID: 482718483}
   - component: {fileID: 482718486}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_clim (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2352,7 +2352,7 @@ GameObject:
   - component: {fileID: 520858313}
   - component: {fileID: 520858315}
   - component: {fileID: 520858314}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#grass1 (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2822,7 +2822,7 @@ GameObject:
   - component: {fileID: 603079516}
   - component: {fileID: 603079519}
   - component: {fileID: 603079521}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_palm (6)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3086,7 +3086,7 @@ GameObject:
   - component: {fileID: 674993936}
   - component: {fileID: 674993937}
   - component: {fileID: 674993939}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: '#SP_CH_sand2_Answer'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3195,11 +3195,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674993931}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 546ed54c2c36f5842af879310e04fc6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tempDelet: {fileID: 2800000, guid: 1f3ab743ec2c79346828ab3d5222fc1c, type: 3}
   RenderView: {fileID: 4700541487268336183}
   DragBox: {fileID: 4700541488778140661}
   CheckRange: {fileID: 362437785}
@@ -3210,6 +3211,7 @@ MonoBehaviour:
   - {fileID: 560248852}
   SizeRange_min: 0.7
   SizeRange_max: 3
+  temp: {fileID: 1715434137}
 --- !u!114 &674993937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3628,6 +3630,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 310217019824709217, guid: d8c752d2aa247944eb244041e1576e31,
+        type: 3}
+      propertyPath: IsTouch2
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8c752d2aa247944eb244041e1576e31, type: 3}
 --- !u!1 &784297281
@@ -3645,7 +3652,7 @@ GameObject:
   - component: {fileID: 784297283}
   - component: {fileID: 784297286}
   - component: {fileID: 784297288}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_palm (5)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3888,7 +3895,7 @@ GameObject:
   - component: {fileID: 851553538}
   - component: {fileID: 851553534}
   - component: {fileID: 851553537}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_dive'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4040,7 +4047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856203044}
   - component: {fileID: 856203045}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CH_sand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4205,7 +4212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &899300092
 Animator:
   serializedVersion: 3
@@ -4298,7 +4305,6 @@ RectTransform:
   m_Children:
   - {fileID: 1986762396}
   - {fileID: 1088242278}
-  - {fileID: 1771636265}
   - {fileID: 1809187085}
   - {fileID: 420719630}
   - {fileID: 1997391146}
@@ -4430,9 +4436,9 @@ GameObject:
   - component: {fileID: 913551055}
   - component: {fileID: 913551059}
   - component: {fileID: 913551058}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_swim2'
-  m_TagString: Wrong
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4767,7 +4773,7 @@ GameObject:
   - component: {fileID: 944930746}
   - component: {fileID: 944930745}
   - component: {fileID: 944930747}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#sand_0'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5275,7 +5281,7 @@ GameObject:
   - component: {fileID: 1089963213}
   - component: {fileID: 1089963215}
   - component: {fileID: 1089963214}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#bubble1'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5506,9 +5512,9 @@ GameObject:
   - component: {fileID: 1111989900}
   - component: {fileID: 1111989904}
   - component: {fileID: 1111989903}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_swim1'
-  m_TagString: Wrong
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5763,7 +5769,7 @@ GameObject:
   - component: {fileID: 1143792179}
   - component: {fileID: 1143792178}
   - component: {fileID: 1143792181}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#sand (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5939,6 +5945,11 @@ PrefabInstance:
       propertyPath: temp_MGM
       value: 
       objectReference: {fileID: 1100945262}
+    - target: {fileID: 7206247008345390784, guid: aa7108ad754c7ee45b613e5341f524b6,
+        type: 3}
+      propertyPath: TutorialCheck
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7206247008345390785, guid: aa7108ad754c7ee45b613e5341f524b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6010,7 +6021,7 @@ GameObject:
   - component: {fileID: 1178042568}
   - component: {fileID: 1178042570}
   - component: {fileID: 1178042569}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#bubble0'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6150,9 +6161,9 @@ GameObject:
   - component: {fileID: 1185667557}
   - component: {fileID: 1185667561}
   - component: {fileID: 1185667560}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_swim3'
-  m_TagString: Wrong
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6320,7 +6331,7 @@ GameObject:
   - component: {fileID: 1192569202}
   - component: {fileID: 1192569205}
   - component: {fileID: 1192569207}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_palm (3)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6495,9 +6506,9 @@ GameObject:
   - component: {fileID: 1202664968}
   - component: {fileID: 1202664972}
   - component: {fileID: 1202664971}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_sand1'
-  m_TagString: Wrong
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6664,7 +6675,7 @@ GameObject:
   - component: {fileID: 1219461572}
   - component: {fileID: 1219461575}
   - component: {fileID: 1219461577}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_palm'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6838,7 +6849,7 @@ GameObject:
   - component: {fileID: 1347243148}
   - component: {fileID: 1347243151}
   - component: {fileID: 1347243153}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_palm (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7186,7 +7197,7 @@ GameObject:
   - component: {fileID: 1376605293}
   - component: {fileID: 1376605297}
   - component: {fileID: 1376605298}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_palm4'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7394,7 +7405,7 @@ GameObject:
   - component: {fileID: 1390015741}
   - component: {fileID: 1390015740}
   - component: {fileID: 1390015739}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#Touchable_grass1'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7789,7 +7800,7 @@ GameObject:
   - component: {fileID: 1430381974}
   - component: {fileID: 1430381977}
   - component: {fileID: 1430381979}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_palm (4)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7963,7 +7974,7 @@ GameObject:
   - component: {fileID: 1465559651}
   - component: {fileID: 1465559653}
   - component: {fileID: 1465559652}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#stone2'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8888,7 +8899,7 @@ GameObject:
   - component: {fileID: 1620819035}
   - component: {fileID: 1620819031}
   - component: {fileID: 1620819034}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_clim (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9120,9 +9131,9 @@ GameObject:
   - component: {fileID: 1648715958}
   - component: {fileID: 1648715962}
   - component: {fileID: 1648715961}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_sand'
-  m_TagString: Wrong
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9353,6 +9364,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702085745}
   m_CullTransparentMesh: 0
+--- !u!1 &1715434136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1715434137}
+  - component: {fileID: 1715434139}
+  - component: {fileID: 1715434138}
+  m_Layer: 5
+  m_Name: temp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1715434137
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715434136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2776562341548032223}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 25, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1715434138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715434136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.0926204, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1715434139
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715434136}
+  m_CullTransparentMesh: 0
 --- !u!1 &1753955011
 GameObject:
   m_ObjectHideFlags: 0
@@ -9368,7 +9453,7 @@ GameObject:
   - component: {fileID: 1753955013}
   - component: {fileID: 1753955016}
   - component: {fileID: 1753955018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_grass2_1'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9640,13 +9725,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771636264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1401180133}
-  m_Father: {fileID: 899300096}
-  m_RootOrder: 2
+  m_Father: {fileID: 1809187085}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1771636266
 MonoBehaviour:
@@ -10077,8 +10162,9 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children:
   - {fileID: 1702085746}
+  - {fileID: 1771636265}
   m_Father: {fileID: 899300096}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1809187086
 MonoBehaviour:
@@ -10249,7 +10335,7 @@ GameObject:
   - component: {fileID: 1911783195}
   - component: {fileID: 1911783198}
   - component: {fileID: 1911783200}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_crab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10493,7 +10579,7 @@ GameObject:
   - component: {fileID: 1938458785}
   - component: {fileID: 1938458784}
   - component: {fileID: 1938458783}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: '#Touchable_calm'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10865,7 +10951,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 899300096}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11028,7 +11114,7 @@ GameObject:
   - component: {fileID: 2039069170}
   - component: {fileID: 2039069166}
   - component: {fileID: 2039069169}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: '#SP_CH_clim'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11185,7 +11271,7 @@ GameObject:
   - component: {fileID: 2063266088}
   - component: {fileID: 2063266091}
   - component: {fileID: 2063266093}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: '#SP_PR_palm (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11625,6 +11711,7 @@ RectTransform:
   - {fileID: 4700541487268336182}
   - {fileID: 2776562342517951456}
   - {fileID: 892326819}
+  - {fileID: 1715434137}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11825,12 +11912,12 @@ GameObject:
   - component: {fileID: 4016061617842249020}
   - component: {fileID: 4016061617842249021}
   m_Layer: 0
-  m_Name: mmrAnchor
+  m_Name: mmrAnchor//if_any_error_delet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4016061617842249020
 Transform:
   m_ObjectHideFlags: 0
@@ -12341,7 +12428,7 @@ GameObject:
   - component: {fileID: 4700541488778140661}
   - component: {fileID: 4700541488778140659}
   - component: {fileID: 4700541488778140660}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Image_DragBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

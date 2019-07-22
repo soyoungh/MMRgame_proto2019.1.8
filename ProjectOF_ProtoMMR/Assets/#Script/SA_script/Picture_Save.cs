@@ -127,6 +127,7 @@ public class Picture_Save : MonoBehaviour
             if (ins_load != null) ins_load.LoadA_Picture();
         }
 
+        //screenShot을 destroy 해주고 메모리 할당부분 해제되는지 나중에 체크하기[0722]
         canPicture_Screen = false;
         RenderTexture.active = null;
     }

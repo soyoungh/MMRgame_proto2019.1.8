@@ -16,10 +16,10 @@ TagManager:
   - 
   - PostProcessing
   - TempLayer
-  - 
-  - 
-  - 
-  - 
+  - Prop
+  - RightAnswer
+  - DragBox
+  - WrongAnswer
   - 
   - 
   - 
