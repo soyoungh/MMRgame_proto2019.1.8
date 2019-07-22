@@ -81,6 +81,7 @@ public class Tutorial_control : MonoBehaviour
                 PlayAnim();
                 isCamOn = true;
                 CameraMode.gameObject.GetComponent<Animator>().enabled = false;
+                CameraMode.gameObject.GetComponent<Image>().color = Color.white;
                 print("# 카메라버튼 anim play");
             }
 
