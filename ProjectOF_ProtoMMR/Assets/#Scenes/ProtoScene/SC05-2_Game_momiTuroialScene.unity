@@ -690,6 +690,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2950635875803896600, guid: a5634c6a31513184fb62cb6d23d8b13a,
+        type: 3}
+      propertyPath: CamMoveClamp_ZoomOut
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950635875803896600, guid: a5634c6a31513184fb62cb6d23d8b13a,
+        type: 3}
+      propertyPath: CamMoveClamp_ZoomOut_OnZoomed
+      value: 10.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5634c6a31513184fb62cb6d23d8b13a, type: 3}
 --- !u!1 &219276737
