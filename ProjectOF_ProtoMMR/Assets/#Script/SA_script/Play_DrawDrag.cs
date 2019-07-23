@@ -12,8 +12,6 @@ delegate void DelegateDrawDrag();
 
 public class Play_DrawDrag : MonoBehaviour
 {
-    //[Tooltip("SCRIPT OBJECT, 캡쳐이미지 저장함수 실행용")]
-    //public Picture_Save ins_save;
     [Tooltip("UI_RECTTRANSFORM, 클릭앤 드래그할때 드래그박스 그림")]
     public RectTransform DragBoxImage;
     [Tooltip("CANVAS, 여기에 넣는 캔버스의 Local스페이스를 기준으로 recttransform(좌표위치)을 만듦")]
@@ -21,8 +19,7 @@ public class Play_DrawDrag : MonoBehaviour
     [Tooltip("VECTOR, this is for script(Picture_Save) and 드래그 방향에 상관없는 좌표값을 구하기위해 사용됨")]
     public Vector2 firstPoint, lastPoint;
 
-
-    public GameObject DragRangeWarning;
+    
     public bool isClicked_DrawingBox = false;//using from camzoom
     Vector3 MovingCenter; // 원래는 public이었음 문제있음 바꾸셈0703
     Vector3 startPos, endPos;
@@ -78,7 +75,7 @@ public class Play_DrawDrag : MonoBehaviour
 
     public void DragBoxEnd()
     {if (!enabled) return;
-    
+
         if (isClicked_DrawingBox)//버튼클릭과 동시에 드래그실행됨을 방지
         {
             DragBoxImage.gameObject.SetActive(false);

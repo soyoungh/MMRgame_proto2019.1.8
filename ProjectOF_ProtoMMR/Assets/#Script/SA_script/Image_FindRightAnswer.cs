@@ -40,6 +40,66 @@ public class Image_FindRightAnswer : MonoBehaviour
         Play_CheckTouch.TouchMoved_FromAnswer -= this.DragMoveSizeCheck;
         Play_CheckTouch.TouchEnd_FromAnswer -= this.DragEndFigureOut;
     }
+    public void DragMoveSizeCheck()
+    {
+        if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / SizeRange_min && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / SizeRange_min)
+        {
+            if (DragBox.sizeDelta.x < CheckRange.sizeDelta.x * SizeRange_max && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * SizeRange_max)
+            {
+                IsSizeFit = true;
+                DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);
+            }
+            else
+            {
+                IsSizeFit = false;
+                DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
+            }
+        }
+        else
+        {
+            IsSizeFit = false;
+            DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
+        }
+    }
+    public void DragEndFigureOut()
+    {
+        if (IsSizeFit )//이거랑 정답영역인지 
+        {
+            if(RenderView.activeSelf == false)//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는걸 방지
+            {
+                if (DragHideCompare())
+                {
+                    DragBox.gameObject.SetActive(false);
+                    PhotoActive();
+                    RightAnswer();
+                    print("Right!");
+                }
+                else
+                {
+                    DragBox.gameObject.SetActive(false);
+                    PhotoActive();
+                    Answer_Wrong0_GetList();
+                    print("Wrong!");
+                }
+                IsSizeFit = false;
+            }
+        }
+    }
+    /// <summary>
+    /// 드래그와 찾은이미지 비교
+    /// 손이 떨어졌을때 드래그박스가 이미지범위에서 벗어났는지를 확인
+    /// </summary>
+    /// <returns>bool값을(찾았는지 아닌지의 여부) 리턴</returns>
+    public bool DragHideCompare()
+    {
+        //정답 이미지의 모든 코너가 박스안에 들어왔을때로 수정하기
+        for (int i = 0; i < ImageContain.Length; i++)
+        {
+            if (!RectTransformUtility.RectangleContainsScreenPoint(DragBox, ImageContain[i].position))
+                return false;
+        }
+        return true;
+    }
 
     public void Answer_Wrong0_GetList()
     {
@@ -48,7 +108,7 @@ public class Image_FindRightAnswer : MonoBehaviour
         Collider2D[] Overlaped = Physics2D.OverlapAreaAll(DragCornersVector[0], DragCornersVector[2], 1 << 13);
         GameObject[] OverlapObject = new GameObject[Overlaped.Length];
         int i = 0;
-        while(i < Overlaped.Length)
+        while (i < Overlaped.Length)
         {
             OverlapObject[i] = Overlaped[i].gameObject;
             print("겹침" + OverlapObject[i].name);
@@ -96,67 +156,8 @@ public class Image_FindRightAnswer : MonoBehaviour
                 FadeOutEvent(RemoveOBJ[i].GetComponent<SkeletonAnimation>(), 0);
             else
                 FadeOutEvent_sprite(RemoveOBJ[i].GetComponent<SpriteRenderer>(), 0);
-        }
-    }
 
-    public void DragMoveSizeCheck()
-    {
-        if (DragBox.sizeDelta.x > CheckRange.sizeDelta.x / SizeRange_min && DragBox.sizeDelta.y >= CheckRange.sizeDelta.y / SizeRange_min)
-        {
-            if(DragBox.sizeDelta.x < CheckRange.sizeDelta.x * SizeRange_max && DragBox.sizeDelta.y < CheckRange.sizeDelta.y * SizeRange_max)
-            {
-                IsSizeFit = true;
-                DragBox.gameObject.GetComponent<Image>().color = Color.green * new Color(1, 1, 1, 0.5f);
-            }
-            else
-            {
-                IsSizeFit = false;
-                DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
-            }
+            RemoveOBJ[i].GetComponent<BoxCollider2D>().enabled = false;
         }
-        else
-        {
-            IsSizeFit = false;
-            DragBox.gameObject.GetComponent<Image>().color = Color.grey * new Color(1, 1, 1, 0.5f); ;
-        }
-    }
-
-    public void DragEndFigureOut()
-    {
-        if (IsSizeFit )//이거랑 정답영역인지 
-        {
-            if(RenderView.activeSelf == false)//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는걸 방지
-            {
-                if (DragHideCompare())
-                {
-                    DragBox.gameObject.SetActive(false);
-                    PhotoActive();
-                    RightAnswer();
-                    print("Right!");
-                }
-                else
-                {
-                    DragBox.gameObject.SetActive(false);
-                    PhotoActive();
-                    Answer_Wrong0_GetList();
-                    print("Wrong!");
-                }
-            }
-        }
-    }
-    /// <summary>
-    /// 드래그와 찾은이미지 비교
-    /// 손이 떨어졌을때 드래그박스가 이미지범위에서 벗어났는지를 확인
-    /// </summary>
-    /// <returns>bool값을(찾았는지 아닌지의 여부) 리턴</returns>
-    public bool DragHideCompare()
-    {
-        //정답 이미지의 모든 코너가 박스안에 들어왔을때로 수정하기
-        for (int i = 0; i < ImageContain.Length; i++)
-        {
-            if (!RectTransformUtility.RectangleContainsScreenPoint(DragBox, ImageContain[i].position))
-                return false;
-        }
-        return true;
     }
 }
