@@ -74,7 +74,8 @@ public class Play_DrawDrag : MonoBehaviour
     }
 
     public void DragBoxEnd()
-    {if (!enabled) return;
+    {DragBoxImage.sizeDelta = Vector2.zero;
+        if (!enabled) return;
 
         if (isClicked_DrawingBox)//버튼클릭과 동시에 드래그실행됨을 방지
         {

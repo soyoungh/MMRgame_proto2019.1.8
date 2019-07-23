@@ -17,7 +17,7 @@ public class Play_MouseGapMove : MonoBehaviour
     [Tooltip ("GAME OBJECT, CamDegree is fake anchor of camera")]
     public GameObject CamAnchor;
 
-    public bool iszoom = false;
+    public bool iszoom = false;//이거 안쓰는거면 지우기[0723]
     public float CamMoveSpeed;
     float CamMoveClamp_ZoomOut = 6.5f;
     float CamMoveClamp_ZoomOut_OnZoomed = 10.5f;
