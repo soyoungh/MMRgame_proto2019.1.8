@@ -16,8 +16,7 @@ public class Play_MouseGapMove : MonoBehaviour
     public Image_SameDegreeCamMove ins_GridRotation;
     [Tooltip ("GAME OBJECT, CamDegree is fake anchor of camera")]
     public GameObject CamAnchor;
-
-    public bool iszoom = false;//이거 안쓰는거면 지우기[0723]
+    
     public float CamMoveSpeed;
     float CamMoveClamp_ZoomOut = 6.5f;
     float CamMoveClamp_ZoomOut_OnZoomed = 10.5f;
@@ -66,7 +65,6 @@ public class Play_MouseGapMove : MonoBehaviour
     /// </summary>
     public void OnTouchMoved_ZoomOn()
     {
-        iszoom = true;
         Vector3 PreviousPos = Play_CheckTouch.touch.position - Play_CheckTouch.touch.deltaPosition;
 
         Vector3 CurrentGap = StartTouch - (Vector3)Play_CheckTouch.touch.position;
@@ -89,7 +87,6 @@ public class Play_MouseGapMove : MonoBehaviour
     /// </summary>
     public void OnTouchMoved_ZoomOff()
     {
-        //iszoom = false;
         Vector3 EndTouch_world = Camera.main.ScreenToWorldPoint((Vector3)Play_CheckTouch.touch.position
             + Vector3.forward * -Camera.main.transform.position.z);
 
