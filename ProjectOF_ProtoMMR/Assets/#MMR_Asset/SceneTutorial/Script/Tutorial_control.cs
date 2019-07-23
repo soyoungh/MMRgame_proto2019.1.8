@@ -99,11 +99,16 @@ public class Tutorial_control : MonoBehaviour
                     print("드래그캡쳐(사진찍음)");
                 }
             }
-            if (end.activeSelf == true && Play_CheckTouch.touch.phase == TouchPhase.Ended)
+
+            if (end.activeSelf == true )
             {
-                PlayAnim();
-                end.SetActive(false);
-                print("# 모든 튜토리얼종료, 바가 사라지며 게임시작");
+                if (Input.GetTouch(0).phase == TouchPhase.Ended)
+                {
+                    CameraMode.gameObject.GetComponent<Ui_CamOnOff>().OnOff();
+                    PlayAnim();
+                    end.SetActive(false);
+                    print("# 모든 튜토리얼종료, 바가 사라지며 게임시작");
+                }
             }
         }
     }

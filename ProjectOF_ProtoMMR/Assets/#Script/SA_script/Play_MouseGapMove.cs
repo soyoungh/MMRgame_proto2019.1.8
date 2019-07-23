@@ -12,19 +12,21 @@ using UnityEngine;
 //delegate void DelegateMove();
 public class Play_MouseGapMove : MonoBehaviour
 {
-    [Tooltip("SCRIPT OBJECT, check if camera is zoomed or not")]
-    public Image_SameDegreeCamMove ins_GridRotation;
-    [Tooltip ("GAME OBJECT, CamDegree is fake anchor of camera")]
-    public GameObject CamAnchor;
-    
     public float CamMoveSpeed;
-    float CamMoveClamp_ZoomOut = 6.5f;
-    float CamMoveClamp_ZoomOut_OnZoomed = 10.5f;
+    public float CamMoveClamp_ZoomOut;// = 6.5f;
+    public float CamMoveClamp_ZoomOut_OnZoomed;// = 10.5f;
 
+    Image_SameDegreeCamMove ins_GridRotation;
+    GameObject CamAnchor;
+    
     Vector3 StartTouch, StartMouse;
     Vector3 StartTouch_world;
 
-
+    private void Start()
+    {
+        CamAnchor = gameObject;
+        ins_GridRotation = gameObject.GetComponent<Image_SameDegreeCamMove>();
+    }
     private void OnEnable()
     {
         Play_CheckTouch.OnTouchBegan_FromGapMove += this.OnTouchBegan;
@@ -101,7 +103,7 @@ public class Play_MouseGapMove : MonoBehaviour
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         CamAnchor.transform.localPosition = Vector3.MoveTowards(CamAnchor.transform.localPosition,
             new Vector3(CamAnchor.transform.localPosition.x, CamAnchor.transform.localPosition.y, 0), 0.02f);
-        //z축 0으로 고정 (엄청 크게는 상관없는데 값변하는게 신경쓰여서 추가함)0617
+        //z축 0으로 고정 (엄청 크게는 상관없는데 값변하는게 신경쓰여서 추가함)[0617]
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     }
