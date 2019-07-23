@@ -22,7 +22,10 @@ public class Play_CheckTouch : MonoBehaviour
 
     public static event PlayDelegate TouchMoved_FromAnswer;
     public static event PlayDelegate TouchEnd_FromAnswer;
-    
+
+    public static event PlayDelegate SpineStart_FromSpine;
+    public static event PlayDelegate SpineMoved_FromSpine;
+
 
     void Update()
     {
@@ -35,6 +38,7 @@ public class Play_CheckTouch : MonoBehaviour
 
                 if (touch.phase == TouchPhase.Began)
                 {
+                    SpineStart_FromSpine();
                     OnTouchBegan_FromGapMove();// 드래그이동(MouseGapMove) Began
                     if (DragBoxEnd_FromDrag != null && ins_onoff.Iscam && Input.touchCount < 2)
                         DragBoxStart_FromDrag();// 드래그박스(DrawDrag) 시작
@@ -43,13 +47,12 @@ public class Play_CheckTouch : MonoBehaviour
 
                 if (touch.phase == TouchPhase.Moved)
                 {
+                    SpineMoved_FromSpine();
                     if (TouchMoved_FromAnswer != null && ins_drawdrag.isClicked_DrawingBox)
                         TouchMoved_FromAnswer();//FRA
                     if (OnTouchMoved_FromGapMove != null && !ins_zoom.IsTouch2 && !ins_onoff.Iscam)
                         OnTouchMoved_FromGapMove();//드래그이동(MouseGapMove) Moved
-                }
-
-                else if (touch.phase == TouchPhase.Ended)
+                }else if (touch.phase == TouchPhase.Ended)
                 {
                     if (TouchMoved_FromAnswer != null && ins_drawdrag.isClicked_DrawingBox)
                         TouchEnd_FromAnswer();//FRA

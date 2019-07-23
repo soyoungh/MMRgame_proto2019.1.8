@@ -13,8 +13,20 @@ public class Spine_Touch : MonoBehaviour
     public List<string> anim_name = new List<string>(0);
     public bool isitLOOP = false;
     bool isgotDEFAULT = false;
+    bool isitDragging = false;
     //퍼블릭불로 true인 애들만 리플레이 가능하게 수정하기
     int ListIndex = 0;
+
+    private void OnEnable()
+    {
+        Play_CheckTouch.SpineStart_FromSpine += this.OnTouchEntering;
+        Play_CheckTouch.SpineMoved_FromSpine += this.OnDragging;
+    }
+    private void OnDisable()
+    {
+        Play_CheckTouch.SpineStart_FromSpine -= this.OnTouchEntering;
+        Play_CheckTouch.SpineMoved_FromSpine -= this.OnDragging;
+    }
 
     private void Start()
     {
@@ -25,9 +37,18 @@ public class Spine_Touch : MonoBehaviour
             ListIndex = 1;
         }
     }
-    
-    private void OnMouseUp()
+    void OnDragging()
     {
+        isitDragging = true;
+    }
+    void OnTouchEntering()
+    {
+        isitDragging = false;
+    }
+
+    private void OnMouseUp()
+    {if (isitDragging) return;
+
         if (isgotDEFAULT)
         {//0번은 디폴트 애니메이션
             if (ListIndex < anim_name.Count)
