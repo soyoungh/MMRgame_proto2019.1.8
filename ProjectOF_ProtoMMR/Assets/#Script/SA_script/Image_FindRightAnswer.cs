@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#define CASE_DELET_ALL_WRONG
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -44,7 +45,7 @@ public class Image_FindRightAnswer : MonoBehaviour
     {
         Vector3[] DragCornersVector = new Vector3[4];
         DragBox.GetWorldCorners(DragCornersVector);
-        Collider2D[] Overlaped = Physics2D.OverlapAreaAll(DragCornersVector[0], DragCornersVector[2], 1 << 13);//다먹음, 해당영역이 아닌게 사라짐 시발
+        Collider2D[] Overlaped = Physics2D.OverlapAreaAll(DragCornersVector[0], DragCornersVector[2], 1 << 13);
         GameObject[] OverlapObject = new GameObject[Overlaped.Length];
         int i = 0;
         while(i < Overlaped.Length)
@@ -53,11 +54,16 @@ public class Image_FindRightAnswer : MonoBehaviour
             print("겹침" + OverlapObject[i].name);
             i++;
         }
-
+#if CASE_DELET_ALL_WRONG
+        Answer_Wrong2_Remove_(OverlapObject);
+#else
         if (OverlapObject.Length >= 3)
             Answer_Wrong1_SetRemove(OverlapObject.Length, OverlapObject);
+#endif
     }
 
+#if CASE_DELET_ALL_WRONG
+#else
     void Answer_Wrong1_SetRemove(int maxNum, GameObject[] overedOBJ)
     {
         int[] ranINT = new int[2];
@@ -80,6 +86,7 @@ public class Image_FindRightAnswer : MonoBehaviour
         ranOBJ[1] = overedOBJ[ranINT[1]];
         Answer_Wrong2_Remove_(ranOBJ);
     }
+#endif
 
     void Answer_Wrong2_Remove_(GameObject[] RemoveOBJ)//알파애님
     {
@@ -137,7 +144,6 @@ public class Image_FindRightAnswer : MonoBehaviour
             }
         }
     }
-
     /// <summary>
     /// 드래그와 찾은이미지 비교
     /// 손이 떨어졌을때 드래그박스가 이미지범위에서 벗어났는지를 확인
