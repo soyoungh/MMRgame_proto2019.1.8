@@ -1,0 +1,72 @@
+{
+"skeleton": { "hash": "nCM3ali19Dzko3m3uP9agQ1gDqI", "spine": "3.7.94", "width": 140, "height": 165, "images": "../images/surfing/", "audio": "/Users/edayeong/Desktop/mmr/_Character/02_dubu/surfing" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 99.1, "rotation": 93.66, "x": -0.75, "y": 43.87 },
+	{ "name": "bone2", "parent": "bone", "x": 57.76, "y": -30.72 }
+],
+"slots": [
+	{ "name": "board", "bone": "bone2", "attachment": "board" },
+	{ "name": "body", "bone": "bone", "attachment": "body" },
+	{ "name": "open", "bone": "bone", "attachment": "open" }
+],
+"skins": {
+	"default": {
+		"board": {
+			"board": { "x": 0.87, "y": 2.35, "rotation": -93.66, "width": 112, "height": 117 }
+		},
+		"body": {
+			"body": { "x": 28.2, "y": -2.88, "rotation": -93.66, "width": 121, "height": 149 }
+		},
+		"open": {
+			"open": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 77.23, 19.53, 77.68, 26.52, 85.66, 26.01, 85.21, 19.02 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 7,
+				"height": 8
+			}
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"bone2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": 6.33 },
+					{ "time": 0.6667, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": -2.97, "y": 0.52 },
+					{ "time": 0.6667, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"open": {
+					"open": [
+						{ "time": 0 },
+						{
+							"time": 0.1667,
+							"vertices": [ 3.00041, -0.19194, 3.00039, -0.19194, -3.00009, 0.19193, -3.0001, 0.19192 ]
+						},
+						{ "time": 0.3333 },
+						{
+							"time": 0.5,
+							"vertices": [ 3.00041, -0.19194, 3.00039, -0.19194, -3.00009, 0.19193, -3.0001, 0.19192 ]
+						},
+						{ "time": 0.6667 }
+					]
+				}
+			}
+		}
+	}
+}
+}

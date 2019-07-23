@@ -1,0 +1,48 @@
+
+x_05-2_holdtube.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+amr2
+  rotate: false
+  xy: 74, 76
+  size: 20, 53
+  orig: 20, 53
+  offset: 0, 0
+  index: -1
+arm1
+  rotate: false
+  xy: 116, 164
+  size: 34, 30
+  orig: 34, 30
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 131
+  size: 112, 113
+  orig: 112, 113
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 116, 196
+  size: 55, 48
+  orig: 55, 48
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 2, 2
+  size: 29, 57
+  orig: 29, 57
+  offset: 0, 0
+  index: -1
+tube
+  rotate: false
+  xy: 2, 33
+  size: 70, 96
+  orig: 70, 96
+  offset: 0, 0
+  index: -1

@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/#Scenes/ProtoScene/SC04_StageList.unity
     guid: b51a397238087c24da4fa10701e2ea81
   - enabled: 1
+    path: Assets/#Scenes/ProtoScene/SC05-1_StageLoad_dubu.unity
+    guid: 2dfbf710e0eae8c4fa3016e05560f135
+  - enabled: 1
     path: Assets/#Scenes/ProtoScene/SC05-1_StageLoad_momi.unity
     guid: f502306a472d94d4ab416da7267b2176
   - enabled: 1

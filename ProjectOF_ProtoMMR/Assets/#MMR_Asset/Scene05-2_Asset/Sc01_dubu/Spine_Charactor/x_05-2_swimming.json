@@ -1,0 +1,111 @@
+{
+"skeleton": { "hash": "mN7P3aW3vmGBoDwtMXi8ADqKjIQ", "spine": "3.7.94", "width": 186, "height": 136, "images": "../images/swimming/", "audio": "/Users/edayeong/Desktop/mmr/_Character/02_dubu/swimming" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 83.93, "rotation": 67.38, "x": -14.41, "y": 29.68 },
+	{ "name": "bone2", "parent": "bone", "length": 54.92, "rotation": -102, "x": 18.17, "y": -5.84 },
+	{ "name": "bone3", "parent": "bone", "length": 52.96, "rotation": -88.21, "x": 53.34, "y": -34.31 },
+	{ "name": "bone4", "parent": "bone", "length": 50.77, "rotation": -107.65, "x": 54.92, "y": -25.49 }
+],
+"slots": [
+	{ "name": "body", "bone": "bone", "attachment": "body" },
+	{ "name": "water", "bone": "bone", "attachment": "water" },
+	{ "name": "banana", "bone": "bone", "attachment": "banana" },
+	{ "name": "arm2", "bone": "bone3", "attachment": "arm2" },
+	{ "name": "arm1", "bone": "bone2", "attachment": "arm1" },
+	{ "name": "nose", "bone": "bone4", "attachment": "nose" }
+],
+"skins": {
+	"default": {
+		"arm1": {
+			"arm1": { "x": 26.57, "y": 2.12, "rotation": 34.62, "width": 57, "height": 47 }
+		},
+		"arm2": {
+			"arm2": { "x": 29.92, "y": 0.82, "rotation": 20.83, "width": 55, "height": 31 }
+		},
+		"banana": {
+			"banana": { "x": 44.41, "y": -11.23, "rotation": -67.38, "width": 153, "height": 136 }
+		},
+		"body": {
+			"body": { "x": 35.57, "y": -9.5, "rotation": -67.38, "width": 79, "height": 107 }
+		},
+		"nose": {
+			"nose": { "x": 24.23, "y": 1.25, "rotation": 40.27, "width": 56, "height": 47 }
+		},
+		"water": {
+			"water": { "x": 22.6, "y": 59.31, "rotation": -67.38, "width": 64, "height": 68 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": 2.86 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": -5.63 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": -5.63 },
+					{ "time": 0.6667, "angle": 0 }
+				]
+			}
+		}
+	},
+	"touch1": {
+		"bones": {
+			"bone4": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.3333, "angle": -23.05 },
+					{ "time": 0.5333, "angle": 4.6 },
+					{ "time": 0.7667, "angle": -27.28 },
+					{ "time": 1.0333, "angle": 49.33 },
+					{ "time": 1.3333, "angle": 0 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.2667, "angle": -6.29 },
+					{ "time": 0.5667, "angle": 11.71 },
+					{ "time": 0.7667, "angle": -6.29 },
+					{ "time": 1.0333, "angle": 11.71 },
+					{ "time": 1.3333, "angle": 0 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.2667, "angle": -6.29 },
+					{ "time": 0.5667, "angle": 11.71 },
+					{ "time": 0.7667, "angle": -6.29 },
+					{ "time": 1.0333, "angle": 11.71 },
+					{ "time": 1.3333, "angle": 0 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.2667, "angle": -29.9 },
+					{ "time": 0.5, "angle": 7.67 },
+					{ "time": 0.7333, "angle": -29.9 },
+					{ "time": 1, "angle": 7.67 },
+					{ "time": 1.2333, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

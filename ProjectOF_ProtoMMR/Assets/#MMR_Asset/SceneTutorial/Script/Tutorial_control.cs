@@ -25,7 +25,7 @@ public class Tutorial_control : MonoBehaviour
     bool isdrag = true;
 
     private void OnEnable()
-    {
+    {//
         ins_zoom.enabled = false;
         ins_touch.TutorialCheck = false;
         ins_FRA.enabled = false;

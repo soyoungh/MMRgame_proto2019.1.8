@@ -1,0 +1,27 @@
+
+x_05-2_surfing.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+board
+  rotate: false
+  xy: 125, 118
+  size: 112, 117
+  orig: 112, 117
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 86
+  size: 121, 149
+  orig: 121, 149
+  offset: 0, 0
+  index: -1
+open
+  rotate: false
+  xy: 2, 76
+  size: 7, 8
+  orig: 7, 8
+  offset: 0, 0
+  index: -1

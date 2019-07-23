@@ -1,0 +1,48 @@
+
+x_05-2_swimming.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 83, 67
+  size: 57, 47
+  orig: 57, 47
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: true
+  xy: 223, 197
+  size: 55, 31
+  orig: 55, 31
+  offset: 0, 0
+  index: -1
+banana
+  rotate: false
+  xy: 2, 116
+  size: 153, 136
+  orig: 153, 136
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 7
+  size: 79, 107
+  orig: 79, 107
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 157, 135
+  size: 56, 47
+  orig: 56, 47
+  offset: 0, 0
+  index: -1
+water
+  rotate: false
+  xy: 157, 184
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,13 @@
+
+prop_05-2_fishJump.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fish
+  rotate: false
+  xy: 2, 2
+  size: 32, 80
+  orig: 32, 80
+  offset: 0, 0
+  index: -1
