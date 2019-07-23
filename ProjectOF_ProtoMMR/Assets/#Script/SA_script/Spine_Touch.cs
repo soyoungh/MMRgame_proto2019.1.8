@@ -85,7 +85,6 @@ public class Spine_Touch : MonoBehaviour
         anim.loop = true;
         ListIndex = 1;
     }
-
     IEnumerator WaitAnimEnd_HaveNothing()
     {
         while (!anim.state.GetCurrent(0).IsComplete)

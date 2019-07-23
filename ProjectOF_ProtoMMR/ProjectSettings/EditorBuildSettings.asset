@@ -21,18 +21,18 @@ EditorBuildSettings:
     path: Assets/#Scenes/ProtoScene/SC04_StageList.unity
     guid: b51a397238087c24da4fa10701e2ea81
   - enabled: 1
-    path: Assets/#Scenes/ProtoScene/SC05-1_StageLoad_dubu.unity
-    guid: 2dfbf710e0eae8c4fa3016e05560f135
-  - enabled: 1
     path: Assets/#Scenes/ProtoScene/SC05-1_StageLoad_momi.unity
     guid: f502306a472d94d4ab416da7267b2176
   - enabled: 1
     path: Assets/#Scenes/ProtoScene/SC05-2_Game_momiTuroialScene.unity
     guid: 27e5418a83b3750499d38b2fefed2b3e
-  - enabled: 0
-    path: Assets/#Scenes/ProtoScene/SC05-2_Game_momi.unity
-    guid: 9a8233e7224a74f4fb24dbdeb62e51de
   - enabled: 1
     path: Assets/#Scenes/ProtoScene/SC06_Ending.unity
     guid: 863391eaec3505a4fa2275ffea5bed90
+  - enabled: 1
+    path: Assets/#Scenes/ProtoScene/SC05-1_StageLoad_dubu.unity
+    guid: 2dfbf710e0eae8c4fa3016e05560f135
+  - enabled: 1
+    path: Assets/#Scenes/ProtoScene/SC05-2_Game_dubu.unity
+    guid: c7a707145afd4564594777ce8526975f
   m_configObjects: {}
