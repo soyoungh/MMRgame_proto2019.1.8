@@ -22,13 +22,16 @@ public class Image_FindRightAnswer : MonoBehaviour
     public delegate void FadeDelegate_sprite(SpriteRenderer BeforeSprite, float FirstWait);
     public static event FadeDelegate_sprite FadeOutEvent_sprite;
     //페이드 부분 관련 델리게이트, 이벤트
-    
+
+    public delegate void RollDelegate();
+    public static event RollDelegate RollCount;
     public GameObject RenderView;
     public RectTransform DragBox, CheckRange;
     public RectTransform[] ImageContain = new RectTransform[4];
     public float SizeRange_min, SizeRange_max;
 
     bool IsSizeFit = false;
+    public int Num_RightAnswer = 0;
     
     private void OnEnable()
     {
@@ -67,6 +70,7 @@ public class Image_FindRightAnswer : MonoBehaviour
         {
             if(RenderView.activeSelf == false)//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는걸 방지
             {
+                RollCount();
                 if (DragHideCompare())
                 {
                     DragBox.gameObject.SetActive(false);
@@ -160,4 +164,4 @@ public class Image_FindRightAnswer : MonoBehaviour
             RemoveOBJ[i].GetComponent<BoxCollider2D>().enabled = false;
         }
     }
-}
+}/*temp  delet*/
