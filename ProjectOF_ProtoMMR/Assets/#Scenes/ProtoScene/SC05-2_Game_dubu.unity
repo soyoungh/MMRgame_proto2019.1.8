@@ -188,8 +188,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &30970452
 MonoBehaviour:
@@ -494,7 +494,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 58
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &46169576
 MonoBehaviour:
@@ -664,7 +664,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 8
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &46389928
 MonoBehaviour:
@@ -773,7 +773,7 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isitLOOP: 1
 --- !u!61 &46389933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1018,7 +1018,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 15
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &73114048
 MonoBehaviour:
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
-  - touch1
+  - animation
   isitLOOP: 0
 --- !u!61 &73114053
 BoxCollider2D:
@@ -1548,7 +1548,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 2
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &107644759
 MonoBehaviour:
@@ -1718,7 +1718,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 22
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &111457607
 MonoBehaviour:
@@ -2059,7 +2059,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 64
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &124105434
 MonoBehaviour:
@@ -2812,7 +2812,9 @@ GameObject:
   m_Component:
   - component: {fileID: 151693407}
   - component: {fileID: 151693409}
+  - component: {fileID: 151693410}
   - component: {fileID: 151693408}
+  - component: {fileID: 151693411}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (4)
   m_TagString: Untagged
@@ -2901,85 +2903,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &172082940
-GameObject:
+--- !u!114 &151693410
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 172082941}
-  - component: {fileID: 172082942}
-  m_Layer: 0
-  m_Name: finding_Range
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &172082941
-Transform:
+  m_GameObject: {fileID: 151693406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &151693411
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172082940}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.809, y: 1.288, z: 0}
-  m_LocalScale: {x: 0.06451658, y: 0.07369452, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4016061617842249020}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &172082942
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172082940}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: d879c0094f2d78f40ae67710a9348a8c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 11.44, y: 10.04}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_GameObject: {fileID: 151693406}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &174993316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,7 +2976,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 38
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &174993318
 MonoBehaviour:
@@ -3436,7 +3398,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 45
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &227041939
 MonoBehaviour:
@@ -3606,7 +3568,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 11
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &235618449
 MonoBehaviour:
@@ -3775,7 +3737,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 13
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &271132447
 MonoBehaviour:
@@ -3882,7 +3844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
-  - touch1
+  - animation
   isitLOOP: 0
 --- !u!61 &271132452
 BoxCollider2D:
@@ -4788,7 +4750,7 @@ RectTransform:
   - {fileID: 966783462}
   - {fileID: 2032952211}
   m_Father: {fileID: 4016061617876274970}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4865,7 +4827,9 @@ GameObject:
   m_Component:
   - component: {fileID: 329669983}
   - component: {fileID: 329669985}
+  - component: {fileID: 329669986}
   - component: {fileID: 329669984}
+  - component: {fileID: 329669987}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (5)
   m_TagString: Untagged
@@ -4954,6 +4918,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &329669986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329669982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &329669987
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329669982}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &346445173
 GameObject:
   m_ObjectHideFlags: 0
@@ -5191,8 +5194,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &349921391
 MonoBehaviour:
@@ -5400,7 +5403,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 48
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &379973178
 MonoBehaviour:
@@ -5739,7 +5742,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 46
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &383799759
 MonoBehaviour:
@@ -5909,7 +5912,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 19
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &386756974
 MonoBehaviour:
@@ -6079,7 +6082,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 52
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &390511071
 MonoBehaviour:
@@ -6249,7 +6252,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 42
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &392319077
 MonoBehaviour:
@@ -6603,7 +6606,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &426644536
 MonoBehaviour:
@@ -7584,7 +7587,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 14
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &502521379
 MonoBehaviour:
@@ -8016,7 +8019,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 12
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &511468288
 MonoBehaviour:
@@ -8270,7 +8273,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
 --- !u!33 &520495546
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8445,7 +8448,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 20
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &520904031
 MonoBehaviour:
@@ -8869,7 +8872,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 9
 --- !u!33 &534601214
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9014,7 +9017,7 @@ RectTransform:
   - {fileID: 1467909257}
   - {fileID: 551302923}
   m_Father: {fileID: 4016061617876274970}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9479,7 +9482,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 62
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &564309219
 MonoBehaviour:
@@ -9792,7 +9795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 10
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &591330320
 MonoBehaviour:
@@ -10029,7 +10032,9 @@ GameObject:
   m_Component:
   - component: {fileID: 605130954}
   - component: {fileID: 605130956}
+  - component: {fileID: 605130957}
   - component: {fileID: 605130955}
+  - component: {fileID: 605130958}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (9)
   m_TagString: Untagged
@@ -10118,6 +10123,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &605130957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605130953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &605130958
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605130953}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &605661986
 GameObject:
   m_ObjectHideFlags: 0
@@ -10478,7 +10522,9 @@ GameObject:
   m_Component:
   - component: {fileID: 634685624}
   - component: {fileID: 634685626}
+  - component: {fileID: 634685627}
   - component: {fileID: 634685625}
+  - component: {fileID: 634685628}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (2)
   m_TagString: Untagged
@@ -10567,6 +10613,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &634685627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634685623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &634685628
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634685623}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &639739368
 GameObject:
   m_ObjectHideFlags: 0
@@ -10796,8 +10881,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &658335400
 MonoBehaviour:
@@ -11523,7 +11608,9 @@ GameObject:
   m_Component:
   - component: {fileID: 701706552}
   - component: {fileID: 701706553}
+  - component: {fileID: 701706555}
   - component: {fileID: 701706554}
+  - component: {fileID: 701706556}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim
   m_TagString: Untagged
@@ -11612,6 +11699,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &701706555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701706551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &701706556
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701706551}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &710929137
 GameObject:
   m_ObjectHideFlags: 0
@@ -11646,7 +11772,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 39
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &710929139
 MonoBehaviour:
@@ -12070,7 +12196,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 26
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &769631130
 MonoBehaviour:
@@ -12327,7 +12453,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 0
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &788662659
 MonoBehaviour:
@@ -12497,7 +12623,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 6
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &788936432
 MonoBehaviour:
@@ -13262,7 +13388,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 21
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &842344299
 MonoBehaviour:
@@ -13524,7 +13650,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 31
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &846641285
 MonoBehaviour:
@@ -14374,7 +14500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 61
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &968720501
 MonoBehaviour:
@@ -14544,7 +14670,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 40
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &970036269
 MonoBehaviour:
@@ -14917,8 +15043,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &986104325
 MonoBehaviour:
@@ -15052,7 +15178,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 59
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1030734112
 MonoBehaviour:
@@ -15509,8 +15635,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &1054898617
 MonoBehaviour:
@@ -15829,9 +15955,8 @@ RectTransform:
   - {fileID: 1364153685}
   - {fileID: 560248852}
   - {fileID: 484340080}
-  - {fileID: 1616447816}
   m_Father: {fileID: 4016061617876274970}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15932,7 +16057,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 33
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1080473019
 MonoBehaviour:
@@ -16101,7 +16226,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 47
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1092697145
 MonoBehaviour:
@@ -16247,7 +16372,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1097174340}
   - component: {fileID: 1097174342}
+  - component: {fileID: 1097174343}
   - component: {fileID: 1097174341}
+  - component: {fileID: 1097174344}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (6)
   m_TagString: Untagged
@@ -16336,6 +16463,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1097174343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097174339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &1097174344
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097174339}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &1097293668
 GameObject:
   m_ObjectHideFlags: 0
@@ -16608,7 +16774,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1107354561}
   - component: {fileID: 1107354563}
+  - component: {fileID: 1107354564}
   - component: {fileID: 1107354562}
+  - component: {fileID: 1107354565}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (8)
   m_TagString: Untagged
@@ -16697,6 +16865,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1107354564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107354560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &1107354565
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107354560}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &1108684300
 GameObject:
   m_ObjectHideFlags: 0
@@ -16731,7 +16938,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1108684302
 MonoBehaviour:
@@ -17027,8 +17234,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &1118036670
 MonoBehaviour:
@@ -17162,7 +17369,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 35
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1120423986
 MonoBehaviour:
@@ -17424,7 +17631,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 56
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1130423532
 MonoBehaviour:
@@ -17486,7 +17693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
-  - touch1
+  - animation
   isitLOOP: 0
 --- !u!23 &1130423535
 MeshRenderer:
@@ -17849,7 +18056,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 7
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1160433849
 MonoBehaviour:
@@ -18597,7 +18804,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 51
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1228198287
 MonoBehaviour:
@@ -18893,8 +19100,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &1251121591
 MonoBehaviour:
@@ -19028,7 +19235,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 41
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1254188206
 MonoBehaviour:
@@ -19198,7 +19405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 23
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1271590042
 MonoBehaviour:
@@ -19402,8 +19609,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &1273409029
 MonoBehaviour:
@@ -19537,7 +19744,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 53
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1276755313
 MonoBehaviour:
@@ -19599,7 +19806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
-  - touch1
+  - animation
   isitLOOP: 0
 --- !u!23 &1276755316
 MeshRenderer:
@@ -19890,7 +20097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 63
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1316286864
 MonoBehaviour:
@@ -20236,7 +20443,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 16
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1340782641
 MonoBehaviour:
@@ -20584,7 +20791,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 43
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1361972009
 MonoBehaviour:
@@ -20926,72 +21133,72 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 788662658}
-  - {fileID: 1975553883}
-  - {fileID: 107644758}
-  - {fileID: 426644535}
-  - {fileID: 1700922538}
   - {fileID: 1108684301}
-  - {fileID: 788936431}
-  - {fileID: 1160433848}
+  - {fileID: 426644535}
+  - {fileID: 386756973}
   - {fileID: 46389927}
-  - {fileID: 1411759366}
-  - {fileID: 591330319}
-  - {fileID: 235618448}
-  - {fileID: 511468287}
-  - {fileID: 271132446}
+  - {fileID: 1729231411}
+  - {fileID: 1522838248}
   - {fileID: 502521378}
-  - {fileID: 73114047}
   - {fileID: 1340782640}
   - {fileID: 1760316634}
   - {fileID: 1489865872}
-  - {fileID: 386756973}
-  - {fileID: 520904030}
-  - {fileID: 842344298}
-  - {fileID: 111457606}
-  - {fileID: 1271590041}
-  - {fileID: 1729231411}
+  - {fileID: 1411759366}
   - {fileID: 2111622740}
   - {fileID: 769631129}
   - {fileID: 1476683445}
+  - {fileID: 46169575}
+  - {fileID: 1160433848}
   - {fileID: 2004375811}
+  - {fileID: 788936431}
   - {fileID: 1884026238}
   - {fileID: 1887759594}
+  - {fileID: 235618448}
   - {fileID: 846641284}
   - {fileID: 2122072170}
+  - {fileID: 511468287}
   - {fileID: 1080473018}
   - {fileID: 2037987578}
-  - {fileID: 1120423985}
   - {fileID: 2093882510}
+  - {fileID: 710929138}
+  - {fileID: 1700922538}
+  - {fileID: 1120423985}
   - {fileID: 1682646746}
   - {fileID: 174993317}
-  - {fileID: 710929138}
   - {fileID: 970036268}
+  - {fileID: 1975553883}
   - {fileID: 1254188205}
   - {fileID: 392319076}
+  - {fileID: 107644758}
   - {fileID: 1361972008}
   - {fileID: 1531756407}
   - {fileID: 227041938}
   - {fileID: 383799758}
   - {fileID: 1092697144}
+  - {fileID: 591330319}
   - {fileID: 379973177}
   - {fileID: 1659841169}
   - {fileID: 2062617830}
   - {fileID: 1228198286}
   - {fileID: 390511070}
+  - {fileID: 271132446}
   - {fileID: 1276755312}
   - {fileID: 1493175432}
+  - {fileID: 73114047}
   - {fileID: 2076672621}
   - {fileID: 1130423531}
   - {fileID: 1915498986}
-  - {fileID: 46169575}
+  - {fileID: 788662658}
+  - {fileID: 520904030}
+  - {fileID: 842344298}
+  - {fileID: 111457606}
+  - {fileID: 1271590041}
   - {fileID: 1030734111}
   - {fileID: 1594125784}
   - {fileID: 968720500}
   - {fileID: 564309218}
   - {fileID: 1316286863}
   - {fileID: 124105433}
-  - {fileID: 1522838248}
   - {fileID: 1054898615}
   - {fileID: 30970450}
   - {fileID: 1423706686}
@@ -21209,7 +21416,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1411759367
 MonoBehaviour:
@@ -21810,8 +22017,8 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: touch1
-  loop: 0
+  _animationName: 
+  loop: 1
   timeScale: 1
 --- !u!114 &1423706688
 MonoBehaviour:
@@ -22542,7 +22749,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 27
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1476683446
 MonoBehaviour:
@@ -22838,7 +23045,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 18
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1489865873
 MonoBehaviour:
@@ -22938,7 +23145,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 7
 --- !u!33 &1489865877
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23007,7 +23214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 54
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1493175433
 MonoBehaviour:
@@ -23041,7 +23248,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: animation
+  _animationName: 
   loop: 1
   timeScale: 1
 --- !u!114 &1493175434
@@ -23069,7 +23276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
-  - touch1
+  - animation
   isitLOOP: 0
 --- !u!23 &1493175436
 MeshRenderer:
@@ -23549,7 +23756,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 65
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1522838249
 MonoBehaviour:
@@ -23613,7 +23820,7 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isitLOOP: 1
 --- !u!23 &1522838252
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23719,7 +23926,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 44
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1531756408
 MonoBehaviour:
@@ -24034,7 +24241,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1551700502}
   - component: {fileID: 1551700504}
+  - component: {fileID: 1551700505}
   - component: {fileID: 1551700503}
+  - component: {fileID: 1551700506}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (3)
   m_TagString: Untagged
@@ -24123,6 +24332,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1551700505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551700501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &1551700506
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551700501}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &1552419909
 GameObject:
   m_ObjectHideFlags: 0
@@ -24639,7 +24887,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 60
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1594125785
 MonoBehaviour:
@@ -25264,41 +25512,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612561367}
   m_CullTransparentMesh: 0
---- !u!1 &1616447815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1616447816}
-  m_Layer: 5
-  m_Name: Prop_Touchable
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1616447816
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616447815}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1076409912}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1646121799
 GameObject:
   m_ObjectHideFlags: 0
@@ -25408,7 +25621,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 49
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1659841170
 MonoBehaviour:
@@ -25762,7 +25975,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 37
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1682646747
 MonoBehaviour:
@@ -25932,7 +26145,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 4
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1700922539
 MonoBehaviour:
@@ -26315,7 +26528,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 24
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1729231412
 MonoBehaviour:
@@ -26379,7 +26592,7 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isitLOOP: 1
 --- !u!23 &1729231415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26748,7 +26961,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 17
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1760316635
 MonoBehaviour:
@@ -26782,7 +26995,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: animation
+  _animationName: 
   loop: 1
   timeScale: 1
 --- !u!114 &1760316636
@@ -26848,7 +27061,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 5
 --- !u!33 &1760316639
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27002,7 +27215,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 5
 --- !u!33 &1778103501
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27298,7 +27511,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1795518162}
   - component: {fileID: 1795518164}
+  - component: {fileID: 1795518165}
   - component: {fileID: 1795518163}
+  - component: {fileID: 1795518166}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (1)
   m_TagString: Untagged
@@ -27387,6 +27602,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1795518165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795518161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &1795518166
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795518161}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1001 &1801144618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28087,7 +28341,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 29
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1884026239
 MonoBehaviour:
@@ -28257,7 +28511,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 30
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1887759595
 MonoBehaviour:
@@ -28427,7 +28681,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 57
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1915498987
 MonoBehaviour:
@@ -28489,7 +28743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
-  - touch1
+  - animation
   isitLOOP: 0
 --- !u!23 &1915498990
 MeshRenderer:
@@ -28959,7 +29213,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 1
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1975553884
 MonoBehaviour:
@@ -29216,7 +29470,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 28
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2004375812
 MonoBehaviour:
@@ -29581,7 +29835,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 34
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2037987579
 MonoBehaviour:
@@ -29750,7 +30004,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 50
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2062617831
 MonoBehaviour:
@@ -30007,7 +30261,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 55
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2076672622
 MonoBehaviour:
@@ -30069,7 +30323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim_name:
-  - touch1
+  - animation
   isitLOOP: 0
 --- !u!23 &2076672625
 MeshRenderer:
@@ -30481,7 +30735,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 36
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2093882511
 MonoBehaviour:
@@ -30650,7 +30904,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 25
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2111622741
 MonoBehaviour:
@@ -30912,7 +31166,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
-  m_RootOrder: 32
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2122072171
 MonoBehaviour:
@@ -31057,7 +31311,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2124486753}
   - component: {fileID: 2124486755}
+  - component: {fileID: 2124486756}
   - component: {fileID: 2124486754}
+  - component: {fileID: 2124486757}
   m_Layer: 0
   m_Name: prop_05-2_bubble_anim (7)
   m_TagString: Untagged
@@ -31146,6 +31402,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2124486756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124486752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6464db7ae8ef04b865111b80a9120f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animName: '#bubble_anim_UI'
+--- !u!61 &2124486757
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124486752}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.55}
+  m_EdgeRadius: 0
 --- !u!1 &2127825374
 GameObject:
   m_ObjectHideFlags: 0
@@ -31871,50 +32166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a9ee608ee97f64180db36de05090dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &4016061617842248995
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4016061617842249020}
-  - component: {fileID: 4016061617842249021}
-  m_Layer: 0
-  m_Name: mmrAnchor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4016061617842249020
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4016061617842248995}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0038, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 172082941}
-  m_Father: {fileID: 4016061617876274970}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4016061617842249021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4016061617842248995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4016061617876274968
 GameObject:
   m_ObjectHideFlags: 0
@@ -31993,7 +32244,6 @@ Transform:
   m_Children:
   - {fileID: 1378784404}
   - {fileID: 571355582}
-  - {fileID: 4016061617842249020}
   - {fileID: 542425690}
   - {fileID: 328929499}
   - {fileID: 1076409912}

@@ -81,9 +81,12 @@ public class Spine_Touch : MonoBehaviour
         {
             yield return new WaitForEndOfFrame();
         }
-        anim.AnimationName = anim_name[0];
-        anim.loop = true;
-        ListIndex = 1;
+        if (isitLOOP)
+        {
+            anim.loop = true;
+            anim.AnimationName = anim_name[0];
+            ListIndex = 1;
+        }
     }
     IEnumerator WaitAnimEnd_HaveNothing()
     {
