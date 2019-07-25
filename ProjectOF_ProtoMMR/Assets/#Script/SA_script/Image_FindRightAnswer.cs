@@ -25,7 +25,9 @@ public class Image_FindRightAnswer : MonoBehaviour
 
     public delegate void RollDelegate();
     public static event RollDelegate RollCount;
-    public GameObject RenderView;
+    //Ui_CamRoll 부분 관련 델리게이트, 이벤트
+
+    public GameObject RenderView, Give;
     public RectTransform DragBox, CheckRange;
     public RectTransform[] ImageContain = new RectTransform[4];
     public float SizeRange_min, SizeRange_max;
@@ -71,17 +73,16 @@ public class Image_FindRightAnswer : MonoBehaviour
             if(RenderView.activeSelf == false)//정답 찾고 렌더뷰가 켜져도 이 부분이 실행되는걸 방지
             {
                 RollCount();
+                DragBox.gameObject.SetActive(false);
+                PhotoActive();
                 if (DragHideCompare())
                 {
-                    DragBox.gameObject.SetActive(false);
-                    PhotoActive();
                     RightAnswer();
+                    Give.SetActive(true);
                     print("Right!");
                 }
                 else
                 {
-                    DragBox.gameObject.SetActive(false);
-                    PhotoActive();
                     Answer_Wrong0_GetList();
                     print("Wrong!");
                 }
