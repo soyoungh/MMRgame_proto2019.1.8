@@ -164,4 +164,4 @@ public class Image_FindRightAnswer : MonoBehaviour
             RemoveOBJ[i].GetComponent<BoxCollider2D>().enabled = false;
         }
     }
-}/*temp  delet*/
+}

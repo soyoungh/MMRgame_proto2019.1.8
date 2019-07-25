@@ -9,7 +9,8 @@ public class Play_SceneManager_Progress : MonoBehaviour
     AsyncOperation asyncOper;
     bool PlayReady = false;
     public RectTransform ProgressBar;
-    public static int NextSceneNum;
+    public int NextSceneNum = 1;
+    //public static int NextSceneNum;
 
     private void Start()
     {
@@ -23,7 +24,7 @@ public class Play_SceneManager_Progress : MonoBehaviour
 
     IEnumerator StartLoad()
     {
-        asyncOper = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        asyncOper = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + NextSceneNum);
         asyncOper.allowSceneActivation = false;
 
         while (!asyncOper.isDone)
