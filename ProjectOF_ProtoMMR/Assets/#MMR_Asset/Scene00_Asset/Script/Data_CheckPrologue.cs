@@ -13,5 +13,4 @@ public class Data_CheckPrologue : MonoBehaviour
             print(PlayerPrefs.GetInt("SavePrologue"));
         }
     }
-    
 }

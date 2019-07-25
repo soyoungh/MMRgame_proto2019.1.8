@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Data_SaveScene : MonoBehaviour
 {
-    int SavePrologue = 0;
+    public static int ActiveSceneNum = 0;
     // Start is called before the first frame update
     void Start()
     {
-        if (!PlayerPrefs.HasKey("SavePrologue"))
+        if (!PlayerPrefs.HasKey("SaveSceneNum"))
         {
-            SavePrologue = 1;
-            PlayerPrefs.SetInt("SavePrologue", SavePrologue); //프롤로그씬에 넣어서 해당씬을 봤음을 저장
+            PlayerPrefs.SetInt("SaveSceneNum", ActiveSceneNum);
         }
     }
+    
 }
