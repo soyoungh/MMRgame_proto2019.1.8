@@ -16,7 +16,7 @@ public class Spine_Touch : MonoBehaviour
     public List<string> anim_name = new List<string>(0);
 
     public bool isLOOP = false;
-    public bool isIDLE = false;
+    bool isIDLE = false;
     public bool PlayME = false;
     public bool PlayOTHER = false;
     

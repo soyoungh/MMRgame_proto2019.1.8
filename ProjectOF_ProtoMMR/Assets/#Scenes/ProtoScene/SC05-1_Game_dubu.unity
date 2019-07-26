@@ -219,7 +219,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &30970454
@@ -463,9 +462,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &46169574
 GameObject:
@@ -566,9 +564,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &46169579
 MeshRenderer:
@@ -785,9 +782,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &46389933
 BoxCollider2D:
@@ -1143,8 +1139,7 @@ MonoBehaviour:
   anim_name:
   - animation
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &73114053
 BoxCollider2D:
@@ -1276,7 +1271,6 @@ GameObject:
   - component: {fileID: 87852252}
   - component: {fileID: 87852251}
   - component: {fileID: 87852250}
-  - component: {fileID: 87852249}
   - component: {fileID: 87852248}
   m_Layer: 0
   m_Name: fishjump (2)
@@ -1292,12 +1286,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87852246}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.13, y: 8.99, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.030029297, y: 0.55999756, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 31
+  m_Father: {fileID: 1551700502}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &87852248
 MonoBehaviour:
@@ -1331,28 +1325,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &87852249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87852246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &87852250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,9 +1629,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &107644764
 BoxCollider2D:
@@ -1783,8 +1757,7 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &111457610
@@ -2028,9 +2001,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &124105432
 GameObject:
@@ -2131,9 +2103,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &124105437
 MeshRenderer:
@@ -2537,9 +2508,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &146972561
 GameObject:
@@ -2711,9 +2681,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1001 &147798818
 PrefabInstance:
@@ -2829,6 +2798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 151693407}
   - component: {fileID: 151693409}
+  - component: {fileID: 151693412}
   - component: {fileID: 151693410}
   - component: {fileID: 151693408}
   - component: {fileID: 151693411}
@@ -2849,7 +2819,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -525.56, y: -950.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1589354867}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2959,6 +2930,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &151693412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151693406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 1589354868}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &174993316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3058,9 +3048,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &174993321
 MeshRenderer:
@@ -3484,9 +3473,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &227041942
 MeshRenderer:
@@ -3703,8 +3691,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &235618454
 BoxCollider2D:
@@ -3913,7 +3900,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: animation
+  _animationName: 
   loop: 1
   timeScale: 1
 --- !u!23 &271132448
@@ -3987,10 +3974,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
-  - animation
+  - touch
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &271132452
 BoxCollider2D:
@@ -4263,8 +4249,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 1
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &297457187
 GameObject:
@@ -4602,9 +4587,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &317497394
 GameObject:
@@ -4868,9 +4852,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &328929498
 GameObject:
@@ -4982,6 +4965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 329669983}
   - component: {fileID: 329669985}
+  - component: {fileID: 329669988}
   - component: {fileID: 329669986}
   - component: {fileID: 329669984}
   - component: {fileID: 329669987}
@@ -5002,7 +4986,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -519.43, y: -951.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1536947587}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5112,6 +5097,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &329669988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329669982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 1536947588}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &346445173
 GameObject:
   m_ObjectHideFlags: 0
@@ -5124,7 +5128,6 @@ GameObject:
   - component: {fileID: 346445177}
   - component: {fileID: 346445176}
   - component: {fileID: 346445179}
-  - component: {fileID: 346445178}
   - component: {fileID: 346445175}
   m_Layer: 0
   m_Name: fishjump
@@ -5140,12 +5143,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346445173}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.7, y: 3.65, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.019958496, y: 0.54003906, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 29
+  m_Father: {fileID: 1097174340}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &346445175
 MonoBehaviour:
@@ -5179,7 +5182,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
 --- !u!23 &346445176
@@ -5227,25 +5230,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346445173}
   m_Mesh: {fileID: 0}
---- !u!114 &346445178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346445173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &346445179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5357,7 +5341,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &349921393
@@ -5604,9 +5587,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &379973181
 MeshRenderer:
@@ -5691,7 +5673,6 @@ GameObject:
   - component: {fileID: 382525256}
   - component: {fileID: 382525255}
   - component: {fileID: 382525254}
-  - component: {fileID: 382525253}
   - component: {fileID: 382525252}
   m_Layer: 0
   m_Name: fishjump (8)
@@ -5707,12 +5688,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382525250}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.36, y: -2.63, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.020019531, y: 0.539978, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 37
+  m_Father: {fileID: 605130954}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &382525252
 MonoBehaviour:
@@ -5746,28 +5727,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &382525253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382525250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &382525254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5924,9 +5886,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &383799762
 MeshRenderer:
@@ -6099,9 +6060,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &386756977
 MeshRenderer:
@@ -6273,9 +6233,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &390511074
 MeshRenderer:
@@ -6447,9 +6406,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &392319080
 MeshRenderer:
@@ -6850,9 +6808,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &426644541
 BoxCollider2D:
@@ -7124,9 +7081,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &476216372
 GameObject:
@@ -7140,7 +7096,6 @@ GameObject:
   - component: {fileID: 476216378}
   - component: {fileID: 476216377}
   - component: {fileID: 476216376}
-  - component: {fileID: 476216375}
   - component: {fileID: 476216374}
   m_Layer: 0
   m_Name: fishjump (4)
@@ -7156,12 +7111,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476216372}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.4, y: 17.66, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.030029297, y: 0.62994385, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 33
+  m_Father: {fileID: 701706552}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &476216374
 MonoBehaviour:
@@ -7195,28 +7150,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &476216375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476216372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &476216376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7536,9 +7472,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &484340079
 GameObject:
@@ -7818,8 +7753,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &502521384
 BoxCollider2D:
@@ -8017,9 +7951,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &504666866
 GameObject:
@@ -8257,8 +8190,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &511468293
 BoxCollider2D:
@@ -8456,9 +8388,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &520871398
 GameObject:
@@ -8648,9 +8579,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &520904034
 MeshRenderer:
@@ -8735,7 +8665,6 @@ GameObject:
   - component: {fileID: 532182906}
   - component: {fileID: 532182905}
   - component: {fileID: 532182904}
-  - component: {fileID: 532182903}
   - component: {fileID: 532182902}
   m_Layer: 0
   m_Name: fishjump (1)
@@ -8751,12 +8680,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532182900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.24, y: -2.34, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.039978027, y: 0.57995605, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 30
+  m_Father: {fileID: 1107354561}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &532182902
 MonoBehaviour:
@@ -8790,28 +8719,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &532182903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532182900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &532182904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9039,9 +8949,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &542425686
 GameObject:
@@ -9566,9 +9475,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &564309217
 GameObject:
@@ -9669,8 +9577,7 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &564309222
@@ -9800,16 +9707,6 @@ Transform:
   - {fileID: 142316425}
   - {fileID: 561155811}
   - {fileID: 1932281075}
-  - {fileID: 346445174}
-  - {fileID: 532182901}
-  - {fileID: 87852247}
-  - {fileID: 975498629}
-  - {fileID: 476216373}
-  - {fileID: 1536947587}
-  - {fileID: 1157133060}
-  - {fileID: 1178644985}
-  - {fileID: 382525251}
-  - {fileID: 1589354867}
   m_Father: {fileID: 4016061617876274970}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10031,9 +9928,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &591330325
 BoxCollider2D:
@@ -10162,6 +10058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605130954}
   - component: {fileID: 605130956}
+  - component: {fileID: 605130959}
   - component: {fileID: 605130957}
   - component: {fileID: 605130955}
   - component: {fileID: 605130958}
@@ -10182,7 +10079,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -518.62, y: -963.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 382525251}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10292,6 +10190,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &605130959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605130953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 382525252}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &605661986
 GameObject:
   m_ObjectHideFlags: 0
@@ -10641,9 +10558,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &634685623
 GameObject:
@@ -10655,6 +10571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 634685624}
   - component: {fileID: 634685626}
+  - component: {fileID: 634685629}
   - component: {fileID: 634685627}
   - component: {fileID: 634685625}
   - component: {fileID: 634685628}
@@ -10675,7 +10592,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -535.74, y: -948.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 975498629}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10785,6 +10703,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &634685629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634685623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 975498630}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &639739368
 GameObject:
   m_ObjectHideFlags: 0
@@ -11045,7 +10982,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &658335402
@@ -11455,9 +11391,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &689358048
 GameObject:
@@ -11748,6 +11683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 701706552}
   - component: {fileID: 701706553}
+  - component: {fileID: 701706557}
   - component: {fileID: 701706555}
   - component: {fileID: 701706554}
   - component: {fileID: 701706556}
@@ -11768,7 +11704,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -527.63, y: -942.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 476216373}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11878,6 +11815,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &701706557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701706551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 476216374}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &710929137
 GameObject:
   m_ObjectHideFlags: 0
@@ -11977,8 +11933,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &710929142
 MeshRenderer:
@@ -12305,9 +12260,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &769631128
 GameObject:
@@ -12408,9 +12362,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &769631133
 MeshRenderer:
@@ -12714,9 +12667,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &788662664
 BoxCollider2D:
@@ -12888,9 +12840,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &788936437
 BoxCollider2D:
@@ -13088,9 +13039,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &806567858
 GameObject:
@@ -13515,9 +13465,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &842344297
 GameObject:
@@ -13618,9 +13567,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &842344302
 MeshRenderer:
@@ -13884,8 +13832,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &846641288
 MeshRenderer:
@@ -14744,9 +14691,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &968720504
 MeshRenderer:
@@ -14918,9 +14864,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &970036272
 MeshRenderer:
@@ -15005,7 +14950,6 @@ GameObject:
   - component: {fileID: 975498634}
   - component: {fileID: 975498633}
   - component: {fileID: 975498632}
-  - component: {fileID: 975498631}
   - component: {fileID: 975498630}
   m_Layer: 0
   m_Name: fishjump (3)
@@ -15021,12 +14965,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975498628}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.33, y: 11.96, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.070007324, y: 0.6000366, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 32
+  m_Father: {fileID: 634685624}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &975498630
 MonoBehaviour:
@@ -15060,28 +15004,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &975498631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975498628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &975498632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15238,7 +15163,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &986104327
@@ -15411,9 +15335,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1030734115
 MeshRenderer:
@@ -15838,7 +15761,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1054898619
@@ -16298,8 +16220,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1080473022
 MeshRenderer:
@@ -16471,9 +16392,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1092697148
 MeshRenderer:
@@ -16556,6 +16476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1097174340}
   - component: {fileID: 1097174342}
+  - component: {fileID: 1097174345}
   - component: {fileID: 1097174343}
   - component: {fileID: 1097174341}
   - component: {fileID: 1097174344}
@@ -16576,7 +16497,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -533.28, y: -956.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 346445174}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16686,6 +16608,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &1097174345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097174339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 346445175}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &1097293668
 GameObject:
   m_ObjectHideFlags: 0
@@ -16935,9 +16876,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!114 &1100945262 stripped
 MonoBehaviour:
@@ -16961,6 +16901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107354561}
   - component: {fileID: 1107354563}
+  - component: {fileID: 1107354566}
   - component: {fileID: 1107354564}
   - component: {fileID: 1107354562}
   - component: {fileID: 1107354565}
@@ -16981,7 +16922,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -531.8, y: -962.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 532182901}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17091,6 +17033,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &1107354566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107354560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 532182902}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &1108684300
 GameObject:
   m_ObjectHideFlags: 0
@@ -17235,9 +17196,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &1108684307
 BoxCollider2D:
@@ -17456,7 +17416,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1118036672
@@ -17629,9 +17588,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1120423989
 MeshRenderer:
@@ -17895,8 +17853,7 @@ MonoBehaviour:
   anim_name:
   - animation
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1130423535
 MeshRenderer:
@@ -18068,7 +18025,6 @@ GameObject:
   - component: {fileID: 1157133065}
   - component: {fileID: 1157133064}
   - component: {fileID: 1157133063}
-  - component: {fileID: 1157133062}
   - component: {fileID: 1157133061}
   m_Layer: 0
   m_Name: fishjump (6)
@@ -18084,12 +18040,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157133059}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.99, y: 2.65, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.020019531, y: 0.6000366, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 35
+  m_Father: {fileID: 2124486753}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1157133061
 MonoBehaviour:
@@ -18123,28 +18079,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &1157133062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157133059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &1157133063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18346,9 +18283,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &1160433854
 BoxCollider2D:
@@ -18579,7 +18515,6 @@ GameObject:
   - component: {fileID: 1178644990}
   - component: {fileID: 1178644989}
   - component: {fileID: 1178644988}
-  - component: {fileID: 1178644987}
   - component: {fileID: 1178644986}
   m_Layer: 0
   m_Name: fishjump (7)
@@ -18595,12 +18530,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178644984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.89, y: 20.09, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.020019531, y: 0.55999756, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 36
+  m_Father: {fileID: 1795518162}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1178644986
 MonoBehaviour:
@@ -18634,28 +18569,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &1178644987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178644984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &1178644988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19030,9 +18946,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1228198290
 MeshRenderer:
@@ -19296,7 +19211,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1251121593
@@ -19469,9 +19383,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1254188209
 MeshRenderer:
@@ -19643,9 +19556,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1271590045
 MeshRenderer:
@@ -19817,7 +19729,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1273409031
@@ -19959,7 +19870,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: animation
+  _animationName: 
   loop: 1
   timeScale: 1
 --- !u!114 &1276755314
@@ -19988,10 +19899,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
-  - animation
+  - touch
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1276755316
 MeshRenderer:
@@ -20347,9 +20257,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1316286867
 MeshRenderer:
@@ -20697,8 +20606,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1340782644
 MeshRenderer:
@@ -21049,9 +20957,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1361972012
 MeshRenderer:
@@ -21578,9 +21485,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1411759365
 GameObject:
@@ -21726,9 +21632,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &1411759372
 BoxCollider2D:
@@ -22086,9 +21991,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1418941290
 GameObject:
@@ -22255,7 +22159,6 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1423706690
@@ -22591,9 +22494,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1467330108
 GameObject:
@@ -22765,9 +22667,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1467909256
 GameObject:
@@ -23031,9 +22932,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1476683449
 MeshRenderer:
@@ -23331,8 +23231,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1489865876
 MeshRenderer:
@@ -23502,10 +23401,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
-  - animation
+  - touch
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1493175436
 MeshRenderer:
@@ -24050,9 +23948,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1522838252
 MeshRenderer:
@@ -24224,9 +24121,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1531756411
 MeshRenderer:
@@ -24311,7 +24207,6 @@ GameObject:
   - component: {fileID: 1536947592}
   - component: {fileID: 1536947591}
   - component: {fileID: 1536947590}
-  - component: {fileID: 1536947589}
   - component: {fileID: 1536947588}
   m_Layer: 0
   m_Name: fishjump (5)
@@ -24327,12 +24222,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536947586}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.71, y: 8.76, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.14001465, y: 0.47003174, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 34
+  m_Father: {fileID: 329669983}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1536947588
 MonoBehaviour:
@@ -24366,28 +24261,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &1536947589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536947586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &1536947590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24455,6 +24331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551700502}
   - component: {fileID: 1551700504}
+  - component: {fileID: 1551700507}
   - component: {fileID: 1551700505}
   - component: {fileID: 1551700503}
   - component: {fileID: 1551700506}
@@ -24475,7 +24352,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -541.1, y: -951.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 87852247}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24585,6 +24463,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &1551700507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551700501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 87852248}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &1552419909
 GameObject:
   m_ObjectHideFlags: 0
@@ -24910,7 +24807,6 @@ GameObject:
   - component: {fileID: 1589354872}
   - component: {fileID: 1589354871}
   - component: {fileID: 1589354870}
-  - component: {fileID: 1589354869}
   - component: {fileID: 1589354868}
   m_Layer: 0
   m_Name: fishjump (9)
@@ -24926,12 +24822,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589354866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.54, y: 9.65, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.099975586, y: 0.4800415, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0}
   m_Children: []
-  m_Father: {fileID: 571355582}
-  m_RootOrder: 38
+  m_Father: {fileID: 151693407}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1589354868
 MonoBehaviour:
@@ -24965,28 +24861,9 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: idle
   loop: 0
   timeScale: 1
---- !u!114 &1589354869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589354866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OtherAnim: {fileID: 0}
-  anim_name:
-  - animation
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
-  PlayOTHER: 0
 --- !u!114 &1589354870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25143,9 +25020,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1594125788
 MeshRenderer:
@@ -25388,9 +25264,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1601429114
 GameObject:
@@ -25884,9 +25759,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1659841173
 MeshRenderer:
@@ -26242,9 +26116,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1682646750
 MeshRenderer:
@@ -26461,9 +26334,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &1700922544
 BoxCollider2D:
@@ -26803,9 +26675,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1729231415
 MeshRenderer:
@@ -27140,9 +27011,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1760316633
 GameObject:
@@ -27243,8 +27113,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1760316638
 MeshRenderer:
@@ -27487,9 +27356,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1785808713
 GameObject:
@@ -27735,6 +27603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1795518162}
   - component: {fileID: 1795518164}
+  - component: {fileID: 1795518167}
   - component: {fileID: 1795518165}
   - component: {fileID: 1795518163}
   - component: {fileID: 1795518166}
@@ -27755,7 +27624,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -519.13, y: -940.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1178644985}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27865,6 +27735,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &1795518167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795518161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 1178644986}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1001 &1801144618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28359,9 +28248,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1866043157
 GameObject:
@@ -28533,9 +28421,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1884026237
 GameObject:
@@ -28636,9 +28523,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1884026242
 MeshRenderer:
@@ -28810,9 +28696,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1887759598
 MeshRenderer:
@@ -28984,8 +28869,7 @@ MonoBehaviour:
   anim_name:
   - animation
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &1915498990
 MeshRenderer:
@@ -29228,9 +29112,8 @@ MonoBehaviour:
   anim_name:
   - idle_startscene
   - touch
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!1 &1951875599
 GameObject:
@@ -29568,9 +29451,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!61 &1975553889
 BoxCollider2D:
@@ -29784,9 +29666,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &2004375815
 MeshRenderer:
@@ -30147,8 +30028,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &2037987582
 MeshRenderer:
@@ -30320,9 +30200,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &2062617834
 MeshRenderer:
@@ -30581,8 +30460,7 @@ MonoBehaviour:
   anim_name:
   - animation
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &2076672625
 MeshRenderer:
@@ -31059,8 +30937,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &2093882514
 MeshRenderer:
@@ -31232,9 +31109,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isLOOP: 1
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &2111622744
 MeshRenderer:
@@ -31498,8 +31374,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
 --- !u!23 &2122072174
 MeshRenderer:
@@ -31582,6 +31457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124486753}
   - component: {fileID: 2124486755}
+  - component: {fileID: 2124486758}
   - component: {fileID: 2124486756}
   - component: {fileID: 2124486754}
   - component: {fileID: 2124486757}
@@ -31602,7 +31478,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -528.03, y: -957.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1157133060}
   m_Father: {fileID: 2032952211}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31712,6 +31589,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.98, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &2124486758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124486752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 1157133061}
+  anim_name:
+  - idle
+  - touch1
+  isLOOP: 1
+  PlayME: 0
+  PlayOTHER: 1
 --- !u!1 &2127825374
 GameObject:
   m_ObjectHideFlags: 0
