@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
-  m_Name: x_05-2_fishing_Atlas
+  m_Name: o_05-2_help_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 6e043c2a3f7ee4285837529bb69b2058, type: 3}
+  atlasFile: {fileID: 4900000, guid: 909a49061168d4c42abe047881362d57, type: 3}
   materials:
-  - {fileID: 2100000, guid: 703d767502684400e8e2f4eb28d73a05, type: 2}
+  - {fileID: 2100000, guid: 7a215a24501e02e4c8cdeb691f27a817, type: 2}

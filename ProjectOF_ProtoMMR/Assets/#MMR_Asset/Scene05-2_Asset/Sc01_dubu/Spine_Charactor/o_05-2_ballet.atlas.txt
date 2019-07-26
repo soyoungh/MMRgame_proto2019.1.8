@@ -1,0 +1,69 @@
+
+o_05-2_ballet.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 128, 169
+  size: 46, 90
+  orig: 46, 90
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 2, 80
+  size: 76, 84
+  orig: 76, 84
+  offset: 0, 0
+  index: -1
+arm3
+  rotate: false
+  xy: 324, 425
+  size: 99, 36
+  orig: 99, 36
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 166
+  size: 124, 183
+  orig: 124, 183
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 262, 372
+  size: 60, 89
+  orig: 60, 89
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 128, 261
+  size: 64, 88
+  orig: 64, 88
+  offset: 0, 0
+  index: -1
+nose
+  rotate: false
+  xy: 2, 2
+  size: 46, 76
+  orig: 46, 76
+  offset: 0, 0
+  index: -1
+water
+  rotate: false
+  xy: 2, 351
+  size: 258, 153
+  orig: 258, 153
+  offset: 0, 0
+  index: -1
+wave
+  rotate: false
+  xy: 262, 463
+  size: 220, 41
+  orig: 220, 41
+  offset: 0, 0
+  index: -1

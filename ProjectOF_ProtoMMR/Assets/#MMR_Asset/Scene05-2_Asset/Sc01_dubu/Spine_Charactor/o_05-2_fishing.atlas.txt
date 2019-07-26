@@ -1,0 +1,104 @@
+
+o_05-2_fishing.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 295, 345
+  size: 58, 49
+  orig: 58, 49
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 2, 46
+  size: 19, 55
+  orig: 19, 55
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 187, 335
+  size: 106, 115
+  orig: 106, 115
+  offset: 0, 0
+  index: -1
+eyes
+  rotate: false
+  xy: 187, 324
+  size: 21, 9
+  orig: 21, 9
+  offset: 0, 0
+  index: -1
+fishingrod
+  rotate: false
+  xy: 59, 322
+  size: 126, 128
+  orig: 126, 128
+  offset: 0, 0
+  index: -1
+leg
+  rotate: true
+  xy: 137, 265
+  size: 55, 47
+  orig: 55, 47
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: true
+  xy: 2, 159
+  size: 84, 46
+  orig: 84, 46
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 358, 425
+  size: 25, 64
+  orig: 25, 64
+  offset: 0, 0
+  index: -1
+string
+  rotate: false
+  xy: 2, 245
+  size: 55, 205
+  orig: 55, 205
+  offset: 0, 0
+  index: -1
+surprised_eyes
+  rotate: false
+  xy: 424, 435
+  size: 28, 15
+  orig: 28, 15
+  offset: 0, 0
+  index: -1
+레이어 10
+  rotate: false
+  xy: 2, 103
+  size: 46, 54
+  orig: 46, 54
+  offset: 0, 0
+  index: -1
+레이어 11
+  rotate: true
+  xy: 358, 392
+  size: 31, 35
+  orig: 31, 35
+  offset: 0, 0
+  index: -1
+레이어 8
+  rotate: false
+  xy: 295, 396
+  size: 61, 54
+  orig: 61, 54
+  offset: 0, 0
+  index: -1
+레이어 9
+  rotate: false
+  xy: 59, 257
+  size: 76, 63
+  orig: 76, 63
+  offset: 0, 0
+  index: -1

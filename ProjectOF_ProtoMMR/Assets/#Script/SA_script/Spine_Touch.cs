@@ -7,14 +7,20 @@ using Spine.Unity;
 /// idle상태가있다면 isgotDEFAULT에 체크(isitLOOP는 무시)
 /// idle상태가없다면 루프여부를 isitLOOP에 체크
 /// </summary>
+
+[System.Serializable]//editor에서 접근가능하게
 public class Spine_Touch : MonoBehaviour
 {
     SkeletonAnimation anim;
+    public SkeletonAnimation OtherAnim;
     public List<string> anim_name = new List<string>(0);
-    public bool isitLOOP = false;
-    bool isgotDEFAULT = false;
+
+    public bool isLOOP = false;
+    public bool isIDLE = false;
+    public bool PlayME = false;
+    public bool PlayOTHER = false;
+    
     bool isitDragging = false;
-    //퍼블릭불로 true인 애들만 리플레이 가능하게 수정하기
     int ListIndex = 0;
 
     private void OnEnable()
@@ -30,11 +36,22 @@ public class Spine_Touch : MonoBehaviour
 
     private void Start()
     {
-        anim = GetComponent<SkeletonAnimation>();
-        if (anim.AnimationName != null)
+        if (PlayME)
         {
-            isgotDEFAULT = true;
-            ListIndex = 1;
+            anim = GetComponent<SkeletonAnimation>();
+            if (anim.AnimationName != null)
+            {
+                isIDLE = true;
+                ListIndex = 1;
+            }
+        }else if (PlayOTHER)
+        {
+            anim = OtherAnim;
+            if (anim.AnimationName != null)
+            {
+                isIDLE = true;
+                ListIndex = 1;
+            }
         }
     }
     void OnDragging()
@@ -49,7 +66,13 @@ public class Spine_Touch : MonoBehaviour
     private void OnMouseUp()
     {if (isitDragging) return;
 
-        if (isgotDEFAULT)
+        OnPlayME();
+        
+    }
+
+    public void OnPlayME()
+    {
+        if (isIDLE)
         {//0번은 디폴트 애니메이션
             if (ListIndex < anim_name.Count)
             {
@@ -61,13 +84,14 @@ public class Spine_Touch : MonoBehaviour
                     StartCoroutine(WaitAnimEnd_HaveDefault());
                 }
             }
-        }else
+        }
+        else
         {
             if (ListIndex < anim_name.Count)
             {
                 anim.AnimationName = anim_name[ListIndex];
                 ListIndex++;
-                if (isitLOOP && ListIndex == anim_name.Count)
+                if (isLOOP && ListIndex == anim_name.Count)
                 {
                     StartCoroutine(WaitAnimEnd_HaveNothing());
                 }
@@ -81,7 +105,7 @@ public class Spine_Touch : MonoBehaviour
         {
             yield return new WaitForEndOfFrame();
         }
-        if (isitLOOP)
+        if (isLOOP)
         {
             anim.loop = true;
             anim.AnimationName = anim_name[0];

@@ -1,0 +1,41 @@
+
+o_05-2_help.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 134
+  size: 95, 115
+  orig: 95, 115
+  offset: 0, 0
+  index: -1
+레이어 12
+  rotate: false
+  xy: 2, 8
+  size: 51, 54
+  orig: 51, 54
+  offset: 0, 0
+  index: -1
+레이어 13
+  rotate: false
+  xy: 99, 143
+  size: 70, 52
+  orig: 70, 52
+  offset: 0, 0
+  index: -1
+레이어 14
+  rotate: false
+  xy: 2, 64
+  size: 71, 68
+  orig: 71, 68
+  offset: 0, 0
+  index: -1
+레이어 15
+  rotate: false
+  xy: 99, 197
+  size: 152, 52
+  orig: 152, 52
+  offset: 0, 0
+  index: -1

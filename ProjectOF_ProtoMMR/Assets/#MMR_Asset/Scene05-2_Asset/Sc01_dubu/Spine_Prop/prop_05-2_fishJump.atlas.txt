@@ -1,5 +1,5 @@
 
-prop_05-2_fishJump.png
+prop_05-2_fishjump.png
 size: 128,128
 format: RGBA8888
 filter: Linear,Linear

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: prop_05-2_fishjump_SkeletonData
+  m_Name: o_05-2_help_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: c3d05c5c851e4475bab5c7f398938d05, type: 2}
+  - {fileID: 11400000, guid: 8280b1adeffa9694c8d95768476eb132, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: 0144a3d7aaec743d0bbde7cb62773256, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 637450dd89bcd584c828a1d1db37ffeb, type: 3}
   skeletonDataModifiers: []
   fromAnimation: []
   toAnimation: []

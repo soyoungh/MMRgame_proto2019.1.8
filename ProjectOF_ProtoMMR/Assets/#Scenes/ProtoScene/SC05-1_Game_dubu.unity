@@ -215,9 +215,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &30970454
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -455,11 +459,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &46169574
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,10 +562,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &46169579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -770,10 +781,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &46389933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1124,9 +1139,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &73114053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1259,7 +1278,6 @@ GameObject:
   - component: {fileID: 87852250}
   - component: {fileID: 87852249}
   - component: {fileID: 87852248}
-  - component: {fileID: 87852253}
   m_Layer: 0
   m_Name: fishjump (2)
   m_TagString: Untagged
@@ -1328,9 +1346,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &87852250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1388,32 +1410,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87852246}
   m_Mesh: {fileID: 0}
---- !u!61 &87852253
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87852246}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &101699603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,10 +1650,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &107644764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -1779,10 +1779,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &111457610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1800,7 +1804,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1819,7 +1823,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
 --- !u!33 &111457611
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2020,11 +2024,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &124105432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -2120,10 +2127,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &124105437
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2141,7 +2152,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2160,7 +2171,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
 --- !u!33 &124105438
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2522,11 +2533,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &146972561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2693,11 +2707,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1001 &147798818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2834,7 +2851,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 10
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &151693408
 Animator:
@@ -3037,10 +3054,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &174993321
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3459,10 +3480,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &227041942
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3674,9 +3699,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &235618454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3703,6 +3732,119 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6200278, y: 1.2501428}
   m_EdgeRadius: 0
+--- !u!1 &266729983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266729984}
+  - component: {fileID: 266729987}
+  - component: {fileID: 266729986}
+  - component: {fileID: 266729985}
+  m_Layer: 0
+  m_Name: '#help'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &266729984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266729983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.29, y: -0.62, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 386756973}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &266729985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266729983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonDataAsset: {fileID: 11400000, guid: 3c2e2fba4d2cf1949b51b882c96cc0b5, type: 2}
+  initialSkinName: 
+  initialFlipX: 0
+  initialFlipY: 0
+  separatorSlotNames: []
+  zSpacing: 0
+  useClipping: 1
+  immutableTriangles: 0
+  pmaVertexColors: 1
+  clearStateOnDisable: 0
+  tintBlack: 0
+  singleSubmesh: 0
+  addNormals: 0
+  calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
+  disableRenderingOnOverride: 1
+  _animationName: 
+  loop: 1
+  timeScale: 1
+--- !u!23 &266729986
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266729983}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7a215a24501e02e4c8cdeb691f27a817, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &266729987
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266729983}
+  m_Mesh: {fileID: 0}
 --- !u!1 &271132445
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,9 +3985,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &271132452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4112,11 +4258,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 1
+  isIDLE: 1
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &297457187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4449,11 +4598,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &317497394
 GameObject:
   m_ObjectHideFlags: 0
@@ -4712,11 +4864,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &328929498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,7 +5004,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 11
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &329669984
 Animator:
@@ -4971,7 +5126,6 @@ GameObject:
   - component: {fileID: 346445179}
   - component: {fileID: 346445178}
   - component: {fileID: 346445175}
-  - component: {fileID: 346445180}
   m_Layer: 0
   m_Name: fishjump
   m_TagString: Untagged
@@ -5085,9 +5239,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &346445179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5100,32 +5258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff1afc11336cfe4dbf0482dafcf1696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &346445180
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346445173}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &349921388
 GameObject:
   m_ObjectHideFlags: 0
@@ -5221,9 +5353,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &349921393
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5464,10 +5600,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &379973181
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5553,7 +5693,6 @@ GameObject:
   - component: {fileID: 382525254}
   - component: {fileID: 382525253}
   - component: {fileID: 382525252}
-  - component: {fileID: 382525257}
   m_Layer: 0
   m_Name: fishjump (8)
   m_TagString: Untagged
@@ -5622,9 +5761,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &382525254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5682,32 +5825,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382525250}
   m_Mesh: {fileID: 0}
---- !u!61 &382525257
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382525250}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &383799757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5803,10 +5920,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &383799762
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5910,7 +6031,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.49, y: -1.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 266729984}
   m_Father: {fileID: 1378784404}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5926,7 +6048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: a27171378f4804acebcd41a9090aa142, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 4fc971dfb90f79d4e9a1f6b12b247bae, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -5973,10 +6095,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &386756977
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5994,7 +6120,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 703d767502684400e8e2f4eb28d73a05, type: 2}
+  - {fileID: 2100000, guid: 73bf3a9f02c5b8c4e80a1e268b169822, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6143,10 +6269,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &390511074
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6313,10 +6443,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &392319080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6602,7 +6736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426644534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.58, y: 17.31, z: 0}
+  m_LocalPosition: {x: 7.164, y: 17.221, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
@@ -6620,7 +6754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: a27171378f4804acebcd41a9090aa142, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 4fc971dfb90f79d4e9a1f6b12b247bae, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -6660,7 +6794,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 703d767502684400e8e2f4eb28d73a05, type: 2}
+  - {fileID: 2100000, guid: 73bf3a9f02c5b8c4e80a1e268b169822, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6712,10 +6846,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &426644541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6982,11 +7120,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &476216372
 GameObject:
   m_ObjectHideFlags: 0
@@ -7001,7 +7142,6 @@ GameObject:
   - component: {fileID: 476216376}
   - component: {fileID: 476216375}
   - component: {fileID: 476216374}
-  - component: {fileID: 476216379}
   m_Layer: 0
   m_Name: fishjump (4)
   m_TagString: Untagged
@@ -7070,9 +7210,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &476216376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7130,32 +7274,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476216372}
   m_Mesh: {fileID: 0}
---- !u!61 &476216379
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476216372}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &483819113
 GameObject:
   m_ObjectHideFlags: 0
@@ -7414,11 +7532,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &484340079
 GameObject:
   m_ObjectHideFlags: 0
@@ -7693,9 +7814,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &502521384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7888,11 +8013,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &504666866
 GameObject:
   m_ObjectHideFlags: 0
@@ -8125,9 +8253,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &511468293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8320,11 +8452,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &520871398
 GameObject:
   m_ObjectHideFlags: 0
@@ -8462,7 +8597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -8509,10 +8644,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &520904034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8530,7 +8669,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8549,7 +8688,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
 --- !u!33 &520904035
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8598,7 +8737,6 @@ GameObject:
   - component: {fileID: 532182904}
   - component: {fileID: 532182903}
   - component: {fileID: 532182902}
-  - component: {fileID: 532182907}
   m_Layer: 0
   m_Name: fishjump (1)
   m_TagString: Untagged
@@ -8667,9 +8805,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &532182904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8727,32 +8869,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532182900}
   m_Mesh: {fileID: 0}
---- !u!61 &532182907
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532182900}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &534601209
 GameObject:
   m_ObjectHideFlags: 0
@@ -8919,11 +9035,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &542425686
 GameObject:
   m_ObjectHideFlags: 0
@@ -9443,11 +9562,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &564309217
 GameObject:
   m_ObjectHideFlags: 0
@@ -9496,7 +9618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -9543,10 +9665,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &564309222
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9564,7 +9690,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9583,7 +9709,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
 --- !u!33 &564309223
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9901,10 +10027,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &591330325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10054,7 +10184,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 15
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &605130955
 Animator:
@@ -10507,11 +10637,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &634685623
 GameObject:
   m_ObjectHideFlags: 0
@@ -10544,7 +10677,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &634685625
 Animator:
@@ -10908,9 +11041,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &658335402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11314,11 +11451,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &689358048
 GameObject:
   m_ObjectHideFlags: 0
@@ -11630,7 +11770,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &701706553
 SpriteRenderer:
@@ -11833,9 +11973,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &710929142
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12157,11 +12301,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &769631128
 GameObject:
   m_ObjectHideFlags: 0
@@ -12257,10 +12404,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &769631133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12467,7 +12618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -12507,7 +12658,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12559,10 +12710,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &788662664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12677,7 +12832,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 703d767502684400e8e2f4eb28d73a05, type: 2}
+  - {fileID: 2100000, guid: 3e527943c090947078c27ea396a8788c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12729,10 +12884,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &788936437
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12925,11 +13084,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &806567858
 GameObject:
   m_ObjectHideFlags: 0
@@ -13349,11 +13511,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &842344297
 GameObject:
   m_ObjectHideFlags: 0
@@ -13402,7 +13567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -13449,10 +13614,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &842344302
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13470,7 +13639,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13711,9 +13880,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &846641288
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14318,8 +14491,8 @@ Transform:
   m_LocalPosition: {x: -532.35, y: -983.43, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_Children: []
-  m_Father: {fileID: 2032952211}
-  m_RootOrder: 2
+  m_Father: {fileID: 966783462}
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &945044946
 SpriteRenderer:
@@ -14458,6 +14631,12 @@ RectTransform:
   - {fileID: 664242256}
   - {fileID: 645433429}
   - {fileID: 1864503590}
+  - {fileID: 1518187907}
+  - {fileID: 2139542099}
+  - {fileID: 945044945}
+  - {fileID: 1311817573}
+  - {fileID: 2142800068}
+  - {fileID: 1376277063}
   m_Father: {fileID: 328929499}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14496,7 +14675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968720499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.67, y: 14.6, z: 0}
+  m_LocalPosition: {x: 11.04, y: 14.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1378784404}
@@ -14514,7 +14693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -14561,10 +14740,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &968720504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14582,7 +14765,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14731,10 +14914,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &970036272
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14820,7 +15007,6 @@ GameObject:
   - component: {fileID: 975498632}
   - component: {fileID: 975498631}
   - component: {fileID: 975498630}
-  - component: {fileID: 975498635}
   m_Layer: 0
   m_Name: fishjump (3)
   m_TagString: Untagged
@@ -14889,9 +15075,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &975498632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14949,32 +15139,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975498628}
   m_Mesh: {fileID: 0}
---- !u!61 &975498635
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975498628}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &986104322
 GameObject:
   m_ObjectHideFlags: 0
@@ -15070,9 +15234,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &986104327
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15192,7 +15360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -15239,10 +15407,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1030734115
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15260,7 +15432,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15662,9 +15834,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &1054898619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16118,9 +16294,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1080473022
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16287,10 +16467,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1092697148
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16394,7 +16578,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 12
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1097174341
 Animator:
@@ -16747,11 +16931,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &1100945262 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2950635875803896600, guid: a5634c6a31513184fb62cb6d23d8b13a,
@@ -16796,7 +16983,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 14
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1107354562
 Animator:
@@ -17044,10 +17231,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &1108684307
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17261,9 +17452,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &1118036672
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17430,10 +17625,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1120423989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17692,9 +17891,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1130423535
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17867,7 +18070,6 @@ GameObject:
   - component: {fileID: 1157133063}
   - component: {fileID: 1157133062}
   - component: {fileID: 1157133061}
-  - component: {fileID: 1157133066}
   m_Layer: 0
   m_Name: fishjump (6)
   m_TagString: Untagged
@@ -17936,9 +18138,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &1157133063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17996,32 +18202,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157133059}
   m_Mesh: {fileID: 0}
---- !u!61 &1157133066
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157133059}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &1160433847
 GameObject:
   m_ObjectHideFlags: 0
@@ -18162,10 +18342,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &1160433854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18397,7 +18581,6 @@ GameObject:
   - component: {fileID: 1178644988}
   - component: {fileID: 1178644987}
   - component: {fileID: 1178644986}
-  - component: {fileID: 1178644991}
   m_Layer: 0
   m_Name: fishjump (7)
   m_TagString: Untagged
@@ -18466,9 +18649,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &1178644988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18526,32 +18713,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178644984}
   m_Mesh: {fileID: 0}
---- !u!61 &1178644991
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178644984}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &1207422081
 GameObject:
   m_ObjectHideFlags: 0
@@ -18865,10 +19026,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1228198290
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19127,9 +19292,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &1251121593
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19296,10 +19465,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1254188209
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19419,7 +19592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -19466,10 +19639,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1271590045
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19487,7 +19664,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19506,7 +19683,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
 --- !u!33 &1271590046
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19636,9 +19813,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &1273409031
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19805,9 +19986,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1276755316
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20000,8 +20185,8 @@ Transform:
   m_LocalPosition: {x: -562.08, y: -960.21, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 2032952211}
-  m_RootOrder: 3
+  m_Father: {fileID: 966783462}
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1311817574
 SpriteRenderer:
@@ -20111,7 +20296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -20158,10 +20343,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1316286867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20179,7 +20368,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20198,7 +20387,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
 --- !u!33 &1316286868
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20504,9 +20693,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1340782644
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20852,10 +21045,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1361972012
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21043,8 +21240,8 @@ Transform:
   m_LocalPosition: {x: -561.66, y: -937.27, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 2032952211}
-  m_RootOrder: 5
+  m_Father: {fileID: 966783462}
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1376277064
 SpriteRenderer:
@@ -21377,11 +21574,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1411759365
 GameObject:
   m_ObjectHideFlags: 0
@@ -21522,10 +21722,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &1411759372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21878,11 +22082,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1418941290
 GameObject:
   m_ObjectHideFlags: 0
@@ -22044,9 +22251,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 1
+  PlayOTHER: 0
 --- !u!23 &1423706690
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22376,11 +22587,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1467330108
 GameObject:
   m_ObjectHideFlags: 0
@@ -22547,11 +22761,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1467909256
 GameObject:
   m_ObjectHideFlags: 0
@@ -22810,10 +23027,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1476683449
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23106,9 +23327,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1489865876
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23275,9 +23500,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1493175436
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23557,8 +23786,8 @@ Transform:
   m_LocalPosition: {x: -556.41, y: -983.31, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 2032952211}
-  m_RootOrder: 0
+  m_Father: {fileID: 966783462}
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1518187908
 SpriteRenderer:
@@ -23817,10 +24046,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1522838252
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23987,10 +24220,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1531756411
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24076,7 +24313,6 @@ GameObject:
   - component: {fileID: 1536947590}
   - component: {fileID: 1536947589}
   - component: {fileID: 1536947588}
-  - component: {fileID: 1536947593}
   m_Layer: 0
   m_Name: fishjump (5)
   m_TagString: Untagged
@@ -24145,9 +24381,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &1536947590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24205,32 +24445,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536947586}
   m_Mesh: {fileID: 0}
---- !u!61 &1536947593
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536947586}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &1551700501
 GameObject:
   m_ObjectHideFlags: 0
@@ -24263,7 +24477,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 9
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1551700503
 Animator:
@@ -24698,7 +24912,6 @@ GameObject:
   - component: {fileID: 1589354870}
   - component: {fileID: 1589354869}
   - component: {fileID: 1589354868}
-  - component: {fileID: 1589354873}
   m_Layer: 0
   m_Name: fishjump (9)
   m_TagString: Untagged
@@ -24767,9 +24980,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!114 &1589354870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24827,32 +25044,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589354866}
   m_Mesh: {fileID: 0}
---- !u!61 &1589354873
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589354866}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.048800003, y: -0.41849998}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.7999999}
-  m_EdgeRadius: 0
 --- !u!1 &1594125783
 GameObject:
   m_ObjectHideFlags: 0
@@ -24901,7 +25092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: ef9569cf2e8ea4aa9857a843d32e515b, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 48a80d1fb519eee459b13c0b2bd09d31, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
@@ -24948,10 +25139,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1594125788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24969,7 +25164,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24deaad8486e144698e7621e0d08180f, type: 2}
+  - {fileID: 2100000, guid: 74912c21f149c9b4aa8bbd5d58a24592, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25189,11 +25384,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1601429114
 GameObject:
   m_ObjectHideFlags: 0
@@ -25682,10 +25880,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1659841173
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26036,10 +26238,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1682646750
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26251,10 +26457,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &1700922544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26589,10 +26799,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 1
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1729231415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26922,11 +27136,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1760316633
 GameObject:
   m_ObjectHideFlags: 0
@@ -27022,9 +27239,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1760316638
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27262,11 +27483,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1785808713
 GameObject:
   m_ObjectHideFlags: 0
@@ -27533,7 +27757,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1795518163
 Animator:
@@ -28131,11 +28355,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1866043157
 GameObject:
   m_ObjectHideFlags: 0
@@ -28302,11 +28529,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1884026237
 GameObject:
   m_ObjectHideFlags: 0
@@ -28402,10 +28632,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1884026242
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28423,7 +28657,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 703d767502684400e8e2f4eb28d73a05, type: 2}
+  - {fileID: 2100000, guid: 3e527943c090947078c27ea396a8788c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28572,10 +28806,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1887759598
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28593,7 +28831,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 703d767502684400e8e2f4eb28d73a05, type: 2}
+  - {fileID: 2100000, guid: 3e527943c090947078c27ea396a8788c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28742,9 +28980,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &1915498990
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28982,11 +29224,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle_startscene
   - touch
-  - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!1 &1951875599
 GameObject:
   m_ObjectHideFlags: 0
@@ -29319,10 +29564,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!61 &1975553889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29531,10 +29780,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &2004375815
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29777,12 +30030,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1518187907}
-  - {fileID: 2139542099}
-  - {fileID: 945044945}
-  - {fileID: 1311817573}
-  - {fileID: 2142800068}
-  - {fileID: 1376277063}
   - {fileID: 701706552}
   - {fileID: 1795518162}
   - {fileID: 634685624}
@@ -29896,9 +30143,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &2037987582
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30065,10 +30316,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &2062617834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30322,9 +30577,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &2076672625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30796,9 +31055,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &2093882514
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30965,10 +31228,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - idle
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &2111622744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31227,9 +31494,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isitLOOP: 0
+  isLOOP: 0
+  isIDLE: 0
+  PlayME: 0
+  PlayOTHER: 0
 --- !u!23 &2122072174
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31333,7 +31604,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2032952211}
-  m_RootOrder: 13
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2124486754
 Animator:
@@ -31707,8 +31978,8 @@ Transform:
   m_LocalPosition: {x: -543.14, y: -981.63, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0}
   m_Children: []
-  m_Father: {fileID: 2032952211}
-  m_RootOrder: 1
+  m_Father: {fileID: 966783462}
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2139542100
 SpriteRenderer:
@@ -31799,8 +32070,8 @@ Transform:
   m_LocalPosition: {x: -563.24, y: -946.28, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 2032952211}
-  m_RootOrder: 4
+  m_Father: {fileID: 966783462}
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2142800069
 SpriteRenderer:
