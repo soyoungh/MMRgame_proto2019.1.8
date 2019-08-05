@@ -21,7 +21,7 @@ public class Spine_Touch : MonoBehaviour
     public bool PlayOTHER = false;
     
     bool isitDragging = false;
-    int ListIndex = 0;
+    public int ListIndex = 0;
 
     private void OnEnable()
     {
@@ -78,6 +78,7 @@ public class Spine_Touch : MonoBehaviour
             {
                 anim.loop = false;
                 anim.AnimationName = anim_name[ListIndex];
+                print("idle상태 애님순서 : " + ListIndex);
                 ListIndex++;
                 if (ListIndex == anim_name.Count)
                 {
@@ -90,6 +91,7 @@ public class Spine_Touch : MonoBehaviour
             if (ListIndex < anim_name.Count)
             {
                 anim.AnimationName = anim_name[ListIndex];
+                print("애님순서 : " + ListIndex);
                 ListIndex++;
                 if (isLOOP && ListIndex == anim_name.Count)
                 {

@@ -221,6 +221,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &30970454
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -465,6 +466,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &46169574
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +569,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &46169579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -785,6 +788,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &46389933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1141,6 +1145,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &73114053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1632,6 +1637,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &107644764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1760,6 +1766,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &111457610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2004,6 +2011,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &124105432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,6 +2114,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &124105437
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2511,6 +2520,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &146972561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,6 +2694,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1001 &147798818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2949,6 +2960,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &174993316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,6 +3063,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &174993321
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3476,6 +3489,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &227041942
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3693,6 +3707,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &235618454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3737,7 +3752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &266729984
 Transform:
   m_ObjectHideFlags: 0
@@ -3784,7 +3799,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: 
+  _animationName: anim1
   loop: 1
   timeScale: 1
 --- !u!23 &266729986
@@ -3823,7 +3838,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
 --- !u!33 &266729987
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3978,6 +3993,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &271132452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4251,6 +4267,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &297457187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4590,6 +4607,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &317497394
 GameObject:
   m_ObjectHideFlags: 0
@@ -4855,6 +4873,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &328929498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5116,6 +5135,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &346445173
 GameObject:
   m_ObjectHideFlags: 0
@@ -5343,6 +5363,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &349921393
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5590,6 +5611,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &379973181
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5889,6 +5911,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &383799762
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5974,9 +5997,11 @@ GameObject:
   - component: {fileID: 386756976}
   - component: {fileID: 386756975}
   - component: {fileID: 386756974}
+  - component: {fileID: 386756980}
+  - component: {fileID: 386756981}
   - component: {fileID: 386756979}
   m_Layer: 0
-  m_Name: fishing (1)
+  m_Name: fishing_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6060,9 +6085,12 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 1
+  - touch2
+  - touch3
+  isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &386756977
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6099,7 +6127,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
 --- !u!33 &386756978
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6134,6 +6162,53 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5698757, y: 2.0702014}
   m_EdgeRadius: 0
+--- !u!114 &386756980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386756972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546ed54c2c36f5842af879310e04fc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RenderView: {fileID: 4700541487268336183}
+  Give: {fileID: 1411789628}
+  DragBox: {fileID: 4700541488778140661}
+  CheckRange: {fileID: 362437785}
+  ImageContain:
+  - {fileID: 1951875600}
+  - {fileID: 940771134}
+  - {fileID: 1364153685}
+  - {fileID: 560248852}
+  SizeRange_min: 0.7
+  SizeRange_max: 3
+  Num_RightAnswer: 0
+--- !u!114 &386756981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386756972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3061e752c7f338c409963e23cc60078d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishing_ins_spine: {fileID: 386756976}
+  saver_ins_spine: {fileID: 788662663}
+  Help: {fileID: 266729983}
+  Add_animname1: anim1
+  Add_animname2: anim2
+  Add_animname3: abim3
+  right_:
+  - {fileID: 1951875599}
+  - {fileID: 940771133}
+  - {fileID: 1364153684}
+  - {fileID: 560248851}
 --- !u!1 &390511069
 GameObject:
   m_ObjectHideFlags: 0
@@ -6236,6 +6311,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &390511074
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6409,6 +6485,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &392319080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6771,7 +6848,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
 --- !u!33 &426644538
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6811,6 +6888,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &426644541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7084,6 +7162,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &476216372
 GameObject:
   m_ObjectHideFlags: 0
@@ -7475,6 +7554,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &484340079
 GameObject:
   m_ObjectHideFlags: 0
@@ -7755,6 +7835,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &502521384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7954,6 +8035,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &504666866
 GameObject:
   m_ObjectHideFlags: 0
@@ -8192,6 +8274,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &511468293
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8391,6 +8474,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &520871398
 GameObject:
   m_ObjectHideFlags: 0
@@ -8582,6 +8666,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &520904034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8952,6 +9037,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &542425686
 GameObject:
   m_ObjectHideFlags: 0
@@ -9253,7 +9339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -538.75, y: -960.411}
+  m_AnchoredPosition: {x: -528.03, y: -963.661}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &560248853
@@ -9478,6 +9564,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &564309217
 GameObject:
   m_ObjectHideFlags: 0
@@ -9580,6 +9667,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &564309222
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9651,6 +9739,85 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5699999, y: 0.88359505}
   m_EdgeRadius: 0
+--- !u!1 &568171402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 568171403}
+  - component: {fileID: 568171404}
+  m_Layer: 0
+  m_Name: o_05-2_dubu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &568171403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568171402}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08, y: 0.32, z: 0}
+  m_LocalScale: {x: -0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 788662658}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &568171404
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568171402}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: a866bc637ec4ae24baf5d39bbaee6e2b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.56, y: 2.56}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &571355581
 GameObject:
   m_ObjectHideFlags: 0
@@ -9931,6 +10098,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &591330325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10209,6 +10377,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &605661986
 GameObject:
   m_ObjectHideFlags: 0
@@ -10561,6 +10730,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &634685623
 GameObject:
   m_ObjectHideFlags: 0
@@ -10722,6 +10892,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &639739368
 GameObject:
   m_ObjectHideFlags: 0
@@ -10984,6 +11155,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &658335402
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11394,6 +11566,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &689358048
 GameObject:
   m_ObjectHideFlags: 0
@@ -11834,6 +12007,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &710929137
 GameObject:
   m_ObjectHideFlags: 0
@@ -11935,6 +12109,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &710929142
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12263,6 +12438,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &769631128
 GameObject:
   m_ObjectHideFlags: 0
@@ -12365,6 +12541,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &769631133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12538,8 +12715,9 @@ GameObject:
   - component: {fileID: 788662662}
   - component: {fileID: 788662659}
   - component: {fileID: 788662664}
+  - component: {fileID: 788662665}
   m_Layer: 0
-  m_Name: ballet
+  m_Name: ballet_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12554,8 +12732,9 @@ Transform:
   m_GameObject: {fileID: 788662657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.56, y: -5.21, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 568171403}
   m_Father: {fileID: 1378784404}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12667,9 +12846,10 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 1
+  isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &788662664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12696,6 +12876,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5699999, y: 0.88359505}
   m_EdgeRadius: 0
+--- !u!95 &788662665
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788662657}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8757187ddc8a5dd45ab9ca0a9655c5c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &788936430
 GameObject:
   m_ObjectHideFlags: 0
@@ -12843,6 +13042,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &788936437
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13042,6 +13242,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &806567858
 GameObject:
   m_ObjectHideFlags: 0
@@ -13468,6 +13669,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &842344297
 GameObject:
   m_ObjectHideFlags: 0
@@ -13570,6 +13772,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &842344302
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13834,6 +14037,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &846641288
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14357,7 +14561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -537.73004, y: -959.35}
+  m_AnchoredPosition: {x: -524.6, y: -960.2999}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940771135
@@ -14694,6 +14898,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &968720504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14867,6 +15072,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &970036272
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15165,6 +15371,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &986104327
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15338,6 +15545,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1030734115
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15763,6 +15971,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1054898619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16222,6 +16431,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1080473022
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16395,6 +16605,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1092697148
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16627,6 +16838,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &1097293668
 GameObject:
   m_ObjectHideFlags: 0
@@ -16879,6 +17091,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!114 &1100945262 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2950635875803896600, guid: a5634c6a31513184fb62cb6d23d8b13a,
@@ -17052,6 +17265,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &1108684300
 GameObject:
   m_ObjectHideFlags: 0
@@ -17199,6 +17413,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &1108684307
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17418,6 +17633,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1118036672
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17591,6 +17807,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1120423989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17855,6 +18072,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1130423535
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18286,6 +18504,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &1160433854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18949,6 +19168,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1228198290
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19213,6 +19433,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1251121593
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19386,6 +19607,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1254188209
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19559,6 +19781,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1271590045
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19731,6 +19954,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1273409031
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19903,6 +20127,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1276755316
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20260,6 +20485,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1316286867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20608,6 +20834,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1340782644
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20960,6 +21187,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1361972012
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21066,7 +21294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -537.74005, y: -960.411}
+  m_AnchoredPosition: {x: -524.61, y: -963.661}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364153686
@@ -21488,6 +21716,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1411759365
 GameObject:
   m_ObjectHideFlags: 0
@@ -21635,6 +21864,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &1411759372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21681,7 +21911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1411789629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21820,7 +22050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf47fe615f393f843853a757ce5b3ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneNumber: 7
+  SceneNumber: 10
 --- !u!1 &1414243666
 GameObject:
   m_ObjectHideFlags: 0
@@ -21994,6 +22224,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1418941290
 GameObject:
   m_ObjectHideFlags: 0
@@ -22161,6 +22392,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1423706690
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22497,6 +22729,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1467330108
 GameObject:
   m_ObjectHideFlags: 0
@@ -22670,6 +22903,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1467909256
 GameObject:
   m_ObjectHideFlags: 0
@@ -22935,6 +23169,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1476683449
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23233,6 +23468,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1489865876
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23405,6 +23641,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1493175436
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23951,6 +24188,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1522838252
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24124,6 +24362,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1531756411
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24482,6 +24721,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &1552419909
 GameObject:
   m_ObjectHideFlags: 0
@@ -24767,7 +25007,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BeforeFindMMR
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 788662659}
     - target: {fileID: 5433562433946553268, guid: 9d447d3d81287e4449ca14bbb46be410,
         type: 3}
       propertyPath: AfterFindMMR
@@ -24782,7 +25022,7 @@ PrefabInstance:
         type: 3}
       propertyPath: AfterFindMMR_sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 568171404}
     - target: {fileID: 5433562433946553271, guid: 9d447d3d81287e4449ca14bbb46be410,
         type: 3}
       propertyPath: DragControl
@@ -25023,6 +25263,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1594125788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25267,6 +25508,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1601429114
 GameObject:
   m_ObjectHideFlags: 0
@@ -25517,6 +25759,7 @@ GameObject:
   - component: {fileID: 1612561368}
   - component: {fileID: 1612561370}
   - component: {fileID: 1612561369}
+  - component: {fileID: 1612561371}
   m_Layer: 5
   m_Name: CameraRoll
   m_TagString: Untagged
@@ -25585,6 +25828,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612561367}
   m_CullTransparentMesh: 0
+--- !u!114 &1612561371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612561367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f107c83ecf8ef6645a732c514fa3ce9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1646121799
 GameObject:
   m_ObjectHideFlags: 0
@@ -25762,6 +26017,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1659841173
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26119,6 +26375,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1682646750
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26337,6 +26594,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &1700922544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26678,6 +26936,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1729231415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27014,6 +27273,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1760316633
 GameObject:
   m_ObjectHideFlags: 0
@@ -27115,6 +27375,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1760316638
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27359,6 +27620,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1785808713
 GameObject:
   m_ObjectHideFlags: 0
@@ -27754,6 +28016,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1001 &1801144618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28251,6 +28514,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1866043157
 GameObject:
   m_ObjectHideFlags: 0
@@ -28424,6 +28688,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1884026237
 GameObject:
   m_ObjectHideFlags: 0
@@ -28526,6 +28791,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1884026242
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28699,6 +28965,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1887759598
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28871,6 +29138,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &1915498990
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29115,6 +29383,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1951875599
 GameObject:
   m_ObjectHideFlags: 0
@@ -29150,7 +29419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -538.73, y: -959.34}
+  m_AnchoredPosition: {x: -528.01, y: -960.29}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1951875601
@@ -29454,6 +29723,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!61 &1975553889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29669,6 +29939,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &2004375815
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30030,6 +30301,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &2037987582
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30203,6 +30475,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &2062617834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30462,6 +30735,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &2076672625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30939,6 +31213,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &2093882514
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31112,6 +31387,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &2111622744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31376,6 +31652,7 @@ MonoBehaviour:
   isLOOP: 0
   PlayME: 1
   PlayOTHER: 0
+  ListIndex: 0
 --- !u!23 &2122072174
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31608,6 +31885,7 @@ MonoBehaviour:
   isLOOP: 1
   PlayME: 0
   PlayOTHER: 1
+  ListIndex: 0
 --- !u!1 &2127825374
 GameObject:
   m_ObjectHideFlags: 0
