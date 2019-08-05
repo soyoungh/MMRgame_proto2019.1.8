@@ -8,5 +8,7 @@ public class Data_PrologueReset : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("SavePrologue");
         print("SavePrologue의 키값과 데이터를 지웠습니다.");
+        PlayerPrefs.DeleteKey("SaveTutorial");
+        print("SaveTutorial의 키값과 데이터를 지웠습니다.");
     }
 }

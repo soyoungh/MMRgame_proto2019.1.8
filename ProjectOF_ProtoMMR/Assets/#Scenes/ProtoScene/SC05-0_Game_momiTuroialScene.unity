@@ -1443,10 +1443,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - swim
   - swim_touch
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &380760260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,9 +1931,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &456238615
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2269,9 +2277,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &520858312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,10 +2891,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
   - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &603079521
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3167,9 +3183,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - playing
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &674993939
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3709,10 +3729,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
   - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &784297288
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3965,9 +3989,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &856203043
 GameObject:
   m_ObjectHideFlags: 0
@@ -4137,6 +4165,7 @@ GameObject:
   - component: {fileID: 899300093}
   - component: {fileID: 899300092}
   - component: {fileID: 899300097}
+  - component: {fileID: 899300098}
   m_Layer: 5
   m_Name: TutorialCanvas_CameraFollow
   m_TagString: Untagged
@@ -4277,6 +4306,18 @@ MonoBehaviour:
   CheckRange: {fileID: 362437785}
   SizeRange_min: 1
   SizeRange_max: 3
+--- !u!114 &899300098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899300091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092a796470a888c4e965df8a1c8684dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &907384321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,10 +4560,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - swim
   - swim_touch
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &915970398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5595,10 +5640,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - swim
   - swim_touch
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1138991245
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,10 +6293,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - swim
   - swim_touch
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1192569200
 GameObject:
   m_ObjectHideFlags: 0
@@ -6388,10 +6441,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
   - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &1192569207
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6589,9 +6646,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - playing
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1219461570
 GameObject:
   m_ObjectHideFlags: 0
@@ -6732,10 +6793,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
   - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &1219461577
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6906,10 +6971,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
   - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &1347243153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7242,10 +7311,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
   - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!114 &1376605297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7858,10 +7931,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
   - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &1430381979
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8953,9 +9030,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1646121799
 GameObject:
   m_ObjectHideFlags: 0
@@ -9197,9 +9278,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - playing
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &1702085745
 GameObject:
   m_ObjectHideFlags: 0
@@ -9419,9 +9504,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
-  isitLOOP: 1
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &1753955018
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10300,9 +10389,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &1911783200
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11093,9 +11186,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!1 &2063266086
 GameObject:
   m_ObjectHideFlags: 0
@@ -11236,10 +11333,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5769119f40818744aff573dce6848e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OtherAnim: {fileID: 0}
   anim_name:
   - touch
   - touch2
-  isitLOOP: 0
+  isLOOP: 0
+  PlayME: 0
+  PlayOTHER: 0
+  ListIndex: 0
 --- !u!60 &2063266093
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11271,6 +11372,50 @@ PolygonCollider2D:
       - {x: 0.2925038, y: 3.3646898}
       - {x: 2.0128937, y: 3.7707777}
       - {x: 3.0059426, y: 5.861897}
+--- !u!1 &2120943370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120943372}
+  - component: {fileID: 2120943371}
+  m_Layer: 0
+  m_Name: DataCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2120943371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120943370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4418f3139a2ab4db7631a9f164df07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tuto: {fileID: 899300091}
+--- !u!4 &2120943372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120943370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2133086808
 GameObject:
   m_ObjectHideFlags: 0
