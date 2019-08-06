@@ -20,18 +20,18 @@ public class Spine_Touch : MonoBehaviour
     public bool PlayME = false;
     public bool PlayOTHER = false;
     
-    bool isitDragging = false;
+    //bool isitDragging = false;
     public int ListIndex = 0;
 
     private void OnEnable()
     {
-        Play_CheckTouch.SpineStart_FromSpine += this.OnTouchEntering;
-        Play_CheckTouch.SpineMoved_FromSpine += this.OnDragging;
+        //Play_CheckTouch.SpineStart_FromSpine += this.OnTouchEntering;
+        //Play_CheckTouch.SpineMoved_FromSpine += this.OnDragging;
     }
     private void OnDisable()
     {
-        Play_CheckTouch.SpineStart_FromSpine -= this.OnTouchEntering;
-        Play_CheckTouch.SpineMoved_FromSpine -= this.OnDragging;
+        //Play_CheckTouch.SpineStart_FromSpine -= this.OnTouchEntering;
+        //Play_CheckTouch.SpineMoved_FromSpine -= this.OnDragging;
     }
 
     private void Start()
@@ -54,17 +54,9 @@ public class Spine_Touch : MonoBehaviour
             }
         }
     }
-    void OnDragging()
-    {
-        isitDragging = true;
-    }
-    void OnTouchEntering()
-    {
-        isitDragging = false;
-    }
 
     private void OnMouseUp()
-    {if (isitDragging) return;
+    {if (Play_CheckTouch.SpineCheck) return;
 
         OnPlayME();
         
