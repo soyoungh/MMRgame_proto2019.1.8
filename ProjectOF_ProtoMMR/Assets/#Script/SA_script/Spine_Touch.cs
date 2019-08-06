@@ -55,11 +55,10 @@ public class Spine_Touch : MonoBehaviour
         }
     }
 
-    private void OnMouseUp()
+    private void OnMouseDown()
     {if (Play_CheckTouch.SpineCheck) return;
 
         OnPlayME();
-        
     }
 
     public void OnPlayME()

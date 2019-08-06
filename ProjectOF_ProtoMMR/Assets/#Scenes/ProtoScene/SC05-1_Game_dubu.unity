@@ -189,7 +189,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &30970452
 MonoBehaviour:
@@ -218,7 +218,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -2780,7 +2780,7 @@ PrefabInstance:
     - target: {fileID: 2950635875803896603, guid: a5634c6a31513184fb62cb6d23d8b13a,
         type: 3}
       propertyPath: Zoom_RealMin
-      value: 80
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 2950635875803896600, guid: a5634c6a31513184fb62cb6d23d8b13a,
         type: 3}
@@ -3916,7 +3916,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!23 &271132448
 MeshRenderer:
@@ -3989,8 +3989,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
-  - touch
-  isLOOP: 0
+  - touch1
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -5331,7 +5331,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &349921391
 MonoBehaviour:
@@ -5360,7 +5360,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -7757,7 +7757,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: animation
+  _animationName: 
   loop: 1
   timeScale: 1
 --- !u!23 &502521380
@@ -11123,7 +11123,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &658335400
 MonoBehaviour:
@@ -11152,7 +11152,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -12262,6 +12262,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 310217019824709217, guid: d8c752d2aa247944eb244041e1576e31,
+        type: 3}
+      propertyPath: maxFOV_real
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 310217019824709217, guid: d8c752d2aa247944eb244041e1576e31,
+        type: 3}
+      propertyPath: maxFOV
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 310217019824709217, guid: d8c752d2aa247944eb244041e1576e31,
+        type: 3}
+      propertyPath: minFOV
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 310217019824709217, guid: d8c752d2aa247944eb244041e1576e31,
+        type: 3}
+      propertyPath: minFOV_real
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8c752d2aa247944eb244041e1576e31, type: 3}
@@ -15339,7 +15359,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &986104325
 MonoBehaviour:
@@ -15368,7 +15388,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -15939,7 +15959,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &1054898617
 MonoBehaviour:
@@ -15968,7 +15988,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -17601,7 +17621,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &1118036670
 MonoBehaviour:
@@ -17630,7 +17650,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -19401,7 +19421,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &1251121591
 MonoBehaviour:
@@ -19430,7 +19450,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -19922,7 +19942,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &1273409029
 MonoBehaviour:
@@ -19951,7 +19971,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -20123,8 +20143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
-  - touch
-  isLOOP: 0
+  - touch1
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -22360,7 +22380,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &1423706688
 MonoBehaviour:
@@ -22389,7 +22409,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -23609,7 +23629,7 @@ MonoBehaviour:
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
   _animationName: 
-  loop: 1
+  loop: 0
   timeScale: 1
 --- !u!114 &1493175434
 MonoBehaviour:
@@ -23637,8 +23657,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
-  - touch
-  isLOOP: 0
+  - touch1
+  isLOOP: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -29523,7 +29543,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 80
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
