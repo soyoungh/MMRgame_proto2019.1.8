@@ -567,7 +567,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - idle
-  - touch1
+  - touch2
   isLOOP: 0
   isIDLE: 0
   PlayME: 1
@@ -12603,7 +12603,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - idle
-  - touch1
+  - touch2
   isLOOP: 0
   isIDLE: 0
   PlayME: 1
@@ -23268,7 +23268,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - idle
-  - touch1
+  - touch2
   isLOOP: 0
   isIDLE: 0
   PlayME: 1
@@ -31514,7 +31514,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - idle
-  - touch1
+  - touch2
   isLOOP: 0
   isIDLE: 0
   PlayME: 1
