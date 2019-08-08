@@ -13,10 +13,12 @@ public class Spine_Touch : MonoBehaviour
 {
     SkeletonAnimation anim;
     public SkeletonAnimation OtherAnim;
+
+    [SerializeField]
     public List<string> anim_name = new List<string>(0);
 
     public bool isLOOP = false;
-    bool isIDLE = false;
+    public bool isIDLE = false;
     public bool PlayME = false;
     public bool PlayOTHER = false;
     

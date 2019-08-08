@@ -1,4 +1,4 @@
-﻿#define Active_//이거 비활성화 하고 멀티 셀렉션 다시 진행하기[0726]
+﻿//#define Active_//이거 비활성화 하고 멀티 셀렉션 다시 진행하기[0726]
 #define DEBUG_
 
 #if Active_
@@ -16,10 +16,10 @@ public class SpineTouch_Editor : Editor
 {
 #if DEBUG_
     Spine_Touch[] SpineScripts;
-
     private void OnEnable()
     {
         SpineScripts = targets.Cast<Spine_Touch>().ToArray();
+        //여러 오브젝트를 선택하여 다수의 컴포넌트에 접근하기위해서는 targets 변수를 사용하여 선택 오브젝트들을 가져옴
     }
 #endif
 
@@ -27,30 +27,49 @@ public class SpineTouch_Editor : Editor
     {
 #if DEBUG_
         EditorGUI.BeginChangeCheck();
-        EditorGUI.showMixedValue = false;
+        //EditorGUI.showMixedValue = SpineScripts.Count<Spine_Touch>() > 1;//선택된 오브젝트가 다수일경우, 아닐경우에따라 수치표시를 결정
 
-        foreach (var SpineScript in SpineScripts)
+
+        var bool_playme = EditorGUILayout.BeginToggleGroup("본인애님 실행", SpineScripts[0].PlayME);
+        EditorGUI.indentLevel++; //들여쓰기의 정도
+
+
+        //~~~~~~~~~~~시리얼된거랑 리스트가 서로 형이안맞음~~~~~~~~~~~~~~~~~~##
+        SerializedObject animLIST = new SerializedObject(SpineScripts);
+        List<string> list_animname = SpineScripts[0].anim_name;
+        ShowList(animLIST.FindProperty("anim_name"), "anim");
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+
+
+        var bool_isidle = EditorGUILayout.Toggle("has idle?", SpineScripts[0].isIDLE);
+        var bool_isloop = EditorGUILayout.Toggle("oop anim?", SpineScripts[0].isLOOP);
+        EditorGUI.indentLevel--;
+        EditorGUILayout.EndToggleGroup();
+
+        Undo.RecordObjects(SpineScripts, "spine value");
+
+        if (EditorGUI.EndChangeCheck())
         {
-            SpineScript.PlayME = EditorGUILayout.BeginToggleGroup("본인애님 실행", SpineScripts[0].PlayME);
-            EditorGUI.indentLevel++; //들여쓰기의 정도
-            ShowList(serializedObject.FindProperty("anim_name"), "anim");
-            SpineScript.isIDLE = EditorGUILayout.Toggle("has idle?", SpineScripts[0].isIDLE);
-            SpineScript.isLOOP = EditorGUILayout.Toggle("oop anim?", SpineScripts[0].isLOOP);
-            EditorGUI.indentLevel--;
-            EditorGUILayout.EndToggleGroup();
+            foreach (var SpineScript in SpineScripts)
+            {
+                SpineScript.PlayME = bool_playme;
+                SpineScript.anim_name = list_animname;
+                animLIST.ApplyModifiedProperties();//바꾸고 적용시켜주는게 문제인듯
+                SpineScript.isIDLE = EditorGUILayout.Toggle("has idle?", SpineScripts[0].isIDLE);
+                SpineScript.isLOOP = EditorGUILayout.Toggle("oop anim?", SpineScripts[0].isLOOP);
 
-            //case 2
-            SpineScript.PlayOTHER = EditorGUILayout.BeginToggleGroup("다른애님 실행", SpineScripts[0].PlayOTHER);
-            EditorGUI.indentLevel++; //들여쓰기의 정도
-            ShowList(serializedObject.FindProperty("anim_name"), "anim");
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("OtherAnim"));
-            SpineScript.isIDLE = EditorGUILayout.Toggle("has idle?", SpineScripts[0].isIDLE);
-            SpineScript.isLOOP = EditorGUILayout.Toggle("loop anim?", SpineScripts[0].isLOOP);
-            EditorGUI.indentLevel--;
-            EditorGUILayout.EndToggleGroup();
+                //EditorGUI.showMixedValue = false;
+                ////case 2
+                //SpineScript.PlayOTHER = EditorGUILayout.BeginToggleGroup("다른애님 실행", SpineScripts[0].PlayOTHER);
+                //EditorGUI.indentLevel++; //들여쓰기의 정도
+                //ShowList(serializedObject.FindProperty("anim_name"), "anim");
+                //EditorGUILayout.PropertyField(serializedObject.FindProperty("OtherAnim"));
+                //SpineScript.isIDLE = EditorGUILayout.Toggle("has idle?", SpineScripts[0].isIDLE);
+                //SpineScript.isLOOP = EditorGUILayout.Toggle("loop anim?", SpineScripts[0].isLOOP);
+                //EditorGUI.indentLevel--;
+                //EditorGUILayout.EndToggleGroup();
+            }
         }
-
-        EditorGUI.EndChangeCheck();
         //case 1
         
 #else

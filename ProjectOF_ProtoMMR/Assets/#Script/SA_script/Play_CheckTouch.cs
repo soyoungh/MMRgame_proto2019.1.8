@@ -30,7 +30,7 @@ public class Play_CheckTouch : MonoBehaviour
 
     void Update()
     {
-        print("스파인터치 : " + SpineCheck);
+        //print("스파인터치 : " + SpineCheck);
         if (TutorialCheck)
         {
             if (Input.touchCount == 1)
