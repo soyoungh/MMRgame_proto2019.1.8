@@ -6108,6 +6108,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
+  - touch2
+  - touch3
   isLOOP: 0
   isIDLE: 1
   PlayME: 1
@@ -12909,11 +12911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
-  - anim1
-  - anim2
-  - anim3
   - idle
-  - touc1
+  - touch1
   isLOOP: 1
   isIDLE: 1
   PlayME: 1
