@@ -567,9 +567,9 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - idle
-  - touch2
-  isLOOP: 0
-  isIDLE: 0
+  - touch1
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -789,7 +789,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isLOOP: 0
+  isLOOP: 1
   isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -1770,7 +1770,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -2120,7 +2120,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -3073,7 +3073,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -3500,7 +3500,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -3718,7 +3718,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
@@ -5630,7 +5630,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -5931,7 +5931,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -6108,10 +6108,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  - touch2
-  - touch3
   isLOOP: 0
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -6333,7 +6331,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -6508,7 +6506,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -6912,7 +6910,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -8302,8 +8300,8 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
-  isIDLE: 1
+  isLOOP: 1
+  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -8697,7 +8695,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -9701,7 +9699,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -10133,7 +10131,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -12150,8 +12148,8 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
-  isIDLE: 1
+  isLOOP: 1
+  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -12603,9 +12601,9 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - idle
-  - touch2
-  isLOOP: 0
-  isIDLE: 0
+  - touch1
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -12911,10 +12909,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
+  - anim1
+  - anim2
+  - anim3
   - idle
-  - touch1
-  isLOOP: 0
-  isIDLE: 0
+  - touc1
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -13108,7 +13109,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -13841,7 +13842,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -14106,7 +14107,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
@@ -14969,7 +14970,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -15144,7 +15145,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -15619,7 +15620,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -16506,8 +16507,8 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
-  isIDLE: 1
+  isLOOP: 1
+  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -16682,7 +16683,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -17491,8 +17492,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
   anim_name:
-  - 
-  isLOOP: 0
+  - idle
+  - touch1
+  isLOOP: 1
   isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
@@ -17889,7 +17891,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -18154,7 +18156,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isLOOP: 0
+  isLOOP: 1
   isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
@@ -18587,8 +18589,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -19253,7 +19255,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -19694,7 +19696,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -19869,7 +19871,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -20576,7 +20578,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -20895,7 +20897,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: animation
+  _animationName: 
   loop: 1
   timeScale: 1
 --- !u!114 &1340782642
@@ -21280,7 +21282,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -21958,8 +21960,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -23267,9 +23269,9 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - idle
-  - touch2
-  isLOOP: 0
-  isIDLE: 0
+  - touch1
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -23538,7 +23540,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: animation
+  _animationName: 
   loop: 1
   timeScale: 1
 --- !u!114 &1489865874
@@ -23568,9 +23570,9 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   isIDLE: 0
-  PlayME: 0
+  PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
 --- !u!23 &1489865876
@@ -24291,7 +24293,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -24466,7 +24468,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -25369,7 +25371,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -26125,7 +26127,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -26484,7 +26486,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -26704,7 +26706,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -27047,7 +27049,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -28908,8 +28910,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -29083,8 +29085,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -29257,7 +29259,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isLOOP: 0
+  isLOOP: 1
   isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
@@ -29845,7 +29847,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -30061,8 +30063,8 @@ MonoBehaviour:
   anim_name:
   - idle
   - touch1
-  isLOOP: 0
-  isIDLE: 0
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -30424,8 +30426,8 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
-  isIDLE: 1
+  isLOOP: 1
+  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -30600,7 +30602,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -30860,7 +30862,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - animation
-  isLOOP: 0
+  isLOOP: 1
   isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
@@ -31339,8 +31341,8 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
-  isIDLE: 1
+  isLOOP: 1
+  isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -31513,9 +31515,9 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - idle
-  - touch2
-  isLOOP: 0
-  isIDLE: 0
+  - touch1
+  isLOOP: 1
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -31780,7 +31782,7 @@ MonoBehaviour:
   OtherAnim: {fileID: 0}
   anim_name:
   - touch1
-  isLOOP: 0
+  isLOOP: 1
   isIDLE: 0
   PlayME: 1
   PlayOTHER: 0
