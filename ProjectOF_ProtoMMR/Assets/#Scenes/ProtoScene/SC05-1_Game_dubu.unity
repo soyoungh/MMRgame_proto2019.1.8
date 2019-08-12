@@ -8304,7 +8304,7 @@ MonoBehaviour:
   - touch1
   isLOOP: 0
   isIDLE: 0
-  PlayME: 1
+  PlayME: 0
   PlayOTHER: 0
   ListIndex: 0
 --- !u!61 &511468293
@@ -12152,7 +12152,7 @@ MonoBehaviour:
   - touch1
   isLOOP: 0
   isIDLE: 0
-  PlayME: 1
+  PlayME: 0
   PlayOTHER: 0
   ListIndex: 0
 --- !u!23 &710929142
@@ -16507,7 +16507,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -30426,7 +30426,7 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -31341,9 +31341,9 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 1
-  PlayOTHER: 0
+  isIDLE: 1
+  PlayME: 0
+  PlayOTHER: 1
   ListIndex: 0
 --- !u!23 &2093882514
 MeshRenderer:
