@@ -17490,7 +17490,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
-  anim_name: []
+  anim_name:
+  - 
   isLOOP: 0
   isIDLE: 1
   PlayME: 1

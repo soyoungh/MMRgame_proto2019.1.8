@@ -31,32 +31,24 @@ public class SpineTouch_Editor : Editor
         bool_isloop = EditorGUILayout.Toggle("loop 여부", SpineScripts[0].isLOOP);
 
         //case1
-        var bool_playme = EditorGUILayout.Toggle("#본인애님 실행", SpineScripts[0].PlayME);
-        using (var group1 = new EditorGUILayout.FadeGroupScope(Convert.ToSingle(bool_playme)))
-        {
-            if(group1.visible == true)
-            {
-                EditorGUI.indentLevel++; //들여쓰기의 정도
-                //~~~~~~~~~~~시리얼된거랑 리스트 맞추기~~~~~~~~~~~~~~~~~~~~~~~##
-                list_animname = SpineScripts[0].anim_name;
-                ShowList(animLIST.FindProperty("anim_name"), "name_");
-                //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
-                EditorGUI.indentLevel--;
-            }
-        }
+        var bool_playme = EditorGUILayout.BeginToggleGroup("#본인애님 실행", SpineScripts[0].PlayME);
+        EditorGUI.indentLevel++; //들여쓰기의 정도
+        //~~~~~~~~~~~시리얼된거랑 리스트 맞추기~~~~~~~~~~~~~~~~~~~~~~~##
+        list_animname = SpineScripts[0].anim_name;
+        ShowList(animLIST.FindProperty("anim_name"), "name_");
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+        EditorGUI.indentLevel--;
+        EditorGUILayout.EndToggleGroup();
+
         //case2
-        var bool_playother = EditorGUILayout.Toggle("#다른애님 실행", SpineScripts[0].PlayOTHER);
-        using (var group2 = new EditorGUILayout.FadeGroupScope(Convert.ToSingle(bool_playother)))
-        {
-            if(group2.visible == true)
-            {
-                EditorGUI.indentLevel++; //들여쓰기의 정도
-                GetOtherAnim = (SkeletonAnimation)EditorGUILayout.ObjectField("가져올 다른 애니메이션", SpineScripts[0].OtherAnim, typeof(SkeletonAnimation), true);
-                list_otheranimname = SpineScripts[0].anim_name;
-                ShowList(animLIST.FindProperty("anim_name"), "name_");
-                EditorGUI.indentLevel--;
-            }
-        }
+        var bool_playother = EditorGUILayout.BeginToggleGroup("#다른애님 실행", SpineScripts[0].PlayOTHER);
+        EditorGUI.indentLevel++; //들여쓰기의 정도
+        GetOtherAnim = (SkeletonAnimation)EditorGUILayout.ObjectField("가져올 다른 애니메이션", SpineScripts[0].OtherAnim, typeof(SkeletonAnimation), true);
+        list_otheranimname = SpineScripts[0].anim_name;
+        ShowList(animLIST.FindProperty("anim_name"), "name_");
+        EditorGUI.indentLevel--;
+        EditorGUILayout.EndToggleGroup();
+
         Undo.RecordObjects(SpineScripts, "spine value");
 
         if (EditorGUI.EndChangeCheck())
