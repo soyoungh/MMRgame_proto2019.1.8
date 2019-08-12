@@ -8303,8 +8303,8 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isIDLE: 1
+  PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
 --- !u!61 &511468293
@@ -12151,8 +12151,8 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isIDLE: 1
+  PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
 --- !u!23 &710929142
@@ -16507,8 +16507,8 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isIDLE: 1
+  PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
 --- !u!23 &1080473022
@@ -17490,12 +17490,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OtherAnim: {fileID: 0}
-  anim_name:
-  - idle
-  - touch1
+  anim_name: []
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isIDLE: 1
+  PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
 --- !u!61 &1108684307
@@ -30426,8 +30424,8 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isIDLE: 1
+  PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
 --- !u!23 &2037987582
@@ -31341,8 +31339,8 @@ MonoBehaviour:
   anim_name:
   - touch1
   isLOOP: 0
-  isIDLE: 0
-  PlayME: 0
+  isIDLE: 1
+  PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
 --- !u!23 &2093882514

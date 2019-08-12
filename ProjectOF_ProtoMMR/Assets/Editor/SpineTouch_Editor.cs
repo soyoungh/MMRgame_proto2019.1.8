@@ -29,7 +29,6 @@ public class SpineTouch_Editor : Editor
 
         bool_isidle = EditorGUILayout.Toggle("idle 유뮤", SpineScripts[0].isIDLE);
         bool_isloop = EditorGUILayout.Toggle("loop 여부", SpineScripts[0].isLOOP);
-        EditorGUI.indentLevel++;
 
         //case1
         var bool_playme = EditorGUILayout.Toggle("#본인애님 실행", SpineScripts[0].PlayME);
@@ -64,11 +63,11 @@ public class SpineTouch_Editor : Editor
         {
             foreach (var SpineScript in SpineScripts)
             {
+                SpineScript.isIDLE = bool_isidle;
+                SpineScript.isLOOP = bool_isloop;
                 SpineScript.PlayME = bool_playme;
                 SpineScript.anim_name = list_animname;
                 animLIST.ApplyModifiedProperties();//바꾸고 적용시켜주는게 문제인듯
-                SpineScript.isIDLE = bool_isidle;
-                SpineScript.isLOOP = bool_isloop;
 
                 //case 2
                 SpineScript.PlayOTHER = bool_playother;
