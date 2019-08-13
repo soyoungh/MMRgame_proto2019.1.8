@@ -9,6 +9,8 @@ public class AB_load : MonoBehaviour
     //https://docs.unity3d.com/kr/2017.4/Manual/AssetBundles-Native.html 참고자료_공식문서
     //https://wergia.tistory.com/32 참고자료
     
+    // test to patch this file's chenge onto the master.
+
     public void LoadOnLocal()
     {
         //로컬저장소용 1.LoadFromFile
