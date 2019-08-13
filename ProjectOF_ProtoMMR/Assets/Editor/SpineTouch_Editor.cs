@@ -15,7 +15,7 @@ public class SpineTouch_Editor : Editor
     List<string> list_otheranimname;
     bool bool_isidle;
     bool bool_isloop;
-    SkeletonAnimation GetOtherAnim;
+    List<SkeletonAnimation> GetOtherAnim = new List<SkeletonAnimation>();
     private void OnEnable()
     {
         SpineScripts = targets.Cast<Spine_Touch>().ToArray();
@@ -31,7 +31,7 @@ public class SpineTouch_Editor : Editor
         bool_isloop = EditorGUILayout.Toggle("loop 여부", SpineScripts[0].isLOOP);
 
         //case1
-        var bool_playme = EditorGUILayout.BeginToggleGroup("#본인애님 실행", SpineScripts[0].PlayME);
+        var bool_playme = EditorGUILayout.BeginToggleGroup("#본인애님 실행", SpineScripts[0].PlayME);//토글로 묶지않고 using써서 하면 list사이즈 에러생김
         EditorGUI.indentLevel++; //들여쓰기의 정도
         //~~~~~~~~~~~시리얼된거랑 리스트 맞추기~~~~~~~~~~~~~~~~~~~~~~~##
         list_animname = SpineScripts[0].anim_name;
@@ -43,7 +43,11 @@ public class SpineTouch_Editor : Editor
         //case2
         var bool_playother = EditorGUILayout.BeginToggleGroup("#다른애님 실행", SpineScripts[0].PlayOTHER);
         EditorGUI.indentLevel++; //들여쓰기의 정도
-        GetOtherAnim = (SkeletonAnimation)EditorGUILayout.ObjectField("가져올 다른 애니메이션", SpineScripts[0].OtherAnim, typeof(SkeletonAnimation), true);
+        foreach(var spinescript in SpineScripts)
+        {
+            GetOtherAnim.Add((SkeletonAnimation)EditorGUILayout.ObjectField("가져올 다른 애니메이션", spinescript.OtherAnim, typeof(SkeletonAnimation), true));
+        }
+        //게임오브젝트를 리스트로 만들어 주고 해당 스크립트에 해당 오브젝트를 적용
         list_otheranimname = SpineScripts[0].anim_name;
         ShowList(animLIST.FindProperty("anim_name"), "name_");
         EditorGUI.indentLevel--;
@@ -53,6 +57,7 @@ public class SpineTouch_Editor : Editor
 
         if (EditorGUI.EndChangeCheck())
         {
+            int i = 0;
             foreach (var SpineScript in SpineScripts)
             {
                 SpineScript.isIDLE = bool_isidle;
@@ -64,8 +69,9 @@ public class SpineTouch_Editor : Editor
                 //case 2
                 SpineScript.PlayOTHER = bool_playother;
                 SpineScript.anim_name = list_otheranimname;
-                SpineScript.OtherAnim = GetOtherAnim;
+                SpineScript.OtherAnim = GetOtherAnim[i];
                 animLIST.ApplyModifiedProperties();
+                i++;
             }
         }
     }

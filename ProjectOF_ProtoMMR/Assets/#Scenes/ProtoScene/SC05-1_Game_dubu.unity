@@ -465,7 +465,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -2016,7 +2016,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -2527,7 +2527,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -2702,7 +2702,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -4281,7 +4281,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -4622,7 +4622,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -4889,7 +4889,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -7187,7 +7187,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -7580,7 +7580,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -8063,7 +8063,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -8504,7 +8504,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -9069,7 +9069,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -9597,7 +9597,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -10767,7 +10767,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -11606,7 +11606,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -12048,7 +12048,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 0
   PlayOTHER: 1
   ListIndex: 0
@@ -12501,7 +12501,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -13309,7 +13309,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -13737,7 +13737,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -17170,7 +17170,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -21811,7 +21811,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -22321,7 +22321,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -22828,7 +22828,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -23003,7 +23003,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -25616,7 +25616,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -27386,7 +27386,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -27735,7 +27735,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -28132,7 +28132,7 @@ MonoBehaviour:
   - idle
   - touch1
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 0
   PlayOTHER: 1
   ListIndex: 0
@@ -28631,7 +28631,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -28806,7 +28806,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
@@ -29505,7 +29505,7 @@ MonoBehaviour:
   - idle_startscene
   - touch
   isLOOP: 1
-  isIDLE: 0
+  isIDLE: 1
   PlayME: 1
   PlayOTHER: 0
   ListIndex: 0
